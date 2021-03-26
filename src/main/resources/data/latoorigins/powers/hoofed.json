@@ -3,8 +3,8 @@
   "name": "Hoofed",
   "description": "Your legs are shaped different causing you to move faster, but swim slower.",
   "modifier": {
-    "operation": "addition",
-    "value": -0.035,
+    "operation": "multiply_total",
+    "value": 0.5,
     "name": "Hoofed swim speed reduction"
   }
 }
