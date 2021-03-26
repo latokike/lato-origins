@@ -5,8 +5,6 @@
     "sprite_location": "latoorigins:textures/gui/ability_bars.png",
     "bar_index": "2"
   },
-  "name": "Heated Skin",
-  "description": "A heated skin allows for cuts to be quickly healed",
   "entity_action": {
     "type": "origins:heal",
     "amount": 6
