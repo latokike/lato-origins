@@ -6,7 +6,5 @@
   ],
   "icon": "end_portal_frame",
   "order": 1,
-  "impact": 3,
-  "description": "As you venture deep into the dark caves, you pass out, your vision fades out, you feel like your body is being taken over, a brief moment later, you become a Monster, a Guardian of the caves.",
-  "name": "Warden"
+  "impact": 3
 }
