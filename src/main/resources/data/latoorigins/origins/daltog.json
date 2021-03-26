@@ -20,7 +20,5 @@
   ],
   "icon": "nether_brick",
   "order": 1,
-  "impact": 3,
-  "description": "Latos banished the Daltogs to the nether a long time ago. Now the Daltog Nation is almost nothing.",
-  "name": "Daltog"
+  "impact": 3
 }
