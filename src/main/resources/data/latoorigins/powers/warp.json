@@ -1,7 +1,5 @@
 {
   "type": "origins:fire_projectile",
-  "name": "Warp",
-  "description": "Warp any where you want to go.",
   "cooldown": 60,
   "hud_render": {
     "sprite_location": "latoorigins:textures/gui/ability_bars.png",
