@@ -1,7 +1,5 @@
 {
   "type": "origins:active_self",
-  "name": "Goat Dash",
-  "description": "Goat dash allows you to move in a forwards direction very quick",
   "entity_action": {
     "type": "origins:add_velocity",
     "z": 2,
