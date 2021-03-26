@@ -1,7 +1,5 @@
 {
   "type": "origins:active_self",
-  "name": "Lava Torpedo",
-  "description": "Blaze through lava at high speeds.",
   "entity_action": {
     "type": "origins:add_velocity",
     "z": 5,
