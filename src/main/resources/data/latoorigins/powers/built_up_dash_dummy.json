@@ -8,8 +8,10 @@
         "type": "origins:apply_effect",
         "effect": {
           "effect": "minecraft:slowness",
-          "duration": 20,
-          "amplifier": 255
+          "duration": 40,
+          "amplifier": 255,
+          "show_particles": false,
+          "show_icon": false
         }
       }
     ]
