@@ -12,7 +12,7 @@
             "type": "origins:if_else",
             "condition": {
               "type": "origins:in_tag",
-              "tag": "extraorigins:edible"
+              "tag": "latoorigins:edible"
             },
             "if_action": {
               "type": "origins:and",
@@ -41,7 +41,7 @@
   "cooldown": 300,
   "key": "secondary",
   "hud_render": {
-    "sprite_location": "extraorigins:textures/gui/nothing.png",
+    "sprite_location": "latoorigins:textures/gui/nothing.png",
     "bar_index": "6"
   }
 }
