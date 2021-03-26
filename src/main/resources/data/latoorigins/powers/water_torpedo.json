@@ -1,7 +1,5 @@
 {
   "type": "origins:active_self",
-  "name": "Water Torpedo",
-  "description": "Blaze through water at high speeds.",
   "entity_action": {
     "type": "origins:add_velocity",
     "z": 5,
