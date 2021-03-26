@@ -9,14 +9,13 @@
 	  "extraorigins:cobblestone",
 	  "extraorigins:lava_sharkian",
 	  "extraorigins:sharkian",
-	  "extraorigins:goat",
+	  "extraorigins:goatlin",
 	  "extraorigins:tauros",
 	  "extraorigins:lato",
 	  "extraorigins:daltog",
   	  "extraorigins:warden",
 	  "extraorigins:dimensional_being",
   	  "extraorigins:piglin",
-	  "extraorigins:god",
-	  "extraorigins:power_tester"
+	  "extraorigins:god"
   ]
 }

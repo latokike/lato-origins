@@ -1,0 +1,20 @@
+{
+  "type": "origins:target_action_on_hit",
+  "name": "Powerful Arms",
+  "description": "Powerful arms that can launch foes into the air, provided you are using your fists",
+  "entity_action": {
+    "type": "origins:add_velocity",
+    "y": 0.7
+  },
+  "cooldown": 0,
+  "condition": {
+    "type": "origins:equipped_item",
+    "equipment_slot": "mainhand",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "item": "minecraft:air"
+      }
+    }
+  }
+}

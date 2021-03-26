@@ -1,0 +1,14 @@
+{
+  "powers": [
+  	"extraorigins:cobblestone_skin",
+	  "extraorigins:immobile",
+  	"extraorigins:natural_regeneration",
+	  "extraorigins:antivore",
+  	"extraorigins:heavy_body"
+  ],
+  "icon": "cobblestone",
+  "order": 1,
+  "impact": 3,
+  "description": "Cobblestone.",
+  "name": "Cobblestone"
+}

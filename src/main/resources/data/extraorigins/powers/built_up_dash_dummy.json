@@ -1,0 +1,22 @@
+{
+  "type": "origins:active_self",
+  "hidden": "true",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:slowness",
+          "duration": 20,
+          "amplifier": 255
+        }
+      }
+    ]
+  },
+  "cooldown": 800,
+  "hud_render": {
+    "sprite_location": "extraorigins:textures/gui/nothing.png",
+    "bar_index": "6"
+  }
+}

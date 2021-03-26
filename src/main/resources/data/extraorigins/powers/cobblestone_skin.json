@@ -1,0 +1,33 @@
+{
+
+  "name": "Cobblestone Skin",
+	"description": "Skin made out of cobblestone comes with perks, like increased health, and damage, and disabillities such as immobillity.",
+	"type": "origins:multiple",
+	"modify_size":
+	{
+		"type": "extraorigins:modify_size",
+		"scale": 0.5
+	},
+	"invulnerabillities":
+	{
+		"type": "origins:invulnerability",
+	"damage_condition":
+	{
+	  "type": "origins:or",
+	  "conditions":
+	    [
+    	  {
+        	"type": "origins:name",
+	      	"name": "starve"
+        },
+  	    {
+	        "type": "origins:name",
+  	      "name": "drown"
+	      },
+  	    {
+  		    "type": "extraorigins:thorns_enchantment"
+	      }
+	    ]
+    }
+	}
+}
