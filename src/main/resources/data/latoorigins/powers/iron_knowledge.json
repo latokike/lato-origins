@@ -1,7 +1,5 @@
 {
   "type": "origins:modify_damage_dealt",
-  "name": "Iron knowledge",
-  "description": "Additional damage whilst using iron",
   "modifier": {
 	"value": 5,
 	"operation": "addition"
