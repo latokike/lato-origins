@@ -12,7 +12,7 @@ import latokike.latoorigins.common.LatoOrigins;
 import latokike.latoorigins.common.power.BoneMealPower;
 import latokike.latoorigins.common.power.ModifySizePower;
 import latokike.latoorigins.common.power.SpikedPower;
-import latokike.latoorigins.common.power.ModifyPlayerSpawn;
+import latokike.latoorigins.common.power.ModifyPlayerSpawnPower;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
