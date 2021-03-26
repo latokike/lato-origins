@@ -1,7 +1,5 @@
 {
   "type": "origins:attacker_action_when_hit",
-  "name": "Horned",
-  "description": "Having horns deals damage to attacers, if there is time to recover from the last attack.",
   "entity_action": {
     "type": "origins:damage",
     "amount": 2,
