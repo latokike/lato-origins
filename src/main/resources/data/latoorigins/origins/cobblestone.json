@@ -8,7 +8,5 @@
   ],
   "icon": "cobblestone",
   "order": 1,
-  "impact": 3,
-  "description": "Cobblestone.",
-  "name": "Cobblestone"
+  "impact": 3
 }
