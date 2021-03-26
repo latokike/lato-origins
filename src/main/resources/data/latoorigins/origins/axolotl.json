@@ -15,7 +15,5 @@
   ],
   "icon": "salmon",
   "order": 1,
-  "impact": 3,
-  "description": "A cute little fish. They are thriving.",
-  "name": "Axolotl"
+  "impact": 3
 }
