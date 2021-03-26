@@ -33,7 +33,5 @@
   ],
   "icon": "nether_star",
   "order": 1,
-  "impact": 3,
-  "description": "God is the creator of all beings.",
-  "name": "God"
+  "impact": 3
 }
