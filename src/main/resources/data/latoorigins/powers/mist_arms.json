@@ -1,7 +1,5 @@
 {
   "type": "origins:attribute",
-  "name": "Mist Arms",
-  "description": "Arms that can reach terrifying distances.",
   "modifiers": [
     {
       "name": "Mist block reach",
