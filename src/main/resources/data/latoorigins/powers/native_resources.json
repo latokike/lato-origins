@@ -1,7 +1,7 @@
 {
   "type": "origins:modify_damage_dealt",
   "name": "Native Resources",
-  "description": "Slightly increased damage using netherite or gold, and allows netherrack to be used as stone.",
+  "description": "Slightly increased damage using netherite or gold, and allows netherrack to be used as cobblestone.",
   "modifier": {
 	"value": 3,
 	"operation": "addition"
