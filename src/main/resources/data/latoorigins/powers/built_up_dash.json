@@ -1,7 +1,5 @@
 {
   "type": "origins:active_self",
-  "name": "Built Up Dash",
-  "description": "Charge in any direction at high speeds, but you have to build up speed first.",
   "entity_action": {
     "type": "origins:and",
     "actions": [
@@ -9,8 +7,10 @@
         "type": "origins:apply_effect",
         "effect": {
           "effect": "minecraft:speed",
-          "duration": 400,
-          "amplifier": 1
+          "duration": 200,
+          "amplifier": 1,
+          "show_particles": false,
+          "show_icon": false
         }
       },
       {
