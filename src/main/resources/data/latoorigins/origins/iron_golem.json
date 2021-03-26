@@ -16,8 +16,5 @@
   ],
   "icon": "iron_block",
   "order": 1,
-  "impact": 2,
-  "description": "Iron golems were built to protect others.",
-  "name": "Iron Golem"
+  "impact": 2
 }
-
