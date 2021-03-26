@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "origins": [
+	  "extraorigins:axolotl",
+	  "extraorigins:inchling",
+	  "extraorigins:floran",
+	  "extraorigins:glass_golem",
+	  "extraorigins:iron_golem",
+	  "extraorigins:cobblestone",
+	  "extraorigins:lava_sharkian",
+	  "extraorigins:sharkian",
+	  "extraorigins:goat",
+	  "extraorigins:tauros",
+	  "extraorigins:lato",
+	  "extraorigins:daltog",
+  	  "extraorigins:warden",
+	  "extraorigins:dimensional_being",
+  	  "extraorigins:piglin",
+	  "extraorigins:god",
+	  "extraorigins:power_tester"
+  ]
+}
