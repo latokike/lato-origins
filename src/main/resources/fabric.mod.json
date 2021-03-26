@@ -9,9 +9,9 @@
   ],
   "contact": {
 	"homepage": "",
-	"sources": "https://github.com/MoriyaShiine/extra-origins, https://github.com/Latokike/lato-origins"
+	"sources": "https://github.com/Latokike/lato-origins"
   },
-  "license": "GPL-3.0",
+  "license": "MIT",
   "icon": "assets/latoorigins/icon.png",
   "environment": "*",
   "entrypoints": {
@@ -25,7 +25,7 @@
   "depends": {
 	"fabricloader": ">=0.11.0",
 	"fabric": "*",
-	"minecraft": "1.16.5",
+	"minecraft": "1.16.4",
 	"origins": ">=0.6.0",
 	"pehkui": ">=1.9.0+21w10a"
   }
