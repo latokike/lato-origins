@@ -12,7 +12,5 @@
   ],
   "icon": "netherite_axe",
   "order": 1,
-  "impact": 3,
-  "description": "Latos banished Daltogs to the nether long ago, and now all of the Latos are gone.",
-  "name": "Lato"
+  "impact": 3
 }
