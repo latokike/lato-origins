@@ -1,14 +1,12 @@
 {
   "type": "origins:conditioned_attribute",
-  "name": "Habitat Advantage",
-  "description": "You are more at home in the plains.",
   "modifier": {
     "condition": {
       "type": "origins:category",
       "category": "plains"
     },
     "attribute": "generic.attack_damage",
-	  "value": 0.5,
-	  "operation": "multiply_base"
+	  "value": 2.0,
+	  "operation": "multiply_total"
   }
 }
