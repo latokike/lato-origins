@@ -1,37 +1,45 @@
 {
-  "type": "origins:attribute",
-  "modifiers": [
+	"type": "origins:multiple",
+	"modify_size":
 	{
-	  "name": "Monstrous Body health",
-	  "attribute": "generic.max_health",
-	  "value": 10.0,
-	  "operation": "addition"
+		"type": "extraorigins:modify_size",
+		"scale": 1.5
 	},
+	"attribute_modifiers":
 	{
-	  "name": "Monstrous Body damage",
-	  "attribute": "generic.attack_damage",
-	  "value": 3.0,
-	  "operation": "addition"
-	},
-	{
-	  "name": "Monstrous Body movement speed reduction",
-	  "attribute": "generic.movement_speed",
-	  "value": -0.045,
-	  "operation": "addition"
-	},
-	{
-	  "name": "Monstrous Body reach",
-	  "attribute": "reach-entity-attributes:reach",
-	  "value": 2,
-	  "operation": "addition"
-	},
-	{
-	  "name": "Monstrous Body attack range",
-	  "attribute": "reach-entity-attributes:attack_range",
-	  "value": 3,
-	  "operation": "addition"
+		"type": "origins:attribute",
+		"modifiers":
+		[
+			{
+				"name": "Monstrous Body health",
+				"attribute": "generic.max_health",
+				"value": 10.0,
+				"operation": "addition"
+			},
+			{
+				"name": "Monstrous Body damage",
+				"attribute": "generic.attack_damage",
+				"value": 3.0,
+				"operation": "addition"
+			},
+			{
+				"name": "Monstrous Body movement speed reduction",
+				"attribute": "generic.movement_speed",
+				"value": -0.01,
+				"operation": "addition"
+			},
+			{
+				"name": "Monstrous Body reach",
+				"attribute": "reach-entity-attributes:reach",
+				"value": 2,
+				"operation": "addition"
+			},
+			{
+				 "name": "Monstrous Body attack range",
+				"attribute": "reach-entity-attributes:attack_range",
+				"value": 3,
+				"operation": "addition"
+			}
+		]
 	}
-  ],
-  "name": "Monstrous Body",
-  "description": "A body that allows further reach, stronger attacks, more health, but at the cost of speed."
 }
