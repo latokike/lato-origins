@@ -13,7 +13,5 @@
   ],
   "icon": "lava_bucket",
   "order": 1,
-  "impact": 3,
-  "description": "Lava sharkians are the ruler of the lava oceans.",
-  "name": "Lava Sharkian"
+  "impact": 3
 }
