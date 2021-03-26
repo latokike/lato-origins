@@ -1,7 +1,5 @@
 {
   "type": "origins:active_self",
-  "name": "Grass Graze",
-  "description": "You can eat grass to gain some food.",
   "entity_action": {
     "type": "origins:and",
     "actions": [
