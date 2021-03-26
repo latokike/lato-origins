@@ -1,7 +1,5 @@
 {
   "type": "origins:active_self",
-  "name": "Rage",
-  "description": "Rage gives strength for a short period of time, but costs health.",
   "entity_action": {
     "type": "origins:and",
     "actions": [
