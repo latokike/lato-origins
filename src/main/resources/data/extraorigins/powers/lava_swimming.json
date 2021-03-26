@@ -1,9 +1,0 @@
-{
-  "type": "origins:swimming",
-  "name": "Lava Swimming",
-  "description": "You can swim in lava!",
-  "condition": {
-    "type": "origins:submerged_in",
-    "fluid": "minecraft:lava"
-  }
-}
