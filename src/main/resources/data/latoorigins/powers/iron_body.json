@@ -1,0 +1,19 @@
+{
+  "type": "origins:attribute",
+  "modifiers": [
+	{
+	  "name": "Iron Body health",
+	  "attribute": "generic.max_health",
+	  "value": 10.0,
+	  "operation": "addition"
+	},
+	{
+	  "name": "Iron Body movement speed reduction",
+	  "attribute": "generic.movement_speed",
+	  "value": -0.02,
+	  "operation": "addition"
+	}
+  ],
+  "name": "Iron Body",
+  "description": "A body made out of iron provides more health, but costs speed."
+}

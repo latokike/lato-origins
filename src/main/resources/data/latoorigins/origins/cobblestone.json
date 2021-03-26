@@ -1,0 +1,14 @@
+{
+  "powers": [
+	"latoorigins:cobblestone_body",
+	"latoorigins:immobile",
+	"latoorigins:natural_regeneration",
+	"latoorigins:antivore",
+	"latoorigins:heavy_body"
+  ],
+  "icon": "cobblestone",
+  "order": 1,
+  "impact": 3,
+  "description": "Cobblestone.",
+  "name": "Cobblestone"
+}

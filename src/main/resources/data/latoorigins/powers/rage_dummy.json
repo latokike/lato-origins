@@ -1,0 +1,22 @@
+{
+  "type": "origins:active_self",
+  "hidden": "true",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:instant_damage",
+          "duration": 1,
+          "amplifier": 0
+        }
+      }
+    ]
+  },
+  "cooldown": 600,
+  "hud_render": {
+    "sprite_location": "latoorigins:textures/gui/nothing.png",
+    "bar_index": "0"
+  }
+}

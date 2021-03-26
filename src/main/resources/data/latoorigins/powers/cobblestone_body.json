@@ -1,0 +1,21 @@
+{
+  "name": "Cobblestone Body",
+	"description": "A body made out of cobblestone comes with perks, like increased health, no starvation, and disabillities such as immobillity.",
+	"type": "origins:invulnerability",
+	"damage_condition": {
+	"type": "origins:or",
+	"conditions": [
+	  {
+		"type": "origins:name",
+		"name": "starve"
+	  },
+	  {
+		"type": "origins:name",
+		"name": "drown"
+	  },
+	  {
+		"type": "latoorigins:thorns_enchantment"
+	  }
+	]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "latokike.extraorigins.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+	"ItemStackMixin",
+	"LivingEntityMixin",
+	"PiglinBrainMixin",
+	"TrackTargetGoalMixin"
+  ],
+  "injectors": {
+	"defaultRequire": 1
+  }
+}

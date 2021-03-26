@@ -1,0 +1,18 @@
+{
+  "powers": [
+    "latoorigins:water_torpedo",
+    "latoorigins:gnashing_teeth",
+    "latoorigins:bubbles",
+    "origins:water_vision",
+    "origins:swim_speed",
+    "origins:aqua_affinity",
+    "origins:like_water",
+    "origins:water_breathing",
+    "origins:aquatic"
+  ],
+  "icon": "prismarine_shard",
+  "order": 1,
+  "impact": 3,
+  "description": "Sharkians are the ruler of the oceans, and they would rule the land too, if they could breathe on it.",
+  "name": "Sharkian"
+}

@@ -1,0 +1,36 @@
+{
+  "type": "origins:active_self",
+  "name": "Grass Graze",
+  "description": "You can eat grass to gain some food.",
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:block_action_at",
+        "block_action": {
+          "type": "origins:offset",
+          "y": -1,
+          "action": {
+            "type": "origins:set_block",
+            "condition": {
+              "type": "origins:in_tag",
+              "tag": "latoorigins:edible"
+            },
+            "block": "minecraft:dirt"
+          }
+        }
+      },
+      {
+        "type": "origins:feed",
+        "food": 7.0,
+        "saturation": 0.0
+      }
+    ]
+  },
+  "cooldown": 300,
+  "key": "secondary",
+  "hud_render": {
+    "sprite_location": "latoorigins:textures/gui/nothing.png",
+    "bar_index": "6"
+  }
+}

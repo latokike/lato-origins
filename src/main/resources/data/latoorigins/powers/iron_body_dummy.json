@@ -1,0 +1,16 @@
+{
+  "hidden": "true",
+  "type": "origins:invulnerability",
+  "damage_condition": {
+	"type": "origins:or",
+	"conditions": [
+	  {
+		"type": "latoorigins:thorns_enchantment"
+	  },
+	  {
+		"type": "origins:name",
+		"name": "sweetBerryBush"
+	  }
+	]
+  }
+}

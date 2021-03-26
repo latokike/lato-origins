@@ -1,0 +1,24 @@
+{
+    "type": "origins:recipe",
+    "hidden": "true",
+    "recipe": {
+      "id": "latoorigins:native_resources/native_shovel_crafting",
+      "type": "minecraft:crafting_shaped",
+      "pattern": [
+        "#",
+        "b",
+        "b"
+      ],
+      "key": {
+        "#": {
+          "item": "minecraft:netherrack"
+        },
+        "b": {
+          "item": "minecraft:stick"
+        }
+      },
+      "result": {
+        "item": "minecraft:stone_shovel"
+      }
+    }
+}

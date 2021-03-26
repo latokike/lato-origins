@@ -1,0 +1,23 @@
+{
+  "powers": [
+	"latoorigins:iron_knowledge",
+	"latoorigins:iron_body",
+	"latoorigins:iron_body_dummy",
+	"latoorigins:village_spawn",
+	"latoorigins:powerful_arms",
+	"origins:natural_armor",
+	"origins:extra_reach",
+	"latoorigins:antivore",
+	"latoorigins:long_arms",
+	"origins:more_exhaustion",
+	"origins:strong_arms",
+	"origins:strong_arms_break_speed",
+	"latoorigins:natural_regeneration"
+  ],
+  "icon": "iron_block",
+  "order": 1,
+  "impact": 2,
+  "description": "Iron golems were built to protect others.",
+  "name": "Iron Golem"
+}
+

@@ -1,0 +1,10 @@
+{
+  "type": "origins:modify_damage_taken",
+  "name": "Tough Hide",
+  "description": "Tougher hide allows you to take more hits.",
+  "modifier": {
+	  "name": "Less damage taken",
+	  "value": -1.0,
+	  "operation": "addition"
+  }
+}

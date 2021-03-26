@@ -1,0 +1,5 @@
+{
+  "type": "origins:simple",
+  "name": "Rideable",
+  "description": "You are able to be ridden."
+}

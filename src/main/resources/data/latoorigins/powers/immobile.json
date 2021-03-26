@@ -1,0 +1,37 @@
+{
+  "type": "origins:attribute",
+  "modifiers": [
+	{
+	  "name": "Immobile health",
+	  "attribute": "generic.max_health",
+	  "value": 80.0,
+	  "operation": "addition"
+	},
+	{
+	  "name": "Immobile damage",
+	  "attribute": "generic.attack_damage",
+	  "value": 1000.0,
+	  "operation": "addition"
+	},
+	{
+	  "name": "Immobile movement speed reduction",
+	  "attribute": "generic.movement_speed",
+	  "value": -1,
+	  "operation": "addition"
+	},
+	{
+	  "name": "Immobile reach",
+	  "attribute": "reach-entity-attributes:reach",
+	  "value": -2,
+	  "operation": "addition"
+	},
+	{
+	  "name": "Immobile attack range",
+	  "attribute": "reach-entity-attributes:attack_range",
+	  "value": -2,
+	  "operation": "addition"
+	}
+  ],
+  "name": "Immobile",
+  "description": "You. Are. Immobile."
+}

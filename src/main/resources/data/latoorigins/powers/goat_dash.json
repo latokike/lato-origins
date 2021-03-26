@@ -1,0 +1,15 @@
+{
+  "type": "origins:active_self",
+  "name": "Goat Dash",
+  "description": "Goat dash allows you to move in a forwards direction very quick",
+  "entity_action": {
+    "type": "origins:add_velocity",
+    "z": 2,
+    "space": "local"
+  },
+  "cooldown": 300,
+  "hud_render": {
+    "sprite_location": "latoorigins:textures/gui/ability_bars.png",
+    "bar_index": 1
+  }
+}

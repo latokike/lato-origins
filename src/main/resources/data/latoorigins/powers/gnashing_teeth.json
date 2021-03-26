@@ -1,0 +1,15 @@
+{
+  "type": "origins:conditioned_attribute",
+  "modifier": {
+	  "name": "Gnashing damage",
+	  "attribute": "generic.attack_damage",
+		"value": 10.0,
+		"condition": {
+			"type": "origins:submerged_in",
+			"fluid": "minecraft:water"
+		},
+		"operation": "addition"
+	},
+  "name": "Gnashing Teeth",
+  "description": "Teeth that allow for terrifying attack damage whilst submerged in water."
+}

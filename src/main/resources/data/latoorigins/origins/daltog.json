@@ -1,0 +1,26 @@
+{
+  "powers": [
+	"latoorigins:native_resources",
+	"latoorigins:native_resources_dummy",
+	"latoorigins:native_resources_dummy2",
+	"latoorigins:native_resources_dummy3",
+	"latoorigins:native_resources_dummy4",
+	"latoorigins:native_resources_dummy5",
+	"latoorigins:native_resources_dummy6",
+	"latoorigins:native_resources_dummy7",
+	"latoorigins:native_resources_dummy8",
+	"latoorigins:heated_skin",
+	"latoorigins:rideable_creature",
+	"origins:translucent",
+	"origins:tailwind",
+	"origins:carnivore",
+	"origins:fire_immunity",
+	"origins:nether_spawn",
+	"origins:light_armor"
+  ],
+  "icon": "nether_brick",
+  "order": 1,
+  "impact": 3,
+  "description": "Latos banished the Daltogs to the nether a long time ago. Now the Daltog Nation is almost nothing.",
+  "name": "Daltog"
+}

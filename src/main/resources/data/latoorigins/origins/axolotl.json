@@ -1,0 +1,21 @@
+{
+  "powers": [
+	"latoorigins:bite_sized",
+	"latoorigins:bite_sized_dummy",
+	"latoorigins:bite_sized_dummy2",
+	"latoorigins:absorbing",
+	"latoorigins:small_appetite",
+	"latoorigins:lightweight",
+	"origins:light_armor",
+	"origins:water_vision",
+	"origins:swim_speed",
+	"origins:aqua_affinity",
+	"origins:like_water",
+	"origins:water_breathing"
+  ],
+  "icon": "salmon",
+  "order": 1,
+  "impact": 3,
+  "description": "A cute little fish. They are thriving.",
+  "name": "Axolotl"
+}

@@ -1,0 +1,11 @@
+{
+  "type": "origins:modify_jump",
+  "name": "Heavy Body",
+  "description": "A heavy body decreases jump height",
+  "hidden": true,
+  "modifier": {
+	"name": "Heavy Body jump force penalty",
+	"value": -1,
+  "operation": "addition"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "powers": [
+  	"latoorigins:goat_dash",
+  	"latoorigins:horned",
+  	"origins:tailwind",
+  	"origins:sprint_jump",
+  	"origins:vegetarian",
+  	"origins:no_shield",
+   	"origins:fall_immunity",
+	"latoorigins:tough_hide"
+  ],
+  "icon": "rabbit_hide",
+  "order": 1,
+  "name": "Mountain Goat",
+  "description": "You are a mountain goat, leaping from peak to peak with increadible agillity, and jump height.",
+  "impact": 3
+}

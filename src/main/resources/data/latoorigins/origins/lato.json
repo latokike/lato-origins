@@ -1,0 +1,18 @@
+{
+  "powers": [
+	"latoorigins:lato_blooded",
+	"latoorigins:arcane_skin",
+	"origins:natural_armor",
+	"origins:nine_lives",
+	"origins:slow_falling",
+	"origins:tailwind",
+	"latoorigins:rage",
+	"latoorigins:rage_dummy",
+	"latoorigins:perfect_vision"
+  ],
+  "icon": "netherite_axe",
+  "order": 1,
+  "impact": 3,
+  "description": "Latos banished Daltogs to the nether long ago, and now all of the Latos are gone.",
+  "name": "Lato"
+}

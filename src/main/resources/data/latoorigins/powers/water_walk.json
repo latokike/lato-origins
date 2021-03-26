@@ -1,0 +1,12 @@
+{
+  "type": "origins:walk_on_fluid",
+  "fluid": "minecraft:water",
+  "name": "Water Walking",
+  "description": "Walk on water, just like Jesus",
+  "condition": {
+    "type": "origins:fluid_height",
+    "fluid": "minecraft:water",
+    "comparison": "<=",
+    "compare_to": 0.4
+  }
+}

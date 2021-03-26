@@ -1,0 +1,8 @@
+{
+  "type": "origins:effect_immunity",
+  "name": "Lato Blooded",
+  "description": "Lato's blood can work out metallic poisioning.",
+  "effects": [
+    "minecraft:wither"
+  ]
+}
