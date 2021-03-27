@@ -84,7 +84,7 @@
   "power.latoorigins.neighbors.name": "邻居",
   "power.latoorigins.neighbors.description": "您熟悉地狱的暴民。",
   "power.latoorigins.old_friends.name": "老朋友",
-  "power.latoorigisn.old_friends.description": "您很早就知道终点的统治者。"
+  "power.latoorigisn.old_friends.description": "您很早就知道终点的统治者。",
   "power.latoorigins.perfect_vision.name": "完美视野",
   "power.latoorigins.perfect_vision.description": "精心构造的眼睛可以带来完美的视力，它们也是可切换的。",
   "power.latoorigins.powerful_arms.name": "强大的武器",
@@ -97,6 +97,8 @@
   "power.latoorigins.small_appetite.description": "您不那么饿，所以需要少吃点东西。",
   "power.latoorigins.tough_hide.name": "坚韧的皮",
   "power.latoorigins.tough_hide.description": "坚韧的皮可以让您承受更多打击。",
+  "power.latoorigins.underwater_allies.name": "水下盟友",
+  "power.latoorigins.underwater_allies.description": "您熟悉水下生物。",
   "power.latoorigins.village_spawn.name": "乡村生活",
   "power.latoorigins.village_spawn.description": "你住在一个村庄。",
   "power.latoorigins.warp.name": "尺寸翘曲",
