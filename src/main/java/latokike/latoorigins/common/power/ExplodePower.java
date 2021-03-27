@@ -1,4 +1,4 @@
-package com.github.originsplus.power;
+package latokike.latoorigins.common.power;
 
 import java.util.function.Consumer;
 
