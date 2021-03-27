@@ -104,5 +104,7 @@
   "power.latoorigins.water_vision.name": "Water Vision",
   "power.latoorigins.water_vision.description": "You can see much more clearly in water than others.",
   "power.latoorigins.water_walk.name": "Water Walking",
-  "power.latoorigins.water_walk.description": "Walk on water, just like Jesus."
+  "power.latoorigins.water_walk.description": "Walk on water, just like Jesus.",
+  "power.latoorigins.webbed_feet.name": "Webbed Feet",
+  "power.latoorigins.webbed_feet.description": "Your feet are webbed, causing you to move slower on land."
 }
