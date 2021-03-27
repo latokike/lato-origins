@@ -79,6 +79,8 @@
   "power.latoorigins.native_resources.description": "Slightly increased damage using netherite or gold, and allows netherrack to be used as cobblestone.",
   "power.latoorigins.natural_regeneration.name": "Natural Regeneration",
   "power.latoorigins.natural_regeneration.description": "Natural regeneration passively regenerates your health.",
+  "power.latoorigins.neighbors.name": "Neighbors",
+  "power.latoorigins.neighbors.description": "You are familiar with mobs of the nether.",
   "power.latoorigins.perfect_vision.name": "Perfect Vision",
   "power.latoorigins.perfect_vision.description": "Carefully constructed eyes that allow for perfect vision, they also are toggleable.",
   "power.latoorigins.powerful_arms.name": "Powerful Arms",
