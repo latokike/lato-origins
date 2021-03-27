@@ -4,6 +4,37 @@
     "type": "origins:and",
     "actions": [
       {
+        {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "origins:on_block",
+          "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:grass"
+          }
+        },
+        "if_action": {
+          "type": "origins:feed",
+          "food": 7.0,
+          "saturation": 0.0
+        }
+      },
+      {
+        "type": "origins:if_else",
+        "condition": {
+          "type": "origins:on_block",
+          "block_condition": {
+            "type": "origins:block",
+            "block": "minecraft:grass"
+          }
+        },
+        "if_action": {
+          "type": "origins:execute_command",
+          "command": "playsound minecraft:block.grass.break @s",
+          "permission_level": 4
+        }
+      },
+      {
         "type": "origins:block_action_at",
         "block_action": {
           "type": "origins:offset",
@@ -25,16 +56,6 @@
             }
           }
         }
-      },
-      {
-        "type": "origins:feed",
-        "food": 7.0,
-        "saturation": 0.0
-      },
-      {
-        "type": "origins:execute_command",
-        "command": "playsound minecraft:block.grass.break @s",
-        "permission_level": 4
       }
     ]
   },
