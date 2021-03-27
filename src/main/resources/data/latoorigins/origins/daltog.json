@@ -16,7 +16,8 @@
 	"origins:carnivore",
 	"origins:fire_immunity",
 	"origins:nether_spawn",
-	"origins:light_armor"
+	"origins:light_armor",
+	"latoorigins:neighbors"
   ],
   "icon": "nether_brick",
   "order": 1,
