@@ -1,7 +1,0 @@
-{
-  "type": "latoorigins:modify_behavior",
-  "behavior": "neutral",
-  "entities": [
-    "minecraft:ender_dragon"
-  ]
-}

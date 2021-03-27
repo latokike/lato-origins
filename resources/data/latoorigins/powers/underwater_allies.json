@@ -1,9 +1,0 @@
-{
-  "type": "latoorigins:modify_behavior",
-  "behavior": "neutral",
-  "entities": [
-    "minecraft:drowned",
-    "minecraft:guardian",
-    "minecraft:elder_guardian"
-  ]
-}

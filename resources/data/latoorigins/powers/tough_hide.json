@@ -1,8 +1,0 @@
-{
-  "type": "origins:modify_damage_taken",
-  "modifier": {
-	  "name": "Less damage taken",
-	  "value": 0.75,
-	  "operation": "multiply_total"
-  }
-}

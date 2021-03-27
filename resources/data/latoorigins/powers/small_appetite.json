@@ -1,8 +1,0 @@
-{
-  "type": "origins:modify_exhaustion",
-  "modifier": {
-	"name": "Less exhaustion from small appetite",
-	"value": -0.5,
-	"operation": "multiply_base"
-  }
-}
