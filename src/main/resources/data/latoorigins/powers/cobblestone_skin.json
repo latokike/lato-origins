@@ -1,0 +1,27 @@
+{
+	"type": "origins:multiple",
+	"modify_size":
+	{
+	  "type": "latoorigins:modify_size",
+	  "scale": 0.5
+	},
+	"invulnerabillities":
+	{
+	  "type": "origins:invulnerability",
+	  "damage_condition":
+	{
+	  "type": "origins:or",
+	  "conditions":
+	  [
+    	{
+          "type": "origins:name",
+	      "name": "starve"
+        },
+  	    {
+	      "type": "origins:name",
+  	      "name": "drown"
+	    }
+      ]
+    }
+  }
+}

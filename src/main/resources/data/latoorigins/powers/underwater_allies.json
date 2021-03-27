@@ -3,7 +3,7 @@
   "behavior": "neutral",
   "entities": [
     "minecraft:drowned",
-    "minecraft:gaurdian",
-    "minecraft:elder_gaurdian"
+    "minecraft:guardian",
+    "minecraft:elder_guardian"
   ]
 }

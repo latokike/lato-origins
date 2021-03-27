@@ -4,13 +4,12 @@
     "type": "origins:and",
     "actions": [
       {
-        {
         "type": "origins:if_else",
         "condition": {
           "type": "origins:on_block",
           "block_condition": {
-            "type": "origins:block",
-            "block": "minecraft:grass"
+            "type": "origins:in_tag",
+            "tag": "latoorigins:edible"
           }
         },
         "if_action": {
@@ -24,13 +23,13 @@
         "condition": {
           "type": "origins:on_block",
           "block_condition": {
-            "type": "origins:block",
-            "block": "minecraft:grass"
+            "type": "origins:in_tag",
+            "tag": "latoorigins:edible"
           }
         },
         "if_action": {
           "type": "origins:execute_command",
-          "command": "playsound minecraft:block.grass.break @s",
+          "command": "playsound minecraft:block.grass.break player @s",
           "permission_level": 4
         }
       },

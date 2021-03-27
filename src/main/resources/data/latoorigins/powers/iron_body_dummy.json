@@ -5,9 +5,6 @@
 	"type": "origins:or",
 	"conditions": [
 	  {
-		"type": "latoorigins:thorns_enchantment"
-	  },
-	  {
 		"type": "origins:name",
 		"name": "sweetBerryBush"
 	  }

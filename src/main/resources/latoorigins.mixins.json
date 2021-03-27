@@ -1,13 +1,14 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "latokike.extraorigins.mixin",
+  "package": "latokike.latoorigins.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
 	"ItemStackMixin",
 	"LivingEntityMixin",
 	"PiglinBrainMixin",
-	"TrackTargetGoalMixin"
+	"TrackTargetGoalMixin",
+    "PlayerEntityMixin"
   ],
   "injectors": {
 	"defaultRequire": 1

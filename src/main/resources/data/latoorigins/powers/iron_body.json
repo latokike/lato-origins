@@ -2,7 +2,7 @@
 	"type": "origins:multiple",
 	"modify_size":
 	{
-	  "type": "extraorigins:modify_size",
+	  "type": "latoorigins:modify_size",
 	  "scale": 1.5
 	},
 	"attribute_modifiers":

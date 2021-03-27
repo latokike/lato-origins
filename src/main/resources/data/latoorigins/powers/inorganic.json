@@ -26,9 +26,6 @@
 	  {
 		"type": "origins:name",
 		"name": "fallingBlock"
-	  },
-	  {
-		"type": "latoorigins:thorns_enchantment"
 	  }
 	]
   }

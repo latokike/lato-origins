@@ -1,21 +1,18 @@
 {
   "replace": false,
   "origins": [
-	  "extraorigins:axolotl",
-	  "extraorigins:inchling",
-	  "extraorigins:floran",
-	  "extraorigins:glass_golem",
-	  "extraorigins:iron_golem",
-	  "extraorigins:cobblestone",
-	  "extraorigins:lava_sharkian",
-	  "extraorigins:sharkian",
-	  "extraorigins:goatlin",
-	  "extraorigins:tauros",
-	  "extraorigins:lato",
-	  "extraorigins:daltog",
-  	  "extraorigins:warden",
-	  "extraorigins:dimensional_being",
-  	  "extraorigins:piglin",
-	  "extraorigins:god"
+	  "latoorigins:axolotl",
+	  "latoorigins:cobblestone",
+	  "latoorigins:nukelian",
+	  "latoorigins:iron_golem",
+	  "latoorigins:lava_sharkian",
+	  "latoorigins:sharkian",
+	  "latoorigins:goatlin",
+	  "latoorigins:tauros",
+	  "latoorigins:lato",
+	  "latoorigins:daltog",
+  	  "latoorigins:warden",
+	  "latoorigins:dimensional_being",
+	  "latoorigins:god"
   ]
 }

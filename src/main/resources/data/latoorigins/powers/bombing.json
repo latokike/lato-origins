@@ -1,0 +1,16 @@
+{
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins:add_velocity",
+    "z": 2.5,
+    "space": "local"
+  },
+  "cooldown": 300,
+  "condition": {
+    "type": "origins:fall_flying"
+  },
+  "hud_render": {
+    "should_render": false
+  },
+  "key": "secondary"
+}
