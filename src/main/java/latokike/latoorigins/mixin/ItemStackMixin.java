@@ -55,7 +55,7 @@ public abstract class ItemStackMixin {
 						callbackInfo.cancel();
 					}
 				}
-				else if (entity.getRandom().nextBoolean() && !LOTags.NETHERITE_TOOLS.contains(getItem())) {
+				else if (entity.getRandom().nextBoolean() && !LOTags.NETHERITE_GOLD_TOOLS.contains(getItem())) {
 					damage(amount, entity.getRandom(), null);
 				}
 			}
@@ -64,9 +64,6 @@ public abstract class ItemStackMixin {
 					if (entity.world.random.nextFloat() < 3 / 4f) {
 						callbackInfo.cancel();
 					}
-				}
-				else if (entity.getRandom().nextBoolean() && !LOTags.NETHERITE_ARMOR.contains(getItem())) {
-					damage(amount, entity.getRandom(), null);
 				}
 			}
 		}
@@ -83,9 +80,6 @@ public abstract class ItemStackMixin {
 			if (getItem() instanceof ArmorItem) {
 				if (getItem() instanceof ArmorItem && LOTags.GOLDEN_ARMOR.contains(getItem())) {
 					multimap.put(EntityAttributes.GENERIC_ARMOR, (((ArmorItem) getItem()).getSlotType() == EquipmentSlot.CHEST || ((ArmorItem) getItem()).getSlotType() == EquipmentSlot.LEGS) ? ARMOR_MODIFIER_1 : ARMOR_MODIFIER_0);
-				}
-				if (LOTags.NETHERITE_ARMOR.contains(getItem())) {
-					multimap.put(EntityAttributes.GENERIC_MOVEMENT_SPEED, MOVEMENT_SPEED_MODIFIER);
 				}
 			}
 		}

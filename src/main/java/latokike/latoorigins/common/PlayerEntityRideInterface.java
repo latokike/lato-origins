@@ -1,4 +1,4 @@
-package io.github.ultrusbot.moborigins;
+package latokike.latoorigins.common;
 
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.util.ActionResult;
