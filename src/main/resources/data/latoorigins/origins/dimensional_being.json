@@ -3,7 +3,8 @@
     "origins:ender_particles",
     "latoorigins:mist_arms",
     "latoorigins:mist_skin",
-    "origins:water_vulnerability"
+    "origins:water_vulnerability",
+    "latoorigins:old_friends"
   ],
   "icon": "ender_eye",
   "order": 1,
