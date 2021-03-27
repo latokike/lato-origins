@@ -104,5 +104,7 @@
   "power.latoorigins.water_vision.name": "水景",
   "power.latoorigins.water_vision.description": "您在水中比其他人看得更清楚。",
   "power.latoorigins.water_walk.name": "水上漫步",
-  "power.latoorigins.water_walk.description": "像耶稣一样在水上行走。"
+  "power.latoorigins.water_walk.description": "像耶稣一样在水上行走。",
+  "power.latoorigins.webbed_feet.name": "脚蹼",
+  "power.latoorigins.webbed_feet.description": "您的脚被蹼打，使您在陆地上的移动速度变慢。"
 }
