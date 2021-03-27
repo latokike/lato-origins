@@ -1,0 +1,9 @@
+{
+  "type": "latoorigins:modify_behavior",
+  "behavior": "neutral",
+  "entities": [
+    "minecraft:drowned",
+    "minecraft:gaurdian",
+    "minecraft:elder_gaurdian"
+  ]
+}
