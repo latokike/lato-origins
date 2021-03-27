@@ -1,0 +1,6 @@
+{
+  "type": "origins:particle",
+  "particle": "minecraft:bubble",
+  "frequency": 4,
+  "hidden": true
+}

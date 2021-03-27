@@ -1,0 +1,10 @@
+{
+  "powers": [
+	"latoorigins:monstrous_body",
+	"origins:natural_armor",
+	"origins:carnivore"
+  ],
+  "icon": "end_portal_frame",
+  "order": 1,
+  "impact": 3
+}

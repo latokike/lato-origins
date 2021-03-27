@@ -1,0 +1,10 @@
+{
+  "powers": [
+	"latoorigins:nuke",
+	"latoorigins:bombing",
+    "latoorigins:homing_missile"
+  ],
+  "icon": "redstone_dust",
+  "order": 1,
+  "impact": 3
+}

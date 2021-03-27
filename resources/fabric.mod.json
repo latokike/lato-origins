@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "latoorigins",
+  "version": "${version}",
+  "name": "Lato Origins",
+  "description": "Adds more origins to the Origins mod",
+  "authors": [
+	"Latokike"
+  ],
+  "contact": {
+	"homepage": "",
+	"sources": "https://github.com/Latokike/lato-origins"
+  },
+  "license": "MIT",
+  "icon": "assets/latoorigins/icon.png",
+  "environment": "*",
+  "entrypoints": {
+	"main": [
+	  "latokike.latoorigins.common.LatoOrigins"
+	]
+  },
+  "mixins": [
+	"latoorigins.mixins.json"
+  ],
+  "depends": {
+	"fabricloader": ">=0.11.0",
+	"fabric": "*",
+	"minecraft": "1.16.4",
+	"origins": ">=0.6.2",
+	"pehkui": ">=1.9.0+21w10a"
+  }
+}

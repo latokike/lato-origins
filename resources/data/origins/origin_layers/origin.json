@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "origins": [
+	  "latoorigins:axolotl",
+	  "latoorigins:cobblestone",
+	  "latoorigins:nukelian",
+	  "latoorigins:iron_golem",
+	  "latoorigins:lava_sharkian",
+	  "latoorigins:sharkian",
+	  "latoorigins:goatlin",
+	  "latoorigins:tauros",
+	  "latoorigins:lato",
+	  "latoorigins:daltog",
+  	  "latoorigins:warden",
+	  "latoorigins:dimensional_being",
+	  "latoorigins:god"
+  ]
+}

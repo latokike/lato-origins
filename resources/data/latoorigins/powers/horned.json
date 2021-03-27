@@ -1,0 +1,16 @@
+{
+  "type": "origins:attacker_action_when_hit",
+  "entity_action": {
+    "type": "origins:damage",
+    "amount": 2,
+    "source": {
+      "name": "Horned damge",
+      "bypasses_armor": false,
+      "fire": false,
+      "unblockable": false,
+      "magic": true,
+      "out_of_world": false
+    }
+  },
+  "cooldown": 5
+}

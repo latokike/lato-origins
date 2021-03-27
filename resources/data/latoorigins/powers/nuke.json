@@ -1,0 +1,13 @@
+{
+  "type": "latoorigins:explode",
+  "cooldown": 5000,
+  "strength": 100,
+  "break_blocks": true,
+  "self_damage": 20,
+  "hud_render": {
+    "sprite_location": "latoorigins:textures/gui/ability_bars.png",
+    "bar_index": "7"
+  },
+  "key": "primary",
+  "ignitable": true
+}
