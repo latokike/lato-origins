@@ -1,0 +1,18 @@
+{
+  "type": "origins:stacking_status_effect",
+  "min_stacks": -30,
+  "max_stacks": 6,
+  "duration_per_stack": 20,
+  "condition": {
+    "type": "origins:exposed_to_sky",
+    "inverted": true
+  },
+  "effects": [
+    {
+      "effect": "minecraft:weakness",
+      "is_ambient": true,
+      "show_particles": false,
+      "show_icon": false
+    }
+  ]
+}

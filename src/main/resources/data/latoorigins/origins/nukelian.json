@@ -4,7 +4,7 @@
 	"latoorigins:bombing",
     "latoorigins:homing_missile"
   ],
-  "icon": "redstone_dust",
+  "icon": "redstone_block",
   "order": 1,
   "impact": 3
 }

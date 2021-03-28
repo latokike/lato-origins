@@ -1,0 +1,16 @@
+{
+  "powers": [
+	"latoorigins:cloud_invulnerability",
+	"latoorigins:invulnerability",
+	"latoorigins:sky_swimming",
+	"latoorigins:cloud_skin",
+	"latoorigins:no_shield",
+	"origins:slow_falling",
+	"latoorigins:perfect_vision",
+	"latoorigins:translucent_body",
+	"latoorigins:need_for_skylight"
+  ],
+  "icon": "end_crystal",
+  "order": 1,
+  "impact": 3
+}

@@ -1,0 +1,98 @@
+{
+	"type": "origins:multiple",
+	"modify_size": {
+		"type": "latoorigins:modify_size",
+		"scale": 0.95
+	},
+	"sky_swim_speed": {
+		"type": "origins:modify_swim_speed",
+		"condition": {
+			"type": "origins:and",
+			"conditions": [
+				{
+					"type": "origins:submerged_in",
+					"fluid": "minecraft:water",
+					"inverted": true
+				},
+				{
+					"type": "origins:swimming"
+				}
+			]
+		},
+		"modifier": {
+			"operation": "addition",
+			"value": 0.03,
+			"name": "Sky swim speed"
+		}
+	},
+	"conditioned_attribute_modifiers":
+		{
+			"type": "origins:conditioned_attribute",
+			"condition": {
+				"type": "origins:and",
+				"conditions": [
+					{
+						"type": "origins:submerged_in",
+						"fluid": "minecraft:water",
+						"inverted": true
+					},
+					{
+						"type": "origins:swimming"
+					}
+				]
+			},
+			"modifiers": [
+			{
+				"name": "Damage",
+				"attribute": "generic.attack_damage",
+				"value": 2.0,
+				"operation": "multiply_base"
+			},
+			{
+				"name": "Speed",
+				"attribute": "generic.movement_speed",
+				"value": 1.60,
+				"operation": "multiply_base"
+			}
+		]
+	},
+	"second_conditioned_attribute_modifiers": {
+		"type": "origins:conditioned_attribute",
+		"condition": {
+			"type": "origins:submerged_in",
+			"fluid": "minecraft:water",
+			"inverted": true
+		},
+		"modifiers": [
+			{
+				"name": "Land speed reduction",
+				"attribute": "generic.movement_speed",
+				"value": -0.03,
+				"operation": "addition"
+			}
+		]
+	},
+	"attribute_modifiers": {
+		"type": "origins:attribute",
+		"modifiers": [
+			{
+				"name": "Heath reduction",
+				"attribute": "generic.max_health",
+				"value": -6.0,
+				"operation": "addition"
+			},
+			{
+				"name": "Reach increase",
+				"attribute": "reach-entity-attributes:reach",
+				"value": 1.5,
+				"operation": "addition"
+			},
+			{
+				"name": "Attack range",
+				"attribute": "reach-entity-attributes:attack_range",
+				"value": 1.5,
+				"operation": "addition"
+			}
+		]
+	}
+}
