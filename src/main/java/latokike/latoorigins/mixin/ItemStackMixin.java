@@ -38,6 +38,10 @@ public abstract class ItemStackMixin {
 	@Environment(EnvType.CLIENT)
 	private static final EntityAttributeModifier ARMOR_MODIFIER_1 = new EntityAttributeModifier("Origin modifier", 2, EntityAttributeModifier.Operation.ADDITION);
 	@Environment(EnvType.CLIENT)
+	private static final EntityAttributeModifier ARMOR_MODIFIER_2 = new EntityAttributeModifier("Origin modifier", 0.75, EntityAttributeModifier.Operation.MULTIPLY_BASE);
+	@Environment(EnvType.CLIENT)
+	private static final EntityAttributeModifier ARMOR_MODIFIER_3 = new EntityAttributeModifier("Origin modifier", 0.75, EntityAttributeModifier.Operation.MULTIPLY_BASE);
+	@Environment(EnvType.CLIENT)
 	private static final EntityAttributeModifier MOVEMENT_SPEED_MODIFIER = new EntityAttributeModifier("Origin modifier", 0.08, EntityAttributeModifier.Operation.MULTIPLY_BASE);
 	
 	@Shadow
@@ -55,9 +59,6 @@ public abstract class ItemStackMixin {
 						callbackInfo.cancel();
 					}
 				}
-				else if (entity.getRandom().nextBoolean() && !LOTags.NETHERITE_GOLD_TOOLS.contains(getItem())) {
-					damage(amount, entity.getRandom(), null);
-				}
 			}
 			if (getItem() instanceof ArmorItem) {
 				if (LOTags.GOLDEN_ARMOR.contains(getItem())) {
@@ -67,8 +68,17 @@ public abstract class ItemStackMixin {
 				}
 			}
 		}
+		if (!entity.world.isClient && LOPowers.WEAK_ARMOR.get(entity) != null && !(entity instanceof PlayerEntity && ((PlayerEntity) entity).isCreative())) {
+			if (getItem() instanceof ArmorItem) {
+				if (LOTags.ARMOR.contains(getItem())) {
+					if (entity.world.random.nextFloat() < 3 / 4f) {
+						callbackInfo.cancel();
+					}
+				}
+			}
+		}
 	}
-	
+
 	@Environment(EnvType.CLIENT)
 	@Redirect(method = "getTooltip", at = @At(value = "INVOKE", target = "Lnet/minecraft/item/ItemStack;getAttributeModifiers(Lnet/minecraft/entity/EquipmentSlot;)Lcom/google/common/collect/Multimap;"))
 	private Multimap<EntityAttribute, EntityAttributeModifier> getAttributeModifiers(ItemStack stack, EquipmentSlot equipmentSlot) {
@@ -81,6 +91,12 @@ public abstract class ItemStackMixin {
 				if (getItem() instanceof ArmorItem && LOTags.GOLDEN_ARMOR.contains(getItem())) {
 					multimap.put(EntityAttributes.GENERIC_ARMOR, (((ArmorItem) getItem()).getSlotType() == EquipmentSlot.CHEST || ((ArmorItem) getItem()).getSlotType() == EquipmentSlot.LEGS) ? ARMOR_MODIFIER_1 : ARMOR_MODIFIER_0);
 				}
+			}
+		}
+		// WEAK_ARMOR
+		if (LOPowers.WEAK_ARMOR.get(MinecraftClient.getInstance().player) != null && !multimap.isEmpty()) {
+			if (getItem() instanceof ArmorItem && LOTags.ARMOR.contains(getItem())) {
+				multimap.put(EntityAttributes.GENERIC_ARMOR, (((ArmorItem) getItem()).getSlotType() == EquipmentSlot.CHEST || ((ArmorItem) getItem()).getSlotType() == EquipmentSlot.LEGS) ? ARMOR_MODIFIER_2 : ARMOR_MODIFIER_3);
 			}
 		}
 		return multimap;

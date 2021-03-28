@@ -46,7 +46,7 @@ public class LOPowers {
 	public static final PowerType<Power> ALL_THAT_GLITTERS = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "all_that_glitters"));
 	public static final PowerType<Power> PIGLIN_NEUTRALITY = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "piglin_neutrality"));
 	public static final PowerType<Power> CROSSBOW_MASTER = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "crossbow_master"));
-	public static final PowerType<Power> LAVA_BREATHING = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "lava_breathing"));
+	public static final PowerType<Power> WEAK_ARMOR = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "weak_armor"));
 	
 	private static <T extends Power> PowerFactory<T> create(PowerFactory<T> factory) {
 		POWER_FACTORIES.put(factory, factory.getSerializerId());
