@@ -29,10 +29,6 @@ public class LOPowers {
 	private static final Map<PowerFactory<?>, Identifier> POWER_FACTORIES = new LinkedHashMap<>();
 	
 	public static final PowerFactory<Power> BONE_MEAL = create(new PowerFactory<>(new Identifier(LatoOrigins.MODID, "bone_meal"), new SerializableData().add("key", SerializableDataType.BACKWARDS_COMPATIBLE_KEY, new Active.Key()), data -> (type, player) -> {BoneMealPower power = new BoneMealPower(type, player); power.setKey((Active.Key) data.get("key")); return power; }).allowCondition());
-
-	public static final PowerType<Power> PHOTOSYNTHESIS = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "photosynthesis"));
-
-	public static final PowerType<Power> DELICATE = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "delicate"));
 	
 	public static final PowerFactory<Power> MODIFY_SIZE = create(new PowerFactory<>(new Identifier(LatoOrigins.MODID, "modify_size"), new SerializableData().add("scale", SerializableDataType.FLOAT), data -> (type, player) -> new ModifySizePower(type, player, data.getFloat("scale"))).allowCondition());
 
