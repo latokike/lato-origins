@@ -2,7 +2,7 @@
   "powers": [
 	"latoorigins:nuke",
 	"latoorigins:bombing",
-    "latoorigins:homing_missile"
+        "latoorigins:homing_missile"
   ],
   "icon": "redstone_block",
   "order": 1,
