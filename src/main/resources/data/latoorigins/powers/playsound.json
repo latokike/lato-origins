@@ -1,0 +1,33 @@
+{
+  "type": "origins:active_self",
+  "entity_action": {
+    "type": "origins:choice",
+    "actions": [
+      {
+        "element": {
+          "type": "latoorigins:sound",
+          "sound": "entity.wither.spawn"
+        },
+        "weight": 10
+      },
+      {
+        "element": {
+          "type": "latoorigins:sound",
+          "sound": "block.glass.break"
+        },
+        "weight": 10
+      },
+      {
+        "element": {
+          "type": "latoorigins:sound",
+          "sound": "item.axe.strip"
+        },
+        "weight": 10
+      }
+    ]
+  },
+  "cooldown": 10,
+  "hud_render": {
+    "should_render": false
+  }
+}

@@ -5,7 +5,7 @@
 	  "type": "latoorigins:modify_size",
 	  "scale": 0.5
 	},
-	"invulnerabillities":
+	"invulnerabilities":
 	{
 	  "type": "origins:invulnerability",
 	  "damage_condition":

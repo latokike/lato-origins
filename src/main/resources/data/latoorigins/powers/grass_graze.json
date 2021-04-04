@@ -28,9 +28,8 @@
           }
         },
         "if_action": {
-          "type": "origins:execute_command",
-          "command": "playsound minecraft:block.grass.break player @s",
-          "permission_level": 4
+          "type": "latoorigins:sound",
+          "sound": "block.grass.break"
         }
       },
       {

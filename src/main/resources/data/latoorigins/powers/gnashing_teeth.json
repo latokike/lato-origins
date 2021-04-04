@@ -3,11 +3,11 @@
   "modifier": {
     "name": "Gnashing damage",
     "attribute": "generic.attack_damage",
-    "value": 1.5,
+    "value": 2.5,
     "condition": {
       "type": "origins:submerged_in",
       "fluid": "minecraft:water"
     },
-    "operation": "multiply_base"
+    "operation": "multiply_total"
   }
 }

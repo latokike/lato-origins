@@ -7,6 +7,6 @@
     },
     "attribute": "generic.attack_damage",
 	  "value": 2.0,
-	  "operation": "multiply_base"
+	  "operation": "multiply_total"
   }
 }
