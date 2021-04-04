@@ -8,8 +8,7 @@
     "origins:fire_immunity",
     "origins:nether_spawn",
     "origins:flame_particles",
-    "origins:burning_wrath",
-    "origins:water_vulnerability"
+    "origins:burning_wrath"
   ],
   "icon": "lava_bucket",
   "order": 1,
