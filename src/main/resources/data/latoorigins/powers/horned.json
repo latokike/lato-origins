@@ -4,10 +4,10 @@
     "type": "origins:damage",
     "amount": 2,
     "source": {
-      "name": "Horned damge",
+      "name": "horned",
       "bypasses_armor": false,
-      "fire": false,
       "unblockable": false,
+      "fire": false,
       "magic": true,
       "out_of_world": false
     }

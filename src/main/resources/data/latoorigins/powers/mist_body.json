@@ -1,0 +1,10 @@
+{
+  "type": "origins:attribute",
+  "modifiers": [
+    {
+      "attribute": "generic.max_health",
+      "value": -8,
+      "operation": "addition"
+    }
+  ]
+}

@@ -1,15 +1,16 @@
 {
   "type": "origins:stacking_status_effect",
-  "min_stacks": -30,
-  "max_stacks": 6,
-  "duration_per_stack": 20,
+  "min_stacks": 0,
+  "max_stacks": 1,
+  "duration_per_stack": 40,
   "condition": {
-    "type": "origins:exposed_to_sky",
-    "inverted": true
+    "type": "origins:food_level",
+    "comparison": "<=",
+    "compare_to": "10"
   },
   "effects": [
     {
-      "effect": "minecraft:weakness",
+      "effect": "minecraft:blindness",
       "is_ambient": false,
       "show_particles": false,
       "show_icon": false

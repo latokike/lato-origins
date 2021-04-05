@@ -6,7 +6,7 @@
   "effects": [
     {
       "effect": "minecraft:regeneration",
-      "is_ambient": true,
+      "is_ambient": false,
       "show_particles": false,
       "show_icon": false
     }

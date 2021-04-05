@@ -8,6 +8,6 @@
   "modifier": {
     "attribute": "generic.movement_speed",
     "operation": "multiply_base",
-    "value": -0.5
+    "value": -0.75
   }
 }

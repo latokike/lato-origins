@@ -1,0 +1,22 @@
+{
+  "type": "origins:self_action_when_hit",
+  "entity_action": {
+    "type": "origins:if_else",
+    "condition": {
+      "type": "origins:health",
+      "comparison": "<=",
+      "compare_to": "0"
+    },
+    "if_action": {
+      "type": "origins:spawn_effect_cloud",
+      "radius": 10.0,
+      "wait_time": 0,
+      "effect": {
+        "effect": "minecraft:poison",
+        "amplifier": 3,
+        "duration": 100
+      }
+    }
+  },
+  "cooldown": 0
+}

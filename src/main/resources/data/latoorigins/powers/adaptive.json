@@ -1,0 +1,39 @@
+{
+  "type": "origins:multiple",
+  "the_nether": {
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 20,
+    "condition": {
+      "type": "origins:dimension",
+      "dimension": "minecraft:the_nether"
+    },
+    "effects": [
+      {
+        "effect": "minecraft:fire_resistance",
+        "is_ambient": false,
+        "show_particles": false,
+        "show_icon": false
+      }
+    ]
+  },
+  "the_end": {
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 20,
+    "condition": {
+      "type": "origins:dimension",
+      "dimension": "minecraft:the_end"
+    },
+    "effects": [
+      {
+        "effect": "minecraft:slow_falling",
+        "is_ambient": false,
+        "show_particles": false,
+        "show_icon": false
+      }
+    ]
+  }
+}

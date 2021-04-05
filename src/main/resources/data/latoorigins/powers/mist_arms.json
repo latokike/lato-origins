@@ -4,13 +4,7 @@
     {
       "name": "Mist block reach",
       "attribute": "reach-entity-attributes:reach",
-      "value": 10,
-      "operation": "addition"
-    },
-    {
-      "name": "Mist entity reach",
-      "attribute": "reach-entity-attributes:attack_range",
-      "value": 10,
+      "value": 8,
       "operation": "addition"
     }
   ]
