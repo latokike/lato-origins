@@ -1,11 +1,14 @@
 {
   "powers": [
     "latoorigins:warp",
-    "origins:ender_particles",
     "latoorigins:mist_arms",
     "latoorigins:mist_skin",
+    "latoorigins:mist_body",
+    "origins:ender_particles",
     "origins:water_vulnerability",
-    "latoorigins:old_friends"
+    "latoorigins:old_friends",
+    "latoorigins:dimensional_traveler",
+    "latoorigins:adaptive"
   ],
   "icon": "ender_eye",
   "order": 1,

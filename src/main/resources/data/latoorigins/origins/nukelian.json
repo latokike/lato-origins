@@ -2,7 +2,10 @@
   "powers": [
 	"latoorigins:nuke",
 	"latoorigins:bombing",
-    "latoorigins:homing_missile"
+    "latoorigins:homing_missile",
+    "latoorigins:radioactive",
+    "latoorigins:uranium_built",
+    "origins:water_vulnerability"
   ],
   "icon": "redstone_block",
   "order": 1,

@@ -1,6 +1,7 @@
 {
   "powers": [
 	"latoorigins:monstrous_body",
+    "latoorigins:blindness",
 	"origins:natural_armor",
 	"origins:carnivore"
   ],
