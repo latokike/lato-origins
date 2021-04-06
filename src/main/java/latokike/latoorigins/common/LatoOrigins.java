@@ -8,6 +8,7 @@ import latokike.latoorigins.common.network.packet.BoneMealPacket;
 import latokike.latoorigins.common.registry.LOConditions;
 import latokike.latoorigins.common.registry.LOPowers;
 import latokike.latoorigins.common.registry.LOScaleTypes;
+import latokike.latoorigins.common.registry.LOInventory;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
@@ -43,6 +44,7 @@ public class LatoOrigins implements ModInitializer {
 		LOScaleTypes.init();
 		LOPowers.init();
 		LOConditions.init();
+		LOInventory.init();
 		EntityActions.init();
 		ItemActions.init();
 		BlockActions.init();
