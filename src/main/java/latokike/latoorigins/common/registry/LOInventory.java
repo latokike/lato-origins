@@ -10,7 +10,7 @@ import io.github.apace100.origins.util.SerializableDataType;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-import latokike.latoorigins.common.LatoOrigin;
+import latokike.latoorigins.common.LatoOrigins;
 import latokike.latoorigins.common.power.CustomInventoryPower;
 
 
@@ -27,7 +27,7 @@ public class LOInventory {
 			.add("key", SerializableDataType.BACKWARDS_COMPATIBLE_KEY, new Active.Key()),
 			data ->
 					(type, player) -> {
-						InventoryPower power = new InventoryPower(type, player, data.getString("name"), data.getInt("size"),
+						CustomInventoryPower power = new CustomInventoryPower(type, player, data.getString("name"), data.getInt("size"),
 								data.getBoolean("drop_on_death"),
 								data.isPresent("drop_on_death_filter") ? (ConditionFactory<ItemStack>.Instance) data.get("drop_on_death_filter") :
 										itemStack -> true);
