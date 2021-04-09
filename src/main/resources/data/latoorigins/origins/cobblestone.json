@@ -4,7 +4,8 @@
 	"latoorigins:immobile",
 	"latoorigins:natural_regeneration",
 	"latoorigins:antivore",
-	"latoorigins:heavy_body"
+	"latoorigins:heavy_body",
+    "latoorigins:pickaxeable"
   ],
   "icon": "cobblestone",
   "order": 1,

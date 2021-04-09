@@ -6,8 +6,7 @@
   	"origins:sprint_jump",
   	"origins:vegetarian",
   	"origins:no_shield",
-   	"origins:fall_immunity",
-	"latoorigins:tough_hide"
+   	"origins:fall_immunity"
   ],
   "icon": "rabbit_hide",
   "order": 1,
