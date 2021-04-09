@@ -1,4 +1,6 @@
-# lato-origins
+# Lato-Origins
+
+[Lato-Origins CurseForge](https://www.curseforge.com/minecraft/mc-mods/lato-origins)
 
 ## Setup
 
