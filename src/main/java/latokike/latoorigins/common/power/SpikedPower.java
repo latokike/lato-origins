@@ -15,3 +15,5 @@ public class SpikedPower extends Power {
         return spikeDamage;
     }
 }
+
+// Original code by UltrusBot
