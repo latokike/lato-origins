@@ -26,3 +26,5 @@ public abstract class PiglinBrainMixin {
 		}
 	}
 }
+
+// Original code by MoriyaShiine
