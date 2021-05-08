@@ -29,3 +29,5 @@ public abstract class LivingEntityMixin extends Entity {
 		return amount;
 	}
 }
+
+// Original code by MoriyaShiine
