@@ -46,3 +46,5 @@ public class LOScaleTypes {
 		}
 	}
 }
+
+// Original code by MoriyaShiine
