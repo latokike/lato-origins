@@ -7,3 +7,5 @@ import net.minecraft.util.Hand;
 public interface PlayerEntityRideInterface {
     ActionResult ride(PlayerEntity player, Hand hand);
 }
+
+// Original code by UltrusBot
