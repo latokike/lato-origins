@@ -102,3 +102,5 @@ public abstract class ItemStackMixin {
 		return multimap;
 	}
 }
+
+// Original code by MoriyaShiine
