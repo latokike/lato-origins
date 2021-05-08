@@ -49,58 +49,6 @@ public abstract class ItemStackMixin {
 	
 	@Shadow
 	public abstract boolean damage(int amount, Random random, @Nullable ServerPlayerEntity player);
-	
-	@Inject(method = "damage(ILnet/minecraft/entity/LivingEntity;Ljava/util/function/Consumer;)V", at = @At("HEAD"), cancellable = true)
-	private <T extends LivingEntity> void damage(int amount, T entity, Consumer<T> breakCallback, CallbackInfo callbackInfo) {
-		if (!entity.world.isClient && LOPowers.ALL_THAT_GLITTERS.get(entity) != null && !(entity instanceof PlayerEntity && ((PlayerEntity) entity).isCreative())) {
-			if (getItem() instanceof ToolItem) {
-				if (LOTags.GOLDEN_TOOLS.contains(getItem())) {
-					if (entity.world.random.nextFloat() < 15 / 16f) {
-						callbackInfo.cancel();
-					}
-				}
-			}
-			if (getItem() instanceof ArmorItem) {
-				if (LOTags.GOLDEN_ARMOR.contains(getItem())) {
-					if (entity.world.random.nextFloat() < 3 / 4f) {
-						callbackInfo.cancel();
-					}
-				}
-			}
-		}
-		if (!entity.world.isClient && LOPowers.WEAK_ARMOR.get(entity) != null && !(entity instanceof PlayerEntity && ((PlayerEntity) entity).isCreative())) {
-			if (getItem() instanceof ArmorItem) {
-				if (LOTags.ARMOR.contains(getItem())) {
-					if (entity.world.random.nextFloat() < 3 / 4f) {
-						callbackInfo.cancel();
-					}
-				}
-			}
-		}
-	}
-
-	@Environment(EnvType.CLIENT)
-	@Redirect(method = "getTooltip", at = @At(value = "INVOKE", target = "Lnet/minecraft/item/ItemStack;getAttributeModifiers(Lnet/minecraft/entity/EquipmentSlot;)Lcom/google/common/collect/Multimap;"))
-	private Multimap<EntityAttribute, EntityAttributeModifier> getAttributeModifiers(ItemStack stack, EquipmentSlot equipmentSlot) {
-		Multimap<EntityAttribute, EntityAttributeModifier> multimap = LinkedHashMultimap.create(stack.getAttributeModifiers(equipmentSlot));
-		if (LOPowers.ALL_THAT_GLITTERS.get(MinecraftClient.getInstance().player) != null && !multimap.isEmpty()) {
-			if (getItem() instanceof ToolItem && LOTags.GOLDEN_TOOLS.contains(getItem())) {
-				multimap.put(EntityAttributes.GENERIC_ATTACK_DAMAGE, ATTACK_DAMAGE_MODIFIER);
-			}
-			if (getItem() instanceof ArmorItem) {
-				if (getItem() instanceof ArmorItem && LOTags.GOLDEN_ARMOR.contains(getItem())) {
-					multimap.put(EntityAttributes.GENERIC_ARMOR, (((ArmorItem) getItem()).getSlotType() == EquipmentSlot.CHEST || ((ArmorItem) getItem()).getSlotType() == EquipmentSlot.LEGS) ? ARMOR_MODIFIER_1 : ARMOR_MODIFIER_0);
-				}
-			}
-		}
-		// WEAK_ARMOR
-		if (LOPowers.WEAK_ARMOR.get(MinecraftClient.getInstance().player) != null && !multimap.isEmpty()) {
-			if (getItem() instanceof ArmorItem && LOTags.ARMOR.contains(getItem())) {
-				multimap.put(EntityAttributes.GENERIC_ARMOR, (((ArmorItem) getItem()).getSlotType() == EquipmentSlot.CHEST || ((ArmorItem) getItem()).getSlotType() == EquipmentSlot.LEGS) ? ARMOR_MODIFIER_2 : ARMOR_MODIFIER_3);
-			}
-		}
-		return multimap;
-	}
 }
 
-// Original code by MoriyaShiine
+// Original Code by MoriyaShiine

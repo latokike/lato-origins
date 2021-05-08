@@ -8,4 +8,4 @@ public interface PlayerEntityRideInterface {
     ActionResult ride(PlayerEntity player, Hand hand);
 }
 
-// Original code by UltrusBot
+// Original Code by UltrusBot

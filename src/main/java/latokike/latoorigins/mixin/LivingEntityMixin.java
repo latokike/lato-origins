@@ -16,7 +16,7 @@ public abstract class LivingEntityMixin extends Entity {
 	public LivingEntityMixin(EntityType<?> type, World world) {
 		super(type, world);
 	}
-	
+
 	@ModifyVariable(method = "damage", at = @At("HEAD"))
 	private float damage(float amount, DamageSource source) {
 		Entity attacker = source.getAttacker();
@@ -30,4 +30,4 @@ public abstract class LivingEntityMixin extends Entity {
 	}
 }
 
-// Original code by MoriyaShiine
+// Original Code by MoriyaShiine

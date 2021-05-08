@@ -34,4 +34,4 @@ public abstract class TrackTargetGoalMixin {
 	}
 }
 
-// Original code by MoriyaShiine
+// Original Code by MoriyaShiine

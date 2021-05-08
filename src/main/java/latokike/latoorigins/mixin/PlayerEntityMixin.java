@@ -70,4 +70,4 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 	}
 }
 
-// Original code by UltrusBot
+// Original Code by UltrusBot
