@@ -69,3 +69,5 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 		}
 	}
 }
+
+// Original code by MoriyaShiine
