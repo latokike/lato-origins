@@ -36,3 +36,5 @@ public class BoneMealPower extends Power implements Active {
 		this.key = key;
 	}
 }
+
+// Original code by MoriyaShiine
