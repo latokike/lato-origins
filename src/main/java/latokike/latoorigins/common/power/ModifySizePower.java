@@ -28,5 +28,3 @@ public class ModifySizePower extends Power {
 		data.setScale(data.getBaseScale() / scale);
 	}
 }
-
-// Original code by MoriyaShiine
