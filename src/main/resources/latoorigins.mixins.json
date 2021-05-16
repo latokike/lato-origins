@@ -4,13 +4,17 @@
   "package": "latokike.latoorigins.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
+    "ItemAccessor",
+    "ItemMixin",
+    "ItemsMixin",
 	"ItemStackMixin",
 	"LivingEntityMixin",
-	"PiglinBrainMixin",
 	"TrackTargetGoalMixin",
-    "PlayerEntityMixin"
+    "PlayerEntityMixin",
+    "PlayerEntityRendererMixin"
   ],
   "injectors": {
 	"defaultRequire": 1
-  }
+  },
+  "refmap": "LatoOrigins-refmap.json"
 }
