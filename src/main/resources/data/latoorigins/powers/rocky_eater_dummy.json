@@ -1,0 +1,19 @@
+{
+  "type": "origins:prevent_item_use",
+  "hidden": true,
+  "item_condition": {
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "tag": "latoorigins:stone"
+        },
+        "inverted": true
+      },
+      {
+        "type": "origins:food"
+      }
+    ]
+  }
+}

@@ -21,8 +21,7 @@
 		},
 		"modifier": {
 			"operation": "addition",
-			"value": 0.03,
-			"name": "Sky swim speed"
+			"value": -0.02
 		}
 	},
 	"conditioned_attribute_modifiers":
@@ -45,13 +44,7 @@
 			{
 				"name": "Damage",
 				"attribute": "generic.attack_damage",
-				"value": 2.0,
-				"operation": "multiply_base"
-			},
-			{
-				"name": "Speed",
-				"attribute": "generic.movement_speed",
-				"value": 1.60,
+				"value": 1.2,
 				"operation": "multiply_base"
 			}
 		]
@@ -65,7 +58,6 @@
 		},
 		"modifiers": [
 			{
-				"name": "Land speed reduction",
 				"attribute": "generic.movement_speed",
 				"value": -0.03,
 				"operation": "addition"
@@ -76,19 +68,16 @@
 		"type": "origins:attribute",
 		"modifiers": [
 			{
-				"name": "Heath reduction",
 				"attribute": "generic.max_health",
 				"value": -6.0,
 				"operation": "addition"
 			},
 			{
-				"name": "Reach increase",
 				"attribute": "reach-entity-attributes:reach",
 				"value": 1.5,
 				"operation": "addition"
 			},
 			{
-				"name": "Attack range",
 				"attribute": "reach-entity-attributes:attack_range",
 				"value": 1.5,
 				"operation": "addition"

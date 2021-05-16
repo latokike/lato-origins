@@ -3,7 +3,7 @@
   "modifiers": [
     {
       "attribute": "generic.max_health",
-      "value": -8,
+      "value": -6,
       "operation": "addition"
     }
   ]

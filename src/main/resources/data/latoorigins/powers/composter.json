@@ -1,0 +1,12 @@
+{
+  "type": "origins:modify_food",
+  "entity_action": {
+    "type": "origins:chance",
+    "action": {
+      "type": "origins:execute_command",
+      "command": "give @s minecraft:bone_meal",
+      "permission_level": 4
+    },
+    "chance": 0.3
+  }
+}

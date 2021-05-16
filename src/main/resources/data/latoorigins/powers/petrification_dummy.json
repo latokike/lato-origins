@@ -1,0 +1,177 @@
+{
+  "type": "origins:multiple",
+  "hidden": true,
+  "color": {
+    "type": "origins:model_color",
+    "red": 0.5,
+    "green": 0.5,
+    "blue": 0.5,
+    "alpha": 1,
+    "condition": {
+      "type": "origins:power_active",
+      "power": "latoorigins:petrification"
+    }
+  },
+  "food_loss": {
+    "type": "origins:action_over_time",
+    "interval": 20,
+    "entity_action": {
+      "type": "origins:exhaust",
+      "amount": 1
+    },
+    "rising_action": {
+      "type": "origins:exhaust",
+      "amount": 3.5
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "latoorigins:petrification"
+    }
+  },
+  "modify_incoming_damage": {
+    "type": "origins:modify_damage_taken",
+    "modifier": {
+      "value": 0.75,
+      "operation": "multiply_total"
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "latoorigins:petrification"
+    }
+  },
+  "modify_swim_speed": {
+    "type": "origins:modify_swim_speed",
+    "modifier": {
+      "value": -1.00,
+      "operation": "addition"
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "latoorigins:petrification"
+    }
+  },
+  "modify_break_speed": {
+    "type": "origins:modify_break_speed",
+    "modifier": {
+      "value": -1.00,
+      "operation": "addition"
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "latoorigins:petrification"
+    }
+  },
+  "modify_damage_dealt": {
+    "type": "origins:modify_damage_dealt",
+    "modifier": {
+      "value": -1.00,
+      "operation": "addition"
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "latoorigins:petrification"
+    }
+  },
+  "modify_jump_power": {
+    "type": "origins:origins:modify_jump",
+    "modifier": {
+      "value": -0.10,
+      "operation": "addition"
+    },
+    "condition": {
+      "type": "origins:power_active",
+      "power": "latoorigins:petrification"
+    }
+  },
+  "invulnerabilities": {
+    "type": "origins:invulnerability",
+    "condition": {
+      "type": "origins:power_active",
+      "power": "latoorigins:petrification"
+    },
+    "damage_condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:name",
+          "name": "cactus"
+        },
+        {
+          "type": "origins:name",
+          "name": "sweetBerryBush"
+        },
+        {
+          "type": "origins:name",
+          "name": "inFire"
+        },
+        {
+          "type": "origins:name",
+          "name": "onFire"
+        },
+        {
+          "type": "origins:name",
+          "name": "hotFloor"
+        },
+        {
+          "type": "origins:name",
+          "name": "inWall"
+        },
+        {
+          "type": "origins:name",
+          "name": "cramming"
+        },
+        {
+          "type": "origins:name",
+          "name": "drown"
+        },
+        {
+          "type": "origins:name",
+          "name": "flyIntoWall"
+        },
+        {
+          "type": "origins:name",
+          "name": "generic"
+        },
+        {
+          "type": "origins:name",
+          "name": "sting"
+        },
+        {
+          "type": "origins:name",
+          "name": "mob"
+        },
+        {
+          "type": "origins:name",
+          "name": "player"
+        },
+        {
+          "type": "origins:name",
+          "name": "arrow"
+        },
+        {
+          "type": "origins:name",
+          "name": "trident"
+        },
+        {
+          "type": "origins:name",
+          "name": "fireworks"
+        },
+        {
+          "type": "origins:name",
+          "name": "thrown"
+        },
+        {
+          "type": "origins:name",
+          "name": "thorns"
+        },
+        {
+          "type": "origins:name",
+          "name": "badRespawnPoint"
+        },
+        {
+          "type": "origins:projectile"
+        }
+      ]
+    }
+  }
+}

@@ -1,13 +1,17 @@
 {
   "type": "origins:self_action_when_hit",
   "entity_action": {
-    "type": "origins:damage",
-    "amount": 6,
-    "source": {
-      "name": "pickaxed",
-      "magic": true,
-      "bypasses_armor": false,
-      "unblockable": false
+    "type": "origins:delay",
+    "ticks": 1,
+    "action": {
+      "type": "origins:damage",
+      "amount": 6,
+      "source": {
+        "name": "pickaxed",
+        "magic": true,
+        "bypasses_armor": false,
+        "unblockable": false
+      }
     }
   },
   "damage_condition": {

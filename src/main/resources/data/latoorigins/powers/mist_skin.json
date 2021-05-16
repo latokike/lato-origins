@@ -1,7 +1,5 @@
 {
   "type": "origins:model_color",
-  "name": "Mist Skin",
-  "description": "Misty skin of an inter-dimensional being.",
   "red": 0.4,
   "green": 0.0,
   "blue": 0.6,
