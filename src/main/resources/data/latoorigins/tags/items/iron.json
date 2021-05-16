@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    "iron_ingot",
+    "iron_block",
+    "iron_boots",
+    "iron_chestplate",
+    "iron_helmet",
+    "iron_leggings",
+    "iron_door",
+    "iron_horse_armor",
+    "iron_bars",
+    "iron_nugget",
+    "iron_pickaxe",
+    "iron_sword",
+    "iron_trapdoor"
+  ]
+}
