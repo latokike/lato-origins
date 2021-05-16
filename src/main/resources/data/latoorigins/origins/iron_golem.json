@@ -6,12 +6,12 @@
 	"latoorigins:village_spawn",
 	"latoorigins:powerful_arms",
 	"origins:natural_armor",
-	"latoorigins:antivore",
 	"latoorigins:long_arms",
+	"latoorigins:iron_diet",
+	"latoorigins:iron_diet_dummy",
 	"origins:more_exhaustion",
 	"origins:strong_arms",
-	"origins:strong_arms_break_speed",
-	"latoorigins:natural_regeneration"
+	"origins:strong_arms_break_speed"
   ],
   "icon": "iron_block",
   "order": 1,

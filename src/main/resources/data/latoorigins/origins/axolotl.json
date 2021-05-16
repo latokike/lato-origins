@@ -13,7 +13,8 @@
 	"origins:swim_speed",
 	"origins:aqua_affinity",
 	"origins:like_water",
-	"origins:water_breathing"
+	"origins:water_breathing",
+	"latoorigins:regenerate"
   ],
   "icon": "salmon",
   "order": 1,

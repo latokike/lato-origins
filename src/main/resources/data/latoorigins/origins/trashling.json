@@ -1,0 +1,11 @@
+{
+  "powers": [
+    "latoorigins:trashlike_appetite",
+    "latoorigins:unhealthy_food",
+    "latoorigins:metal_stomach",
+    "latoorigins:composter"
+  ],
+  "icon": "composter",
+  "order": 1,
+  "impact": 2
+}
