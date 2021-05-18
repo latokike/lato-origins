@@ -10,7 +10,9 @@
 	"ItemStackMixin",
 	"LivingEntityMixin",
 	"TrackTargetGoalMixin",
-    "PlayerEntityMixin",
+    "PlayerEntityMixin"
+  ],
+  "client": [
     "PlayerEntityRendererMixin"
   ],
   "injectors": {
