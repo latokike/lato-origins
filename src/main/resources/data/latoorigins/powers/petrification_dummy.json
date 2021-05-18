@@ -73,7 +73,7 @@
     }
   },
   "modify_jump_power": {
-    "type": "origins:origins:modify_jump",
+    "type": "origins:modify_jump",
     "modifier": {
       "value": -0.10,
       "operation": "addition"
