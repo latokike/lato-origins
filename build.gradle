@@ -1,5 +1,5 @@
 plugins {
-    id 'fabric-loom' version '0.6-SNAPSHOT'
+    id 'fabric-loom' version '0.7-SNAPSHOT'
     id 'maven-publish'
 }
 
@@ -12,20 +12,20 @@ group = project.maven_group
 
 repositories {
     maven {
-        name = "jitpack"
-        url = "https://jitpack.io"
+        name = "Ladysnake Libs"
+        url = 'https://ladysnake.jfrog.io/artifactory/mods'
     }
     maven {
-        name = "entity reach"
-        url = "https://maven.jamieswhiteshirt.com/libs-release/"
+        url "https://jitpack.io"
     }
     maven {
-        name = "fall flying lib"
-        url = "https://dl.bintray.com/adriantodt/maven"
+        url "https://maven.jamieswhiteshirt.com/libs-release/"
     }
     maven {
-        name = "cloth config"
-        url = "https://maven.shedaniel.me/"
+        url "https://maven.shedaniel.me/"
+    }
+    maven {
+        url "https://maven.terraformersmc.com/"
     }
 }
 
