@@ -1,0 +1,29 @@
+{
+  "type": "origins:invulnerability",
+  "damage_condition": {
+    "type": "origins:or",
+    "conditions": [
+      {
+        "type": "origins:name",
+        "name": "fall"
+      },
+      {
+        "type": "origins:name",
+        "name": "cactus"
+      },
+      {
+        "type": "origins:name",
+        "name": "sweetBerryBush"
+      },
+      {
+        "type": "origins:name",
+        "name": "inWall"
+      },
+      {
+        "type": "origins:name",
+        "name": "fallingBlock"
+      }
+    ]
+  },
+  "hidden": true
+}
