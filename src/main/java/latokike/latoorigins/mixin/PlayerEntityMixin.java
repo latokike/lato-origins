@@ -1,6 +1,7 @@
 package latokike.latoorigins.mixin;
 
 import io.github.apace100.origins.component.OriginComponent;
+import io.github.apace100.origins.registry.ModDamageSources;
 import latokike.latoorigins.common.registry.LOPowers;
 import latokike.latoorigins.common.power.SpikedPower;
 import net.minecraft.block.BlockState;
@@ -9,9 +10,11 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.Fluid;
 import net.minecraft.item.ItemStack;
+import net.minecraft.particle.ParticleTypes;
 import net.minecraft.tag.FluidTags;
 import net.minecraft.tag.Tag;
 import net.minecraft.util.ActionResult;
@@ -65,6 +68,21 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 			System.out.println(damage);
 			if (((PlayerEntity)(Object)this).getRandom().nextFloat() <= 0.75) {
 				source.getSource().damage(DamageSource.thorns(((PlayerEntity)(Object)this)), damage);
+			}
+		}
+	}
+
+	// LAVA_BREATHING
+	@Inject(at = @At("TAIL"), method = "tick")
+	private void tick(CallbackInfo info) {
+		if(LOPowers.LAVA_BREATHING.isActive(this)) {
+			if(!this.isSubmergedIn(FluidTags.LAVA) && !this.hasStatusEffect(StatusEffects.WATER_BREATHING) && !this.hasStatusEffect(StatusEffects.CONDUIT_POWER)) {
+				int landGain = this.getNextAirOnLand(0);
+				this.setAir(this.getAir() - landGain);
+			}
+		else if(this.getAir() < this.getMaxAir())
+			{
+				this.setAir(this.getNextAirOnLand(this.getAir()));
 			}
 		}
 	}

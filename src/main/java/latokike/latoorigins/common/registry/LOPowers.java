@@ -104,6 +104,7 @@ public class LOPowers {
 	public static final PowerType<Power> URANIUM_BUILT = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "uranium_built"));
 	public static final PowerType<Power> COBBLESTONE_SKIN = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "cobblestone_skin"));
 	public static final PowerType<Power> TRASHLIKE_APPETITE = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "trashlike_appetite"));
+	public static final PowerType<Power> LAVA_BREATHING = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "lava_breathing"));
 
 	private static <T extends Power> PowerFactory<T> create(PowerFactory<T> factory) {
 		POWER_FACTORIES.put(factory, factory.getSerializerId());

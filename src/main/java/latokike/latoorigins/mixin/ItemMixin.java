@@ -37,7 +37,7 @@ public abstract class ItemMixin implements ItemConvertible {
             for (int i = 0; i < config.iron_golem_food.size(); i++) {
                 ConfigFoodItem currentItem = config.iron_golem_food.get(i);
                 if (currentItem.itemId.equals(Registry.ITEM.getId(stackInHand.getItem()).toString())) {
-                    if (!LOPowers.IRON_DIET.isActive(user)) {
+                    if (!LOPowers.IRON_DIET.isActive(user) && !LOPowers.TRASHLIKE_APPETITE.isActive(user)) {
                         cir.setReturnValue(TypedActionResult.fail(stackInHand));
                     }
                 }
@@ -46,7 +46,7 @@ public abstract class ItemMixin implements ItemConvertible {
             for (int i = 0; i < config.cobblestonian_food.size(); i++) {
                 ConfigFoodItem currentItem = config.cobblestonian_food.get(i);
                 if (currentItem.itemId.equals(Registry.ITEM.getId(stackInHand.getItem()).toString())) {
-                    if (!LOPowers.ROCKY_EATER.isActive(user)) {
+                    if (!LOPowers.ROCKY_EATER.isActive(user) && !LOPowers.TRASHLIKE_APPETITE.isActive(user)) {
                         cir.setReturnValue(TypedActionResult.fail(stackInHand));
                     }
                 }
@@ -55,7 +55,7 @@ public abstract class ItemMixin implements ItemConvertible {
             for (int i = 0; i < config.nukelian_food.size(); i++) {
                 ConfigFoodItem currentItem = config.nukelian_food.get(i);
                 if (currentItem.itemId.equals(Registry.ITEM.getId(stackInHand.getItem()).toString())) {
-                    if (!LOPowers.URANIUM_BUILT.isActive(user)) {
+                    if (!LOPowers.URANIUM_BUILT.isActive(user) && !LOPowers.TRASHLIKE_APPETITE.isActive(user)) {
                         cir.setReturnValue(TypedActionResult.fail(stackInHand));
                     }
                 }
