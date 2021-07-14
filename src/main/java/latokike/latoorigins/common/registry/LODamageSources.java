@@ -1,6 +1,6 @@
 package latokike.latoorigins.common.registry;
 
-import io.github.apace100.origins.mixin.DamageSourceAccessor;
+import io.github.apace100.calio.mixin.DamageSourceAccessor;
 import net.minecraft.entity.damage.DamageSource;
 
 public class LODamageSources {

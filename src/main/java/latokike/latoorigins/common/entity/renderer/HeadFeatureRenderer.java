@@ -11,11 +11,11 @@ import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.render.entity.model.ModelWithHead;
 import net.minecraft.client.render.model.json.ModelTransformation;
 import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.client.util.math.Vector3f;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
+import net.minecraft.util.math.Vec3f;
 
 @Environment(EnvType.CLIENT)
 public class HeadFeatureRenderer<T extends LivingEntity, M extends EntityModel<T> & ModelWithHead> extends FeatureRenderer<T, M> {
@@ -47,7 +47,7 @@ public class HeadFeatureRenderer<T extends LivingEntity, M extends EntityModel<T
 
             (this.getContextModel()).getHead().rotate(matrixStack);
             matrixStack.translate(0.0D, -0.25D, 0.0D);
-            matrixStack.multiply(Vector3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
+            matrixStack.multiply(Vec3f.POSITIVE_Y.getDegreesQuaternion(180.0F));
             matrixStack.scale(0.51F, -0.51F, -0.51F);
 
             MinecraftClient.getInstance().getHeldItemRenderer().renderItem(livingEntity, itemStack, ModelTransformation.Mode.HEAD, false, matrixStack, vertexConsumerProvider, i);

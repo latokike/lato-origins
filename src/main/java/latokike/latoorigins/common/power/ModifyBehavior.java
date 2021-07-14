@@ -1,19 +1,19 @@
 package latokike.latoorigins.common.power;
 
-import java.util.List;
-
-import io.github.apace100.origins.power.Power;
-import io.github.apace100.origins.power.PowerType;
+import io.github.apace100.apoli.power.Power;
+import io.github.apace100.apoli.power.PowerType;
 import net.minecraft.entity.EntityType;
-import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.LivingEntity;
+
+import java.util.List;
 
 public class ModifyBehavior extends Power {
 
 	List<EntityType<?>> affectedEntities;
 	EntityBehavior desiredBehavior;
 
-	public ModifyBehavior(PowerType<?> type, PlayerEntity player, EntityBehavior desiredBehavior, List<EntityType<?>> affectedEntities) {
-		super(type, player);
+	public ModifyBehavior(PowerType<?> type, LivingEntity entity, EntityBehavior desiredBehavior, List<EntityType<?>> affectedEntities) {
+		super(type, entity);
 		this.affectedEntities = affectedEntities;
 		this.desiredBehavior = desiredBehavior;
 	}
@@ -26,7 +26,7 @@ public class ModifyBehavior extends Power {
 		return this.desiredBehavior;
 	}
 
-	public static enum EntityBehavior {
+	public enum EntityBehavior {
 		HOSTILE,
 		NEUTRAL,
 		PASSIVE

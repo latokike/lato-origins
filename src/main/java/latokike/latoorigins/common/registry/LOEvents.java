@@ -3,6 +3,7 @@ package latokike.latoorigins.common.registry;
 import java.util.Optional;
 import java.util.function.Consumer;
 
+import io.github.apace100.apoli.component.PowerHolderComponent;
 import latokike.latoorigins.common.registry.events.EntityInteractCallback;
 import io.github.apace100.origins.component.OriginComponent;
 import latokike.latoorigins.common.power.ExplodePower;
@@ -19,8 +20,8 @@ public class LOEvents {
         EntityInteractCallback.EVENT.register((player, hand, entity) -> {
             if (entity instanceof PlayerEntity) {
                 PlayerEntity affectedPlayer = (PlayerEntity) entity;
-                if (OriginComponent.hasPower(affectedPlayer, ExplodePower.class)) {
-                    ExplodePower power = OriginComponent.getPowers(affectedPlayer, ExplodePower.class).get(0);
+                if (PowerHolderComponent.hasPower(affectedPlayer, ExplodePower.class)) {
+                    ExplodePower power = PowerHolderComponent.getPowers(affectedPlayer, ExplodePower.class).get(0);
 
                     if (power.isIgnitable()) {
                         ItemStack stack = player.getStackInHand(hand);

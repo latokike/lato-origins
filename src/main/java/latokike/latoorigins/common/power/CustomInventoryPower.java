@@ -1,14 +1,15 @@
 package latokike.latoorigins.common.power;
 
-import io.github.apace100.origins.power.Active;
-import io.github.apace100.origins.power.Power;
-import io.github.apace100.origins.power.PowerType;
+import io.github.apace100.apoli.power.Active;
+import io.github.apace100.apoli.power.Power;
+import io.github.apace100.apoli.power.PowerType;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.Inventories;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.nbt.Tag;
+import net.minecraft.nbt.NbtCompound;
+import net.minecraft.nbt.NbtElement;
 import net.minecraft.screen.Generic3x3ContainerScreenHandler;
 import net.minecraft.screen.ScreenHandlerFactory;
 import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
@@ -26,7 +27,7 @@ public class CustomInventoryPower extends Power implements Active, Inventory {
     private final boolean shouldDropOnDeath;
     private final Predicate<ItemStack> dropOnDeathFilter;
 
-    public CustomInventoryPower(PowerType<?> type, PlayerEntity player, String containerName, int size, boolean shouldDropOnDeath, Predicate<ItemStack> dropOnDeathFilter) {
+    public CustomInventoryPower(PowerType<?> type, LivingEntity player, String containerName, int size, boolean shouldDropOnDeath, Predicate<ItemStack> dropOnDeathFilter) {
         super(type, player);
         this.size = size;
         this.inventory = DefaultedList.ofSize(size, ItemStack.EMPTY);
@@ -38,21 +39,21 @@ public class CustomInventoryPower extends Power implements Active, Inventory {
 
     @Override
     public void onUse() {
-        if(!player.world.isClient) {
+        if(!entity.world.isClient && entity instanceof PlayerEntity player) {
             player.openHandledScreen(new SimpleNamedScreenHandlerFactory(factory, containerName));
         }
     }
 
     @Override
-    public Tag toTag() {
-        CompoundTag tag = new CompoundTag();
-        Inventories.toTag(tag, inventory);
+    public NbtElement toTag() {
+        NbtCompound tag = new NbtCompound();
+        Inventories.writeNbt(tag, inventory);
         return tag;
     }
 
     @Override
-    public void fromTag(Tag tag) {
-        Inventories.fromTag((CompoundTag)tag, inventory);
+    public void fromTag(NbtElement tag) {
+        Inventories.readNbt((NbtCompound) tag, inventory);
     }
 
     @Override
@@ -94,7 +95,7 @@ public class CustomInventoryPower extends Power implements Active, Inventory {
 
     @Override
     public boolean canPlayerUse(PlayerEntity player) {
-        return player == this.player;
+        return player == this.entity;
     }
 
     @Override

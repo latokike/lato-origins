@@ -1,5 +1,6 @@
 package latokike.latoorigins.mixin;
 
+import io.github.apace100.apoli.component.PowerHolderComponent;
 import io.github.apace100.origins.component.OriginComponent;
 import io.github.apace100.origins.registry.ModDamageSources;
 import latokike.latoorigins.common.registry.LOPowers;
@@ -51,9 +52,9 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 		if (entity instanceof PlayerEntity && LOPowers.RIDEABLE_CREATURE.isActive(entity)) {
 			if (!this.hasPassengers() && !((PlayerEntity)(Object)this).shouldCancelInteraction()) {
 				if (!this.world.isClient) {
-					((PlayerEntity)(Object)this).startRiding(entity);
+					(this).startRiding(entity);
 				}
-				cir.setReturnValue(ActionResult.success(((PlayerEntity)(Object)this).world.isClient));
+				cir.setReturnValue(ActionResult.success(this.world.isClient));
 			} else {
 				cir.setReturnValue(ActionResult.FAIL);
 			}
@@ -62,11 +63,11 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 	// SPIKED
 	@Inject(method = "damage", at = @At(value = "HEAD"))
 	public void damage$LatoOrigins(DamageSource source, float amount, CallbackInfoReturnable<Boolean> cir) {
-		List<SpikedPower> spikedPowers = OriginComponent.getPowers(((PlayerEntity)(Object)this), SpikedPower.class);
-		if (source.getSource() instanceof LivingEntity && !source.getMagic() && !source.isExplosive() && spikedPowers.size() > 0) {
+		List<SpikedPower> spikedPowers = PowerHolderComponent.getPowers(((PlayerEntity)(Object)this), SpikedPower.class);
+		if (source.getSource() instanceof LivingEntity && !source.isMagic() && !source.isExplosive() && spikedPowers.size() > 0) {
 			int damage = spikedPowers.stream().map(SpikedPower::getSpikeDamage).reduce(Integer::sum).get();
 			System.out.println(damage);
-			if (((PlayerEntity)(Object)this).getRandom().nextFloat() <= 0.75) {
+			if ((this).getRandom().nextFloat() <= 0.75) {
 				source.getSource().damage(DamageSource.thorns(((PlayerEntity)(Object)this)), damage);
 			}
 		}
