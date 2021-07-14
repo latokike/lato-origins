@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "latoorigins",
-  "version": "0.7.0",
+  "version": "${version}",
   "name": "Lato Origins",
   "description": "Adds more origins to the Origins mod",
   "authors": [
@@ -25,8 +25,8 @@
   "depends": {
 	"fabricloader": ">=0.11.0",
 	"fabric": "*",
-	"minecraft": "1.16.x",
-	"origins": ">=0.6.0",
+	"minecraft": "1.17.x",
+	"origins": ">=1.0.0",
 	"pehkui": ">=1.9.0+21w10a"
   }
 }
