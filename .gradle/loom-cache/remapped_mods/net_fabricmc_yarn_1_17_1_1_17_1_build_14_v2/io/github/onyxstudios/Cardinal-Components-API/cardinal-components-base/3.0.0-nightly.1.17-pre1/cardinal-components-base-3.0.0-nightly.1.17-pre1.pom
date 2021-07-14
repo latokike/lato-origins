@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>net_fabricmc_yarn_1_17_1_1_17_1_build_14_v2.io.github.onyxstudios.Cardinal-Components-API</groupId>
-	<artifactId>cardinal-components-base</artifactId>
-	<version>3.0.0-nightly.1.17-pre1</version>
-</project>
