@@ -1,16 +1,12 @@
 package latokike.latoorigins.common;
 
-import latokike.latoorigins.common.power.factory.action.BlockActions;
-import latokike.latoorigins.common.power.factory.action.EntityActions;
-import latokike.latoorigins.common.power.factory.action.ItemActions;
-import latokike.latoorigins.common.network.packet.BoneMealPacket;
+import latokike.latoorigins.common.power.factory.action.*;
 import latokike.latoorigins.common.registry.*;
-import latokike.latoorigins.config.OriginsFood;
+import latokike.latoorigins.config.*;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.api.ModInitializer;
 import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.Toml4jConfigSerializer;
-import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -39,7 +35,6 @@ public class LatoOrigins implements ModInitializer {
 			}
 		});
 		LOGGER.info("Lato Origins " + VERSION + " is initializing. Have fun!");
-		ServerPlayNetworking.registerGlobalReceiver(BoneMealPacket.ID, BoneMealPacket::handle);
 
 		if(!configRegistered) {
 			AutoConfig.register(OriginsFood.class, Toml4jConfigSerializer::new);
@@ -50,10 +45,8 @@ public class LatoOrigins implements ModInitializer {
 		LOScaleTypes.init();
 		LOPowers.init();
 		LOPowers.register();
-		LOConditions.init();
 		LOInventory.init();
 		EntityActions.init();
-		ItemActions.init();
 		BlockActions.init();
 	}
 
