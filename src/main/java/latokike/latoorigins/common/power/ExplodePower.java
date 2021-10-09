@@ -1,13 +1,10 @@
 package latokike.latoorigins.common.power;
 
-import java.util.function.Consumer;
-
-import io.github.apace100.origins.power.ActiveCooldownPower;
-import io.github.apace100.origins.power.PowerType;
-import io.github.apace100.origins.util.HudRender;
-import net.minecraft.entity.Entity;
+import io.github.apace100.apoli.power.ActiveCooldownPower;
+import io.github.apace100.apoli.power.PowerType;
+import io.github.apace100.apoli.util.HudRender;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.world.explosion.Explosion.DestructionType;
 
 public class ExplodePower extends ActiveCooldownPower {
@@ -17,8 +14,8 @@ public class ExplodePower extends ActiveCooldownPower {
 	float selfDamage;
 	boolean ignitable;
 
-	public ExplodePower(PowerType<?> type, PlayerEntity player, int cooldownDuration, HudRender hudRender,
-			float explosionStrength, boolean shouldBreakBlocks, float selfDamage, boolean ignitable) {
+	public ExplodePower(PowerType<?> type, LivingEntity player, int cooldownDuration, HudRender hudRender,
+						float explosionStrength, boolean shouldBreakBlocks, float selfDamage, boolean ignitable) {
 		super(type, player, cooldownDuration, hudRender, null);
 		
 		this.explosionStrength = explosionStrength;
@@ -29,7 +26,7 @@ public class ExplodePower extends ActiveCooldownPower {
 	
 	@Override
 	public void onUse() {
-		if (!player.world.isClient) {
+		if (!entity.world.isClient) {
 			if (canUse()) {
 				explode();
 				use();
@@ -40,9 +37,9 @@ public class ExplodePower extends ActiveCooldownPower {
 	private void explode() {
 		DestructionType type = shouldBreakBlocks ? DestructionType.BREAK : DestructionType.NONE;
 		
-		player.world.createExplosion(player, player.getX(), player.getY(), player.getZ(), explosionStrength, type);
+		entity.world.createExplosion(entity, entity.getX(), entity.getY(), entity.getZ(), explosionStrength, type);
 	
-		player.damage(DamageSource.explosion(player), selfDamage);
+		entity.damage(DamageSource.explosion(entity), selfDamage);
 	}
 	
 	public boolean isIgnitable() {

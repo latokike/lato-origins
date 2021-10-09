@@ -1,8 +1,8 @@
 package latokike.latoorigins.common.registry;
 
-import io.github.apace100.origins.power.factory.condition.ConditionFactory;
-import io.github.apace100.origins.registry.ModRegistries;
-import io.github.apace100.origins.util.SerializableData;
+import io.github.apace100.apoli.power.factory.condition.ConditionFactory;
+import io.github.apace100.apoli.registry.ApoliRegistries;
+import io.github.apace100.calio.data.SerializableData;
 import latokike.latoorigins.common.LatoOrigins;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.Identifier;
@@ -22,6 +22,6 @@ public class LOConditions {
 	}
 	
 	public static void init() {
-		ENTITY_CONDITIONS.keySet().forEach(condition -> Registry.register(ModRegistries.ENTITY_CONDITION, ENTITY_CONDITIONS.get(condition), condition));
+		ENTITY_CONDITIONS.keySet().forEach(condition -> Registry.register(ApoliRegistries.ENTITY_CONDITION, ENTITY_CONDITIONS.get(condition), condition));
 	}
 }

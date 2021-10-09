@@ -1,5 +1,7 @@
 package latokike.latoorigins.mixin;
 
+import io.github.apace100.apoli.component.PowerHolderComponent;
+import io.github.apace100.apoli.registry.ApoliRegistries;
 import io.github.apace100.origins.component.OriginComponent;
 import latokike.latoorigins.common.power.ModifySizePower;
 import net.minecraft.entity.LivingEntity;
@@ -28,8 +30,8 @@ public abstract class TrackTargetGoalMixin {
 		if (target == null) {
 			target = this.target;
 		}
-		if (target instanceof PlayerEntity && OriginComponent.hasPower(target, ModifySizePower.class)) {
-			callbackInfo.setReturnValue(callbackInfo.getReturnValue() * OriginComponent.getPowers(target, ModifySizePower.class).get(0).scale);
+		if (target instanceof PlayerEntity && PowerHolderComponent.hasPower(target, ModifySizePower.class)) {
+			callbackInfo.setReturnValue(callbackInfo.getReturnValue() * PowerHolderComponent.getPowers(target, ModifySizePower.class).get(0).scale);
 		}
 	}
 }
