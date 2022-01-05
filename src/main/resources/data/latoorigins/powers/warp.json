@@ -6,61 +6,27 @@
   },
   "cooldown": 300,
   "entity_action": {
-    "type": "origins:and",
-    "actions": [
-      {
-        "type": "origins:if_else",
-        "condition": {
-          "type": "origins:dimension",
-          "dimension": "minecraft:overworld"
-        },
-        "if_action": {
-          "type": "origins:execute_command",
-          "command": "/execute as @s in minecraft:the_nether run tp @s ~ ~ ~",
-          "permission_level": 4
-        },
-        "else_action": {
-          "type": "origins:if_else",
-          "condition": {
-            "type": "origins:dimension",
-            "dimension": "minecraft:the_nether"
-          },
-          "if_action": {
-            "type": "origins:execute_command",
-            "command": "/execute as @s in minecraft:overworld run tp @s ~ ~ ~",
-            "permission_level": 4
-          }
-        }
+    "type": "origins:if_else",
+    "condition": {
+      "type": "origins:dimension",
+      "dimension": "minecraft:overworld"
+    },
+    "if_action": {
+      "type": "origins:execute_command",
+      "command": "/execute as @s in minecraft:the_nether run tp @s ~ ~ ~",
+      "permission_level": 4
+    },
+    "else_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:dimension",
+        "dimension": "minecraft:the_nether"
       },
-      {
-        "type": "origins:block_action_at",
-        "block_action": {
-          "type:origins:offset",
-          "y": 1,
-          "action": {
-            "type": "origins:setblock",
-            "block": "minecraft:air"
-          }
-        }
-      },
-      {
-        "type": "origins:block_action_at",
-        "block_action": {
-          "type:origins:offset",
-          "y": -1,
-          "action": {
-            "type": "origins:setblock",
-            "block": "minecraft:cobblestone"
-          }
-        }
-      },
-      {
-        "type": "origins:block_action_at",
-        "block_action": {
-          "type": "origins:setblock",
-          "block": "minecraft:air"
-        }
+      "if_action": {
+        "type": "origins:execute_command",
+        "command": "/execute as @s in minecraft:overworld run tp @s ~ ~ ~",
+        "permission_level": 4
       }
-    ]
+    }
   }
 }

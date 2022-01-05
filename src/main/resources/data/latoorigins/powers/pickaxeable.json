@@ -2,10 +2,10 @@
   "type": "origins:self_action_when_hit",
   "entity_action": {
     "type": "origins:delay",
-    "ticks": 1,
+    "ticks": 0,
     "action": {
       "type": "origins:damage",
-      "amount": 6,
+      "amount": 9,
       "source": {
         "name": "pickaxed",
         "magic": true,
