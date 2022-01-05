@@ -16,19 +16,19 @@
 	{
 	  "name": "Immobile movement speed reduction",
 	  "attribute": "generic.movement_speed",
-	  "value": -0.05,
+	  "value": -0.035,
 	  "operation": "addition"
 	},
 	{
 	  "name": "Immobile reach",
 	  "attribute": "reach-entity-attributes:reach",
-	  "value": -1,
+	  "value": -0.5,
 	  "operation": "addition"
 	},
 	{
 	  "name": "Immobile attack range",
 	  "attribute": "reach-entity-attributes:attack_range",
-	  "value": -1,
+	  "value": -0.5,
 	  "operation": "addition"
 	}
   ]
