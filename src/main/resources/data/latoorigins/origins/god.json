@@ -1,13 +1,12 @@
 {
   "powers": [
 	"latoorigins:water_walk",
+	"latoorigins:flight",
 	"origins:aerial_combatant",
 	"origins:aqua_affinity",
 	"origins:aquatic",
-	"origins:arcane_skin",
 	"origins:burning_wrath",
 	"origins:cat_vision",
-	"origins:elytra",
 	"origins:ender_particles",
 	"origins:extra_reach",
 	"origins:fall_immunity",
