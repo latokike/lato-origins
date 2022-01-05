@@ -8,8 +8,7 @@
     "ItemMixin",
     "ItemsMixin",
 	"ItemStackMixin",
-	"LivingEntityMixin",
-	"TrackTargetGoalMixin",
+    "TrackTargetGoalMixin",
     "PlayerEntityMixin"
   ],
   "client": [
