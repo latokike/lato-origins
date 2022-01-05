@@ -28,7 +28,7 @@
           }
         },
         "if_action": {
-          "type": "latoorigins:sound",
+          "type": "origins:play_sound",
           "sound": "block.grass.break"
         }
       },

@@ -1,11 +1,11 @@
 {
-  "type": "origins:attribute",
-  "modifiers": [
-    {
-      "name": "Mist block reach",
-      "attribute": "reach-entity-attributes:reach",
-      "value": 8,
-      "operation": "addition"
-    }
-  ]
-}
+    "type": "origins:attribute",
+    "modifiers": [
+      {
+        "name": "Mist block reach",
+        "attribute": "reach-entity-attributes:reach",
+        "value": 6.5,
+        "operation": "addition"
+      }
+    ]
+  }

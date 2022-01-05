@@ -1,0 +1,95 @@
+{
+    "type": "origins:multiple",
+    "minor": {
+        "type": "origins:self_action_when_hit",
+        "damage_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:amount",
+                    "comparison": ">=",
+                    "compare_to": 0.5
+                },
+                {
+                    "type": "origins:amount",
+                    "comparison": "<",
+                    "compare_to": 4
+                }
+            ]
+        },
+        "cooldown": 0,
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effects": [
+                {
+                    "effect": "minecraft:strength",
+                    "duration": 200,
+                    "amplifier": 0
+                },
+                {
+                    "effect": "minecraft:speed",
+                    "duration": 200,
+                    "amplifier": 0
+                }
+            ]
+        }
+    },
+    "average": {
+        "type": "origins:self_action_when_hit",
+        "damage_condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:amount",
+                    "comparison": ">=",
+                    "compare_to": 4
+                },
+                {
+                    "type": "origins:amount",
+                    "comparison": "<",
+                    "compare_to": 10
+                }
+            ]
+        },
+        "cooldown": 0,
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effects": [
+                {
+                    "effect": "minecraft:strength",
+                    "duration": 300,
+                    "amplifier": 1
+                },
+                {
+                    "effect": "minecraft:speed",
+                    "duration": 300,
+                    "amplifier": 1
+                }
+            ]
+        }
+    },
+    "major": {
+        "type": "origins:self_action_when_hit",
+        "damage_condition": {
+            "type": "origins:amount",
+            "comparison": ">=",
+            "compare_to": 10
+        },
+        "cooldown": 0,
+        "entity_action": {
+            "type": "origins:apply_effect",
+            "effects": [
+                {
+                    "effect": "minecraft:strength",
+                    "duration": 600,
+                    "amplifier": 3
+                },
+                {
+                    "effect": "minecraft:speed",
+                    "duration": 600,
+                    "amplifier": 3
+                }
+            ]
+        }
+    }
+}

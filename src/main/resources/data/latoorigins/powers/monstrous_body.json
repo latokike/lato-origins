@@ -13,13 +13,13 @@
 			{
 				"name": "Monstrous Body health",
 				"attribute": "generic.max_health",
-				"value": 10.0,
+				"value": 8.0,
 				"operation": "addition"
 			},
 			{
 				"name": "Monstrous Body damage",
 				"attribute": "generic.attack_damage",
-				"value": 3.0,
+				"value": 1.0,
 				"operation": "addition"
 			},
 			{
@@ -31,13 +31,13 @@
 			{
 				"name": "Monstrous Body reach",
 				"attribute": "reach-entity-attributes:reach",
-				"value": 2,
+				"value": 0.5,
 				"operation": "addition"
 			},
 			{
 				 "name": "Monstrous Body attack range",
 				"attribute": "reach-entity-attributes:attack_range",
-				"value": 3,
+				"value": 0.5,
 				"operation": "addition"
 			}
 		]

@@ -1,0 +1,22 @@
+{
+  "type": "origins:multiple",
+  "red": {
+    "type": "origins:overlay",
+    "hidden": true,
+    "texture": "minecraft:textures/misc/nausea.png",
+    "red": 1.0,
+    "green": 0.2,
+    "blue": 0.2,
+    "strength": 1.0,
+    "draw_mode": "nausea",
+    "draw_phase": "above_hud",
+    "visible_in_third_person": true,
+    "hide_with_hud": false,
+    "condition": {
+      "type": "origins:fluid_height",
+      "fluid": "minecraft:water",
+      "comparison": ">",
+      "compare_to": 0.0
+    }
+  }
+}
