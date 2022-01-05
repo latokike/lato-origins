@@ -2,6 +2,8 @@
   "powers": [
 	"latoorigins:monstrous_body",
     "latoorigins:blindness",
+    "latoorigins:berserker",
+    "latoorigins:colorblind",
 	"origins:natural_armor",
 	"origins:carnivore"
   ],
