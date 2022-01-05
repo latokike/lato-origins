@@ -72,21 +72,6 @@ public abstract class PlayerEntityMixin extends LivingEntity {
 			}
 		}
 	}
-
-	// LAVA_BREATHING
-	@Inject(at = @At("TAIL"), method = "tick")
-	private void tick(CallbackInfo info) {
-		if(LOPowers.LAVA_BREATHING.isActive(this)) {
-			if(!this.isSubmergedIn(FluidTags.LAVA) && !this.hasStatusEffect(StatusEffects.WATER_BREATHING) && !this.hasStatusEffect(StatusEffects.CONDUIT_POWER)) {
-				int landGain = this.getNextAirOnLand(0);
-				this.setAir(this.getAir() - landGain);
-			}
-		else if(this.getAir() < this.getMaxAir())
-			{
-				this.setAir(this.getNextAirOnLand(this.getAir()));
-			}
-		}
-	}
 }
 
 // Original Code by UltrusBot

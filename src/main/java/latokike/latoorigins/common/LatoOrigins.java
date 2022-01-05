@@ -47,7 +47,6 @@ public class LatoOrigins implements ModInitializer {
 		LOPowers.register();
 		LOInventory.init();
 		EntityActions.init();
-		BlockActions.init();
 	}
 
 	public static Identifier identifier(String path) {

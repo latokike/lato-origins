@@ -35,18 +35,6 @@ public class LOPowers {
 								(List<EntityType<?>>) data.get("entities"))));
 	}
 
-	public static final PowerFactory<Power> BONE_MEAL = create(
-			new PowerFactory<>(
-				new Identifier(LatoOrigins.MODID, "bone_meal"),
-				new SerializableData()
-						.add("key", ApoliDataTypes.BACKWARDS_COMPATIBLE_KEY, new Active.Key()),
-				data -> (type, player) -> {
-					BoneMealPower power = new BoneMealPower(type, player);
-					power.setKey((Active.Key)
-							data.get("key"));
-					return power; })
-				.allowCondition());
-
 	public static final PowerFactory<Power> EXPLODE = create(
 			new PowerFactory<>(
 					new Identifier(LatoOrigins.MODID, "explode"),
@@ -93,13 +81,11 @@ public class LOPowers {
 					.allowCondition());
 
 	public static final PowerType<Power> RIDEABLE_CREATURE = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "rideable_creature"));
-	public static final PowerType<Power> CROSSBOW_MASTER = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "crossbow_master"));
 	public static final PowerType<Power> ROCKY_EATER = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "rocky_eater"));
 	public static final PowerType<Power> IRON_DIET = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "iron_diet"));
 	public static final PowerType<Power> URANIUM_BUILT = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "uranium_built"));
 	public static final PowerType<Power> COBBLESTONE_SKIN = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "cobblestone_skin"));
 	public static final PowerType<Power> TRASHLIKE_APPETITE = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "trashlike_appetite"));
-	public static final PowerType<Power> LAVA_BREATHING = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "lava_breathing"));
 
 	private static <T extends Power> PowerFactory<T> create(PowerFactory<T> factory) {
 		POWER_FACTORIES.put(factory, factory.getSerializerId());
