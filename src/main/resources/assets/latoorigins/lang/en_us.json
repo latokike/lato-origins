@@ -3,73 +3,79 @@
   "origin.latoorigins.axolotl.description": "A cute little fish.",
 
   "origin.latoorigins.astronos.name": "Astronos",
-  "origin.latoorigins.astronos.description": "Peaceful creatures of the skies. These creatures have fragile health, because they don't fight.",
+  "origin.latoorigins.astronos.description": "Peaceful creatures of the skies. These creatures have fragile health, because they don't fight or have any training in endurance.",
 
   "origin.latoorigins.cobblestonian.name": "Cobblestonian",
-  "origin.latoorigins.cobblestonian.description": "Your ancestors were cobblestone, but, over several millennia, they somehow evolved and became a species.",
+  "origin.latoorigins.cobblestonian.description": "Your ancestors were cobblestone, but, over several millennia, they somehow evolved and became a species. It puzzles 4d beings known as 'players' to this day.",
 
   "origin.latoorigins.daltog.name": "Daltog",
-  "origin.latoorigins.daltog.description": "Latos banished the Daltogs to the nether a long time ago. Now the Daltog Nation is fading away.",
+  "origin.latoorigins.daltog.description": "Latonians won the war and banished the daltog race to the nether a long time ago. Now the Daltog Nation is fading away.",
 
   "origin.latoorigins.dimensional_being.name": "Dimensional Being",
-  "origin.latoorigins.dimensional_being.description": "No information gathered on this entity. . .",
+  "origin.latoorigins.dimensional_being.description": "This entity has so much energy in it, it has been theorized it can escape the event horizon of a black hole.",
 
   "origin.latoorigins.goatlin.name": "Goatlin",
-  "origin.latoorigins.goatlin.description": "You are a goatlin, leaping from peak to peak with incredible agility, and jump height.",
+  "origin.latoorigins.goatlin.description": "Goatlin leap from peak to peak with incredible agility, and jump height.",
 
   "origin.latoorigins.god.name": "God",
   "origin.latoorigins.god.description": "God is the creator of all beings.",
 
   "origin.latoorigins.iron_golem.name": "Iron Golem",
-  "origin.latoorigins.iron_golem.description": "Iron golem are built to protect others.",
+  "origin.latoorigins.iron_golem.description": "Iron golem were built to protect others.",
 
   "origin.latoorigins.lato.name": "Lato",
-  "origin.latoorigins.lato.description": "Latos banished Daltogs to the nether long ago, and now about all of the Latos are gone.",
+  "origin.latoorigins.lato.description": "In ancient times, two major civilizations fought. The winning side, the latonians, disappeared without a trace after locking the daltogs in what was commonly referred to as 'Hell.'",
 
   "origin.latoorigins.nukelian.name": "Nukelian",
-  "origin.latoorigins.nukelian.description": "Nukelians were created as Weapons of War, but after war, they had no-where to go.",
+  "origin.latoorigins.nukelian.description": "Nukelians were created as Weapons of War by latonian engineers during the Great war, but after the war ended, the latonians disappeared, leaving them to roam. It has been said that they were the creeper's 'next generation.'",
 
   "origin.latoorigins.lava_sharkian.name": "Lava Sharkian",
-  "origin.latoorigins.lava_sharkian.description": "Lava sharkians are the ruler of the lava oceans.",
+  "origin.latoorigins.lava_sharkian.description": "Lava sharkians are the ruler of the lava oceans, and became well known after eating a major percentage of what was left of the Daltog Nation.",
 
   "origin.latoorigins.sharkian.name": "Sharkian",
   "origin.latoorigins.sharkian.description": "Sharkians are the ruler of the oceans, and they would rule the land too, if they could breathe on it.",
 
   "origin.latoorigins.tauros.name": "Tauros",
-  "origin.latoorigins.tauros.description": "Tauros are the guardians of the plains, calmly grazing the grass.",
+  "origin.latoorigins.tauros.description": "Tauros are the guardians of the plains, minding their own business grazing the grass.",
 
   "origin.latoorigins.trashling.name": "Trashling",
-  "origin.latoorigins.trashling.description": "Trashlings did not have much to eat, and as they evolved, the began learning how to eat more things. Now they can eat almost anything.",
+  "origin.latoorigins.trashling.description": "Trashlings did not have much to eat, but as their species aged, they began learning how to eat more and more things. Now they can eat almost anything.",
 
   "origin.latoorigins.warden.name": "Warden",
-  "origin.latoorigins.warden.description": "Wardens are cave monsters, always lurking in the darkness.",
+  "origin.latoorigins.warden.description": "Wardens are cave monsters, always lurking in the darkness. It was said that they once belonged to high-ranking daltog generals.",
 
   "power.latoorigins.adaptive.name": "Adaptive",
   "power.latoorigins.adaptive.description": "You can adapt to dimensions with ease.",
 
-  "power.latoorigins.arcane_skin.name": "Arcane Skin",
-  "power.latoorigins.arcane_skin.description": "An arcane skin, which is a different color from most.",
+  "power.latoorigins.arcane_skin.name": "Arcane Fur",
+  "power.latoorigins.arcane_skin.description": "You have fur, which causes your skin to be a weird light-blue shade.",
 
-  "power.latoorigins.bite_sized.name": "Bite Sized",
-  "power.latoorigins.bite_sized.description": "You are a bite-sized creature.",
+  "power.latoorigins.bite_sized.name": "Genetically Tiny",
+  "power.latoorigins.bite_sized.description": "You are a genetically extremely small compared to the average height of beings.",
+
+  "power.latoorigins.berserker.name": "Berserker",
+  "power.latoorigins.berserker.description": "The Warden often relies on an unusually high rush of adrenaline to fuel the high attack power of their arms.",
 
   "power.latoorigins.blindness.name": "Blindness",
-  "power.latoorigins.blindness.description": "You are blind when you don't have enough hunger for your eyes.",
+  "power.latoorigins.blindness.description": "Your eyes show signs of advanced genetic modification to make you easier to domesticate by making you blind when not provided food.",
 
   "power.latoorigins.bombing.name": "Bombing",
-  "power.latoorigins.bombing.description": "You are able to go at incredible speeds when you are in homing missile mode.",
+  "power.latoorigins.bombing.description": "A feature added to code-name 'NUKE', which, unlike creepers, allows you to dive-bomb enemies, instead of sneaking up on them.",
 
-  "power.latoorigins.built_up_dash.name": "Built Up Dash",
-  "power.latoorigins.built_up_dash.description": "Charge in any direction at high speeds, but you have to build up speed first.",
+  "power.latoorigins.built_up_dash.name": "Charged Dash",
+  "power.latoorigins.built_up_dash.description": "An ancestral ability of the tauros, it allows them to fly out of cover and attack their enemies in swift movements.",
 
   "power.latoorigins.cloud_invulnerability.name": "Cloud Invulnerability",
-  "power.latoorigins.cloud_invulnerability.description": "Your body is made out of clouds, allowing you to become water vapor, thus avoiding every attack, except starvation.",
+  "power.latoorigins.cloud_invulnerability.description": "Your body is made out of cloud, allowing you to become water vapor, thus avoiding every attack, except for starvation.",
 
   "power.latoorigins.cloud_skin.name": "Cloud Skin",
   "power.latoorigins.cloud_skin.description": "Your skin is of clouds, causing it to be transparent.",
 
-  "power.latoorigins.cobblestone_skin.name": "Cobblestone Skin",
-  "power.latoorigins.cobblestone_skin.description": "Skin made out of cobblestone, causing you to be tougher than most.",
+  "power.latoorigins.cobblestone_skin.name": "Cobblestone Hide",
+  "power.latoorigins.cobblestone_skin.description": "An outer layer made out of cobblestone, causing you to be tougher than most.",
+
+  "power.latoorigins.colorblind.name": "Colorblind",
+  "power.latoorigins.colorblind.description": "Due to a set of highly underdeveloped eyes, the Warden is unable to perceive color as humans do.",
 
   "power.latoorigins.composter.name": "Composter",
   "power.latoorigins.composter.description": "When eating, you have a chance to create bonemeal.",
@@ -78,16 +84,16 @@
   "power.latoorigins.delicious_kelp.description": "Kelp tastes extra delicious to you.",
 
   "power.latoorigins.dimensional_traveler.name": "Dimensional Traveler",
-  "power.latoorigins.dimensional_traveler.description": "You haven't explored the overworld dimension, causing you to be slower and weaker.",
+  "power.latoorigins.dimensional_traveler.description": "You haven't explored the dimension code-named 'EX.LDW.A', causing you to be slower and weaker.",
 
-  "power.latoorigins.finned.name": "Finned",
+  "power.latoorigins.finned.name": "Fins",
   "power.latoorigins.finned.description": "You can only inch towards your target on land.",
 
   "power.latoorigins.gnashing_teeth.name": "Gnashing Teeth",
-  "power.latoorigins.gnashing_teeth.description": "Teeth that allow for terrifying attack damage whilst submerged in water.",
+  "power.latoorigins.gnashing_teeth.description": "Teeth that allow for terrifying attack damage while submerged in water.",
 
-  "power.latoorigins.goat_dash.name": "Goat Dash",
-  "power.latoorigins.goat_dash.description": "Legs that allow for a short burst of speed.",
+  "power.latoorigins.goat_dash.name": "Dash",
+  "power.latoorigins.goat_dash.description": "Goatlin have legs that are well-equipped for a short burst of speed.",
 
   "power.latoorigins.grass_graze.name": "Grass Graze",
   "power.latoorigins.grass_graze.description": "You can eat grass to gain some food.",
@@ -96,49 +102,49 @@
   "power.latoorigins.habitat_advantage.description": "You feel more at home in the plains.",
 
   "power.latoorigins.heated_skin.name": "Heated Skin",
-  "power.latoorigins.heated_skin.description": "A heated skin allows for cuts to be quickly healed.",
+  "power.latoorigins.heated_skin.description": "A heated skin allows for cuts to be quickly closed. This was one of the only advantages the Daltog Nation got when they went to the nether.",
 
   "power.latoorigins.heavy_body.name": "Heavy Body",
-  "power.latoorigins.heavy_body.description": "A heavy body that makes it hard to jump high.",
+  "power.latoorigins.heavy_body.description": "A heavy body that makes it hard to jump high due to the effects of gravity.",
 
   "power.latoorigins.hoofed.name": "Hoofed",
-  "power.latoorigins.hoofed.description": "Your legs are shaped different causing you to move faster, but swim slower.",
+  "power.latoorigins.hoofed.description": "Your legs and feet are shaped different causing you to move faster, but swim slower.",
 
   "power.latoorigins.homing_missile.name": "Homing Missile",
-  "power.latoorigins.homing_missile.description": "You are able to glide into the ground by jumping whilst in the air.",
+  "power.latoorigins.homing_missile.description": "You are able to glide into the ground by jumping while in the air.",
 
   "power.latoorigins.horned.name": "Horned",
-  "power.latoorigins.horned.description": "Having horns deals damage to attackers, if there is time to recover from the last attack.",
+  "power.latoorigins.horned.description": "Having horns deals damage back to attackers, if there is time to recover from the last attack.",
 
   "power.latoorigins.inorganic.name": "Inorganic",
   "power.latoorigins.inorganic.description": "Your body is made out of inorganic material, causing it to be immune to most environmental dangers.",
 
   "power.latoorigins.iron_body.name": "Iron Body",
-  "power.latoorigins.iron_body.description": "A body made out of iron provides more health, but costs speed and size.",
+  "power.latoorigins.iron_body.description": "A body made out of iron provides more durability, but costs speed and size.",
 
   "power.latoorigins.iron_diet.name": "Iron Diet",
-  "power.latoorigins.iron_diet.description": "You are able to eat iron.",
+  "power.latoorigins.iron_diet.description": "You are able to eat iron. *cough* *cough* uh, cannibalism, uhh, *cough*",
 
   "power.latoorigins.iron_knowledge.name": "Iron Knowledge",
-  "power.latoorigins.iron_knowledge.description": "Additional damage whilst using iron",
+  "power.latoorigins.iron_knowledge.description": "Vast knowledge of iron allows you to utilize iron tools to the fullest.",
 
   "power.latoorigins.lato_blooded.name": "Lato Blooded",
-  "power.latoorigins.lato_blooded.description": "Lato's blood can work out metallic poisoning.",
+  "power.latoorigins.lato_blooded.description": "A latonian's blood can work out metallic poisoning by itself.",
 
-  "power.latoorigins.lava_finned.name": "Finned",
+  "power.latoorigins.lava_finned.name": "Fins",
   "power.latoorigins.lava_finned.description": "You can only inch towards your target on land.",
 
   "power.latoorigins.lava_swimming.name": "Lava Swimming",
-  "power.latoorigins.lava_swimming.description": "You can swim in lava!",
+  "power.latoorigins.lava_swimming.description": "Genetic mutations allowed for sharkians to be able to adapt to just about any environment that has liquid in it.",
 
-  "power.latoorigins.lava_swimming_speed.name": "Lava Speed",
-  "power.latoorigins.lava_swimming_speed.description": "Your body is built to go faster in lava.",
+  "power.latoorigins.lava_swimming_speed.name": "Lava Acceleration",
+  "power.latoorigins.lava_swimming_speed.description": "A lava sharkian's body has mutated to go faster in lava.",
 
   "power.latoorigins.lava_torpedo.name": "Lava Torpedo",
-  "power.latoorigins.lava_torpedo.description": "Tear through lava at high speeds.",
+  "power.latoorigins.lava_torpedo.description": "All sharkians have a built-in adrenaline rush that allows for them to go at unrealistic speeds through just about any liquid.",
 
   "power.latoorigins.lightweight.name": "Lightweight",
-  "power.latoorigins.lightweight.description": "A featherweighted body allows for falling to the ground without taking damage.",
+  "power.latoorigins.lightweight.description": "A feather-weighted body allows for falling to the ground without taking damage.",
 
   "power.latoorigins.long_arms.name": "Long Arms",
   "power.latoorigins.long_arms.description": "Longer arms allows for you to have further attack and mining reach.",
@@ -176,11 +182,11 @@
   "power.latoorigins.nuke.name": "Nuke",
   "power.latoorigins.nuke.description": "Your body was built in a way that allows itself to detonate.",
 
-  "power.latoorigins.neighbors.name": "Neighbors",
+  "power.latoorigins.neighbors.name": "Demons Together",
   "power.latoorigins.neighbors.description": "You are familiar with mobs of the nether.",
 
   "power.latoorigins.old_friends.name": "Old Friends",
-  "power.latoorigins.old_friends.description": "You have known the ruler of the end for a long time.",
+  "power.latoorigins.old_friends.description": "You have known the ruler of the end for a long time, mostly due to being stuck in D.4.",
 
   "power.latoorigins.perfect_vision.name": "Perfect Vision",
   "power.latoorigins.perfect_vision.description": "Carefully constructed eyes that allow for perfect vision, they also are toggleable.",
@@ -188,7 +194,7 @@
   "power.latoorigins.petrification.name": "Petrification",
   "power.latoorigins.petrification.description": "You become immobile, but you take less damage, and are invincible to some things.",
 
-  "power.latoorigins.pickaxeable.name": "Pickaxeable",
+  "power.latoorigins.pickaxeable.name": "Pickaxable",
   "power.latoorigins.pickaxeable.description": "You take more damage if someone attacks you with a pickaxe",
 
   "power.latoorigins.powerful_arms.name": "Powerful Arms",
@@ -198,7 +204,7 @@
   "power.latoorigins.radioactive.description": "You leave a radiation cloud when you die, because of the radiation within you.",
 
   "power.latoorigins.rage.name": "Rage",
-  "power.latoorigins.rage.description": "Rage gives strength for a short period of time, but costs health.",
+  "power.latoorigins.rage.description": "A latonian's rage boosts its adrenaline many fold, which in turn gives strength for a short period of time, but costs health.",
 
   "power.latoorigins.regenerate.name": "Regenerate",
   "power.latoorigins.regenerate.description": "You can regenerate.",
@@ -213,15 +219,15 @@
   "power.latoorigins.seven_lives.description": "Your body causes you to have only seven hearts.",
 
   "power.latoorigins.sky_swimming.name": "Sky Swimming",
-  "power.latoorigins.sky_swimming.description": "You can float through the sky.",
+  "power.latoorigins.sky_swimming.description": "You can float through the sky due to your unnaturally light body.",
 
   "power.latoorigins.small_appetite.name": "Small Appetite",
-  "power.latoorigins.small_appetite.description": "You are less hungry, and need to eat less.",
+  "power.latoorigins.small_appetite.description": "You are less hungry, and need to eat less to stay alive.",
 
   "power.latoorigins.translucent_body.name": "Translucent Body",
   "power.latoorigins.translucent_body.description": "Your body has different perks, and different disadvantages than most.",
 
-  "power.latoorigins.trashlike_appetite.name": "Trashlike Appetite",
+  "power.latoorigins.trashlike_appetite.name": "Trash-like Appetite",
   "power.latoorigins.trashlike_appetite.description": "You are able to eat just about everything.",
 
   "power.latoorigins.tough_hide.name": "Tough Hide",
@@ -249,7 +255,7 @@
   "power.latoorigins.water_vision.description": "You can see much more clearly in water than others.",
 
   "power.latoorigins.water_vulnerability.name": "Boiling Water",
-  "power.latoorigins.water_vulnerability.description": "Your blood boils in water, causing you to take damage after prolonged exposure to it.",
+  "power.latoorigins.water_vulnerability.description": "Your blood boils when exposed to mass amounts of water, causing you to take damage after prolonged exposure to it.",
 
   "power.latoorigins.water_walk.name": "Water Walking",
   "power.latoorigins.water_walk.description": "Walk on water, just like Jesus.",
