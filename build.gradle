@@ -1,10 +1,10 @@
 plugins {
-    id 'fabric-loom' version '0.9-SNAPSHOT'
+    id 'fabric-loom' version '0.10-SNAPSHOT'
     id 'maven-publish'
 }
 
-sourceCompatibility = JavaVersion.VERSION_16
-targetCompatibility = JavaVersion.VERSION_16
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
 
 archivesBaseName = project.archives_base_name
 version = project.mod_version
@@ -12,36 +12,35 @@ group = project.maven_group
 
 repositories {
     maven {
-        name = "Ladysnake Libs"
-        url = 'https://ladysnake.jfrog.io/artifactory/mods'
-    }
-    maven {
-        url "https://jitpack.io"
-    }
-    maven {
-        url "https://maven.jamieswhiteshirt.com/libs-release/"
-    }
-    maven {
+        name "cloth config"
         url "https://maven.shedaniel.me/"
     }
     maven {
-        url = 'https://maven.cafeteria.dev'
-        content {
-            includeGroup 'net.adriantodt.fabricmc'
-        }
+        name "mod menu"
+        url "https://maven.terraformersmc.com/"
     }
     maven {
-        url getTerraformersMCMaven()
+        name "player ability lib"
+        url "https://ladysnake.jfrog.io/artifactory/mods"
+    }
+    maven {
+        name "reach entity attributes"
+        url "https://maven.jamieswhiteshirt.com/libs-release/"
+    }
+    maven {
+        name "jitpack"
+        url "https://jitpack.io"
     }
 }
 
 dependencies {
-    minecraft "com.mojang:minecraft:${project.minecraft_version}"
-    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
-    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-    modImplementation "com.github.apace100:origins-fabric:${project.origins_version}"
-    modImplementation("com.github.virtuoel:pehkui:${project.pehkui_version}") {
+    minecraft "com.mojang:minecraft:${minecraft_version}"
+    mappings "net.fabricmc:yarn:${yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${loader_version}"
+
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
+    modImplementation "com.github.apace100:origins-fabric:${origins_version}"
+    modImplementation("com.github.virtuoel:pehkui:${pehkui_version}") {
         exclude(group: "net.fabricmc.fabric-api")
     }
 }
@@ -55,9 +54,7 @@ processResources {
 }
 
 tasks.withType(JavaCompile).configureEach {
-    it.options.encoding = "UTF-8"
-
-    it.options.release = 16
+    it.options.release = 17
 }
 
 java {
@@ -66,24 +63,6 @@ java {
 
 jar {
     from("LICENSE") {
-        rename { "${it}_${project.archivesBaseName}"}
-    }
-}
-
-String getTerraformersMCMaven() {
-    def terraformersUrl = 'https://maven.terraformersmc.com/'
-    if (pingUrl(terraformersUrl))
-        return terraformersUrl
-    else
-        return 'https://maven.kotlindiscord.com/repository/terraformers/'
-}
-
-boolean pingUrl(String address) {
-    try {
-        def conn = (HttpURLConnection) new URL(address).openConnection()
-        int responseCode = conn.getResponseCode()
-        return (200 <= responseCode && responseCode <= 399)
-    } catch (IOException ignored) {
-        return false
+        rename { "${it}_${project.archivesBaseName}" }
     }
 }
