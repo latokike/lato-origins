@@ -12,14 +12,14 @@ For setup instructions please see the [fabric wiki page](https://fabricmc.net/wi
 
 ## Custom Pronunciation:
 Astronos: as-trone-ose\
-Cobblestonian: kob-ble-stone-ian
-Daltog: dal-tog
-Goatlin: gote-lin
-Iron Golem: eye-ron go-lem
-Lato: lah-tow
-Nukelian: nuke-li-an
-Sharkian: shark-ian
-Slimeeq: slime-eek
-Tauros: tore-ose
-Trashling: trash-ling
+Cobblestonian: kob-ble-stone-ian\
+Daltog: dal-tog\
+Goatlin: gote-lin\
+Iron Golem: eye-ron go-lem\
+Lato: lah-tow\
+Nukelian: nuke-li-an\
+Sharkian: shark-ian\
+Slimeeq: slime-eek\
+Tauros: tore-ose\
+Trashling: trash-ling\
 Warden: war-den
