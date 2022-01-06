@@ -1,12 +1,7 @@
 {
   "type": "latoorigins:modify_behavior",
-  "behavior": "neutral",
-  "entities": [
-    "minecraft:wither_skeleton",
-    "minecraft:blaze",
-    "minecraft:piglin",
-    "minecraft:hoglin",
-    "minecraft:magma_cube"
-  ],
-  "hidden": true
+  "entity_condition": {
+    "type": "origins:in_tag",
+    "tag": "latoorigins:end"
+  }
 }
