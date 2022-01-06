@@ -1,0 +1,16 @@
+{
+    "powers": [
+        "latoorigins:slippery",
+        "latoorigins:phasing",
+        "latoorigins:no_fall",
+        "latoorigins:high_jump",
+        "latoorigins:slow_swimming",
+        "latoorigins:speed_increase",
+        "latoorigins:replace_sounds",
+        "latoorigins:slimelike_body",
+        "latoorigins:projectile_absorption"
+    ],
+    "icon": "slime_ball",
+    "order": 1,
+    "impact": 2
+}
