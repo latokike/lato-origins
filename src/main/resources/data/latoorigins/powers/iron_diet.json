@@ -14,15 +14,7 @@
         "type": "origins:feed",
         "food": 1.0,
         "saturation": 1.0
-      },
-      {
-        "type": "origins:apply_effect",
-        "effect": {
-          "effect": "minecraft:speed",
-          "duration": 200,
-          "amplifier": 0
-        }
-      },
+      }
       {
         "type": "origins:equipped_item_action",
         "equipment_slot": "mainhand",
