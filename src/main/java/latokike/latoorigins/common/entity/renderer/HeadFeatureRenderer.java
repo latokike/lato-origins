@@ -39,7 +39,7 @@ public class HeadFeatureRenderer<T extends LivingEntity, M extends EntityModel<T
     }
 
     public void renderHead(MatrixStack matrixStack, VertexConsumerProvider vertexConsumerProvider, int i, T livingEntity) {
-        if (LOPowers.COBBLESTONE_SKIN.isActive(livingEntity)) {
+        if (LOPowers.NONE.isActive(livingEntity)) {
             Item item = Items.COBBLESTONE;
             ItemStack itemStack = item.getDefaultStack();
             matrixStack.push();
