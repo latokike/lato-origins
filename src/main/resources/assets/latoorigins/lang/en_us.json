@@ -35,6 +35,9 @@
   "origin.latoorigins.sharkian.name": "Sharkian",
   "origin.latoorigins.sharkian.description": "Sharkians are the ruler of the oceans, and they would rule the land too, if they could breathe on it.",
 
+  "origin.latoorigins.slimeeq.name": "Slimeeq",
+  "origin.latoorigins.slimeeq.description": "A humanoid-slime being, which evolved similarly to the cobblestonian. They seem to be highly intelligent beings and once, they may have ruled the world.",
+
   "origin.latoorigins.tauros.name": "Tauros",
   "origin.latoorigins.tauros.description": "Tauros are the guardians of the plains, minding their own business grazing the grass.",
 
@@ -86,6 +89,12 @@
   "power.latoorigins.dimensional_traveler.name": "Dimensional Traveler",
   "power.latoorigins.dimensional_traveler.description": "You haven't explored the dimension code-named 'EX.LDW.A', causing you to be slower and weaker.",
 
+  "power.latoorigins.fall.name": "Stone Anatomy",
+  "power.latoorigins.fall.description": "The average cobblestonian's anatomy is very complex, unlike it's simple counterpart, but one thing is clear: it's very heavy.",
+
+  "power.latoorigins.flight.name": "Flight",
+  "power.latoorigins.flight.description": "As you are a deity, you can fly.",
+
   "power.latoorigins.finned.name": "Fins",
   "power.latoorigins.finned.description": "You can only inch towards your target on land.",
 
@@ -107,6 +116,9 @@
   "power.latoorigins.heavy_body.name": "Heavy Body",
   "power.latoorigins.heavy_body.description": "A heavy body that makes it hard to jump high due to the effects of gravity.",
 
+  "power.latoorigins.high_jump.name": "Bouncy Material",
+  "power.latoorigins.high_jump.description": "As you are made out of a bouncy material, you can jump higher.",
+
   "power.latoorigins.hoofed.name": "Hoofed",
   "power.latoorigins.hoofed.description": "Your legs and feet are shaped different causing you to move faster, but swim slower.",
 
@@ -115,6 +127,9 @@
 
   "power.latoorigins.horned.name": "Horned",
   "power.latoorigins.horned.description": "Having horns deals damage back to attackers, if there is time to recover from the last attack.",
+
+  "power.latoorigins.indestructible.name": "Indestructible",
+  "power.latoorigins.indestructible.description": "Due to being made of the human mind and energy, a deity is therefore invincible.",
 
   "power.latoorigins.inorganic.name": "Inorganic",
   "power.latoorigins.inorganic.description": "Your body is made out of inorganic material, causing it to be immune to most environmental dangers.",
@@ -185,6 +200,9 @@
   "power.latoorigins.neighbors.name": "Demons Together",
   "power.latoorigins.neighbors.description": "You are familiar with mobs of the nether.",
 
+  "power.latoorigins.no_fall.name": "Fall Immunity",
+  "power.latoorigins.no_fall.description": "The slimeeq is a strange organism, consisting of just enough slime and water to make it not bounce.",
+
   "power.latoorigins.old_friends.name": "Old Friends",
   "power.latoorigins.old_friends.description": "You have known the ruler of the end for a long time, mostly due to being stuck in D.4.",
 
@@ -194,11 +212,17 @@
   "power.latoorigins.petrification.name": "Petrification",
   "power.latoorigins.petrification.description": "You become immobile, but you take less damage, and are invincible to some things.",
 
+  "power.latoorigins.phasing.name": "Phasing",
+  "power.latoorigins.phasing.description": "If an enemy attacks a slimeeq, a common tactic they use is to go through the enemy with their slime-like anatomy.",
+
   "power.latoorigins.pickaxeable.name": "Pickaxable",
   "power.latoorigins.pickaxeable.description": "You take more damage if someone attacks you with a pickaxe",
 
   "power.latoorigins.powerful_arms.name": "Powerful Arms",
   "power.latoorigins.powerful_arms.description": "Powerful arms that can launch foes into the air, provided you are using your fists.",
+
+  "power.latoorigins.projectile_absorption.name": "Projectile Absorption",
+  "power.latoorigins.projectile_absorption.description": "A slimeeq's full body consists mainly of slime and water, with no flesh in it, making arrows fired inefficiently deal little damage.",
 
   "power.latoorigins.radioactive.name": "Radioactive",
   "power.latoorigins.radioactive.description": "You leave a radiation cloud when you die, because of the radiation within you.",
@@ -221,8 +245,20 @@
   "power.latoorigins.sky_swimming.name": "Sky Swimming",
   "power.latoorigins.sky_swimming.description": "You can float through the sky due to your unnaturally light body.",
 
+  "power.latoorigins.slimelike_body.name": "Slime-like Body",
+  "power.latoorigins.slimelike_body.description": "A slimeeq's body is translucent, allowing you to see through them.",
+
+  "power.latoorigins.slippery.name": "Slippery",
+  "power.latoorigins.slippery.description": "Due to being a certain weight, and made out of mainly slime, you slide on the ground.",
+
+  "power.latoorigins.slow_swimming.name": "Slow Swimming",
+  "power.latoorigins.slow_swimming.description": "As slimeequen are mainly slime, it is naturally hard for them to swim.",
+
   "power.latoorigins.small_appetite.name": "Small Appetite",
   "power.latoorigins.small_appetite.description": "You are less hungry, and need to eat less to stay alive.",
+
+  "power.latoorigins.speed_increase.name": "Slime Digestive Ability",
+  "power.latoorigins.speed_increase.description": "A slimeeq is consists of mostly slime, and can digest things with just their skin. They also can digest sugar much better than a human.",
 
   "power.latoorigins.translucent_body.name": "Translucent Body",
   "power.latoorigins.translucent_body.description": "Your body has different perks, and different disadvantages than most.",
