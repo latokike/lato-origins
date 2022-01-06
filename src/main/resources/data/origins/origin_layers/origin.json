@@ -1,6 +1,7 @@
 {
   "replace": false,
   "origins": [
+	  "latoorigins:slimeeq",
 	  "latoorigins:axolotl",
 	  "latoorigins:cobblestonian",
 	  "latoorigins:nukelian",
