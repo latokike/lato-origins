@@ -13,7 +13,7 @@ For setup instructions please see the [fabric wiki page](https://fabricmc.net/wi
 ## Custom Pronunciation:
 Astronos: as-trone-ose\
 Cobblestonian: kob-ble-stone-ian\
-Daltog: dal-tog\
+Daltog: dal-togg\
 Goatlin: gote-lin\
 Iron Golem: eye-ron go-lem\
 Lato: lah-tow\
