@@ -24,16 +24,17 @@ import java.util.Map;
 
 public class LOPowers {
 	private static final Map<PowerFactory<?>, Identifier> POWER_FACTORIES = new LinkedHashMap<>();
-
-	public static void register() {
-		register(
-				new PowerFactory<>(LatoOrigins.identifier("modify_behavior"),
-						new SerializableData()
-								.add("behavior", SerializableDataType.enumValue(ModifyBehavior.EntityBehavior.class))
-								.add("entities", SerializableDataType.list(SerializableDataTypes.ENTITY_TYPE)),
-						(data) -> (type, player) -> new ModifyBehavior(type, player, (EntityBehavior) data.get("behavior"),
-								(List<EntityType<?>>) data.get("entities"))));
-	}
+	
+	public static final PowerFactory<Power> MODIFY_BEHAVIOUR = create(
+			new PowerFactiry<>(
+					new Identifier(LatoOrigins.MODID, "modify_behaviour"),
+					new SerializableData()
+							.add("entity_condition", ApoliDataTypes.ENTITY_CONDITION, null),
+					(data) -> (type, player) -> {
+						ModifyBehaviourPower power = new ModifyBehaviourPower(type, player,
+								(ConditionFactory<LivingEntity>.Instance)data.get("entity_condition"));
+							return power;})
+					.allowCondition());
 
 	public static final PowerFactory<Power> EXPLODE = create(
 			new PowerFactory<>(
