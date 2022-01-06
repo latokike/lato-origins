@@ -11,7 +11,7 @@
 For setup instructions please see the [fabric wiki page](https://fabricmc.net/wiki/tutorial:setup) that relates to the IDE that you are using.
 
 ## Custom Pronunciation:
-Astronos: as-trone-ose
+Astronos: as-trone-ose/
 Cobblestonian: kob-ble-stone-ian
 Daltog: dal-tog
 Goatlin: gote-lin
