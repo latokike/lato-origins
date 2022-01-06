@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "iron_ingot",
+    "iron_block",
+    "iron_door",
+    "iron_bars",
+    "iron_nugget",
+    "iron_trapdoor"
+  ]
+}
