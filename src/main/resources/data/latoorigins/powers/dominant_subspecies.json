@@ -1,0 +1,7 @@
+{
+  "type": "latoorigins:modify_behavior",
+  "entity_condition": {
+    "type": "origins:in_tag",
+    "tag": "latoorigins:slime"
+  }
+}
