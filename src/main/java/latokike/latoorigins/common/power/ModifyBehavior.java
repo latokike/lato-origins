@@ -2,33 +2,21 @@ package latokike.latoorigins.common.power;
 
 import io.github.apace100.apoli.power.Power;
 import io.github.apace100.apoli.power.PowerType;
-import net.minecraft.entity.EntityType;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 
-import java.util.List;
+import java.util.function.Predicate;
 
 public class ModifyBehavior extends Power {
 
-	List<EntityType<?>> affectedEntities;
-	EntityBehavior desiredBehavior;
+    private final Predicate<LivingEntity> entityCondition;
 
-	public ModifyBehavior(PowerType<?> type, LivingEntity entity, EntityBehavior desiredBehavior, List<EntityType<?>> affectedEntities) {
-		super(type, entity);
-		this.affectedEntities = affectedEntities;
-		this.desiredBehavior = desiredBehavior;
-	}
+    public RemoveMobHostilityPower(PowerType<?> type, LivingEntity entity, Predicate<LivingEntity> entityCondition) {
+        super(type, entity);
+        this.entityCondition = entityCondition;
+    }
 
-	public boolean checkEntity(EntityType<?> type) {
-		return affectedEntities.contains(type);
-	}
-
-	public EntityBehavior getDesiredBehavior() {
-		return this.desiredBehavior;
-	}
-
-	public enum EntityBehavior {
-		HOSTILE,
-		NEUTRAL,
-		PASSIVE
-	}
+    public boolean apply(Entity entity) {
+        return entity instanceof LivingEntity && (entityCondition == null || entityCondition.test((LivingEntity)entity));
+    }
 }
