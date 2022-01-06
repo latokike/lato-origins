@@ -4,7 +4,7 @@
     "sprite_location": "latoorigins:textures/gui/ability_bars.png",
     "bar_index": 4
   },
-  "cooldown": 300,
+  "cooldown": 400,
   "entity_action": {
     "type": "origins:and",
     "actions": [
@@ -38,7 +38,7 @@
           "type": "origins:offset",
           "y": 1,
           "action": {
-            "type": "origins:setblock",
+            "type": "origins:set_block",
             "block": "minecraft:air"
           }
         }
@@ -49,15 +49,19 @@
           "type": "origins:offset",
           "y": -1,
           "action": {
-            "type": "origins:setblock",
-            "block": "minecraft:cobblestone"
+            "type": "origins:set_block",
+            "block": "minecraft:cobblestone",
+            "condition": {
+              "type": "origins:block",
+              "block": "minecraft:air"
+            }
           }
         }
       },
       {
         "type": "origins:block_action_at",
         "block_action": {
-          "type": "origins:setblock",
+          "type": "origins:set_block",
           "block": "minecraft:air"
         }
       }

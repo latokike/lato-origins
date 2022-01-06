@@ -1,0 +1,8 @@
+{
+    "type": "origins:modify_status_effect_amplifier",
+    "status_effect": "minecraft:speed",
+    "modifier": {
+        "operation": "addition",
+        "value": 1
+    }
+}

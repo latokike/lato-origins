@@ -1,4 +1,4 @@
 {
     "type": "origins:shader",
-    "shader": "minecraft:shaders/post/pencil.json"
+    "shader": "latoorigins:shaders/colorblind.json"
 }
