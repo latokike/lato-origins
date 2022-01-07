@@ -14,7 +14,7 @@
         "type": "origins:feed",
         "food": 1.0,
         "saturation": 1.0
-      }
+      },
       {
         "type": "origins:equipped_item_action",
         "equipment_slot": "mainhand",
@@ -35,9 +35,9 @@
     "item_condition": {
       "type": "origins:ingredient",
       "ingredient": {
-        "tag": "latoorigins:usable",
-        "inverse": true
-      }
+        "tag": "latoorigins:usable"
+      },
+      "invert": true
     }
   }
 }
