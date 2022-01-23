@@ -2,6 +2,6 @@
   "type": "latoorigins:modify_behavior",
   "entity_condition": {
     "type": "origins:in_tag",
-    "tag": "latoorigins:underwater"
+    "tag": "latoorigins:slime"
   }
 }

@@ -53,8 +53,8 @@
   "power.latoorigins.arcane_skin.name": "Arcane Fur",
   "power.latoorigins.arcane_skin.description": "You have fur, which causes your skin to be a weird light-blue shade.",
 
-  "power.latoorigins.bite_sized.name": "Genetically Tiny",
-  "power.latoorigins.bite_sized.description": "You are a genetically extremely small compared to the average height of beings.",
+  "power.latoorigins.bite_sized.name": "Tiny",
+  "power.latoorigins.bite_sized.description": "You are a genes make you extremely small compared to the average height of beings.",
 
   "power.latoorigins.berserker.name": "Berserker",
   "power.latoorigins.berserker.description": "The Warden often relies on an unusually high rush of adrenaline to fuel the high attack power of their arms.",
@@ -271,6 +271,9 @@
 
   "power.latoorigins.underwater_allies.name": "Underwater Allies",
   "power.latoorigins.underwater_allies.description": "You are familiar with underwater creatures.",
+
+  "power.latoorigins.ship_eater.name": "Ship Eater",
+  "power.latoorigins.ship_eater.description": "Due to often sinking ships, sharkians are often found in their remains.",
 
   "power.latoorigins.underwater_home.name": "Underwater Home",
   "power.latoorigins.underwater_home.description": "Your home is underwater.",
