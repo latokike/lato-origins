@@ -4,9 +4,6 @@
   "package": "latokike.latoorigins.mixin",
   "compatibilityLevel": "JAVA_8",
   "mixins": [
-    "ItemAccessor",
-    "ItemMixin",
-    "ItemsMixin",
     "ItemStackMixin",
     "ModifyBehaviorMixin",
     "TrackTargetGoalMixin",
