@@ -6,6 +6,7 @@ import io.github.apace100.apoli.power.Power;
 import io.github.apace100.apoli.power.PowerType;
 import io.github.apace100.apoli.power.PowerTypeReference;
 import io.github.apace100.apoli.power.factory.PowerFactory;
+import io.github.apace100.apoli.power.factory.condition.ConditionFactory;
 import io.github.apace100.apoli.registry.ApoliRegistries;
 import io.github.apace100.apoli.util.HudRender;
 import io.github.apace100.calio.data.SerializableData;
@@ -13,8 +14,8 @@ import io.github.apace100.calio.data.SerializableDataType;
 import io.github.apace100.calio.data.SerializableDataTypes;
 import latokike.latoorigins.common.LatoOrigins;
 import latokike.latoorigins.common.power.*;
-import latokike.latoorigins.common.power.ModifyBehavior.EntityBehavior;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
@@ -26,12 +27,12 @@ public class LOPowers {
 	private static final Map<PowerFactory<?>, Identifier> POWER_FACTORIES = new LinkedHashMap<>();
 	
 	public static final PowerFactory<Power> MODIFY_BEHAVIOUR = create(
-			new PowerFactiry<>(
-					new Identifier(LatoOrigins.MODID, "modify_behaviour"),
+			new PowerFactory<>(
+					new Identifier(LatoOrigins.MODID, "modify_behavior"),
 					new SerializableData()
 							.add("entity_condition", ApoliDataTypes.ENTITY_CONDITION, null),
 					(data) -> (type, player) -> {
-						ModifyBehaviourPower power = new ModifyBehaviourPower(type, player,
+						ModifyBehaviorPower power = new ModifyBehaviorPower(type, player,
 								(ConditionFactory<LivingEntity>.Instance)data.get("entity_condition"));
 							return power;})
 					.allowCondition());

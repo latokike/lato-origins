@@ -7,11 +7,11 @@ import net.minecraft.entity.LivingEntity;
 
 import java.util.function.Predicate;
 
-public class ModifyBehavior extends Power {
+public class ModifyBehaviorPower extends Power {
 
     private final Predicate<LivingEntity> entityCondition;
 
-    public RemoveMobHostilityPower(PowerType<?> type, LivingEntity entity, Predicate<LivingEntity> entityCondition) {
+    public ModifyBehaviorPower(PowerType<?> type, LivingEntity entity, Predicate<LivingEntity> entityCondition) {
         super(type, entity);
         this.entityCondition = entityCondition;
     }

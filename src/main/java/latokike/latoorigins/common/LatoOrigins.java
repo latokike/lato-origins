@@ -44,7 +44,6 @@ public class LatoOrigins implements ModInitializer {
 		LOEvents.init();
 		LOScaleTypes.init();
 		LOPowers.init();
-		LOPowers.register();
 		LOInventory.init();
 		EntityActions.init();
 	}
