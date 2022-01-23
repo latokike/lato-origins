@@ -8,9 +8,9 @@
 	"color":
 	{
 		"type": "origins:model_color",
-		"red": 0.80,
-		"green": 0.83,
-		"blue": 0.80
+		"red": 0.5,
+		"green": 0.5,
+		"blue": 0.5
 	},
 	"invulnerabilities":
 	{
