@@ -12,8 +12,8 @@
     "actions": [
       {
         "type": "origins:feed",
-        "food": 1.0,
-        "saturation": 1.0
+        "food": 4.0,
+        "saturation": 4.0
       },
       {
         "type": "origins:equipped_item_action",
@@ -30,13 +30,21 @@
     ]
   },
   "condition": {
-    "type": "origins:equipped_item",
-    "equipment_slot": "mainhand",
-    "item_condition": {
-      "type": "origins:ingredient",
-      "ingredient": {
-        "tag": "latoorigins:light_iron"
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {
+            "tag": "latoorigins:light_iron"
+          }
+        }
+      },
+      {
+        "type": "origins:sneaking"
       }
-    }
+    ]
   }
 }

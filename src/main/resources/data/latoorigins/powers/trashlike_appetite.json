@@ -30,14 +30,30 @@
     ]
   },
   "condition": {
-    "type": "origins:equipped_item",
-    "equipment_slot": "mainhand",
-    "item_condition": {
-      "type": "origins:ingredient",
-      "ingredient": {
-        "tag": "latoorigins:usable"
+    "type": "origins:and",
+    "conditions": [
+      {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+          "type": "origins:ingredient",
+          "ingredient": {
+            "tag": "latoorigins:usable"
+          },
+          "inverted": true
+        }
       },
-      "invert": true
-    }
+      {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+          "type": "origins:empty",
+          "inverted": true
+        }
+      },
+      {
+        "type": "origins:sneaking"
+      }
+    ]
   }
 }
