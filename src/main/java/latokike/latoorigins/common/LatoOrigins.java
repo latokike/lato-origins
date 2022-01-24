@@ -2,7 +2,6 @@ package latokike.latoorigins.common;
 
 import latokike.latoorigins.common.power.factory.action.*;
 import latokike.latoorigins.common.registry.*;
-import latokike.latoorigins.config.*;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.api.ModInitializer;
 import me.shedaniel.autoconfig.AutoConfig;
@@ -16,7 +15,6 @@ public class LatoOrigins implements ModInitializer {
 	public static String VERSION = "";
 	public static int[] SEMVER;
 	public static final Logger LOGGER = LogManager.getLogger("Lato Origins");
-	public static boolean configRegistered = false;
 	
 	@Override
 	public void onInitialize() {
@@ -35,11 +33,6 @@ public class LatoOrigins implements ModInitializer {
 			}
 		});
 		LOGGER.info("Lato Origins " + VERSION + " is initializing. Have fun!");
-
-		if(!configRegistered) {
-			AutoConfig.register(OriginsFood.class, Toml4jConfigSerializer::new);
-			configRegistered = true;
-		}
 
 		LOEvents.init();
 		LOScaleTypes.init();
