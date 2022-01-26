@@ -10,6 +10,7 @@
     "origins:nether_spawn",
     "origins:flame_particles",
     "origins:burning_wrath",
+    "origins:water_vulnerability",
     "origins:carnivore"
   ],
   "icon": "lava_bucket",
