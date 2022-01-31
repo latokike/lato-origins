@@ -3,7 +3,7 @@
   "entity_action": {
     "type": "origins:add_velocity",
     "z": 5,
-    "space": "local"
+    "space": "local_horizontal"
   },
   "cooldown": 300,
   "condition": {
