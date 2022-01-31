@@ -1,3 +1,4 @@
 {
-  "type": "origins:ignore_water"
+  "type": "origins:ignore_water",
+  "hidden": true
 }
