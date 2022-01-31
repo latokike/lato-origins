@@ -1,9 +1,10 @@
 {
   "powers": [
-	"latoorigins:cobblestone_skin",
-	"latoorigins:movement_reduction",
+		"latoorigins:cobblestone_skin",
+		"latoorigins:movement_reduction",
     "latoorigins:rocky_eater",
-	"latoorigins:heavy_body",
+		"latoorigins:heavy_body",
+		"latoorigins:sinking",
     "latoorigins:pickaxeable",
     "latoorigins:fall",
     "origins:no_shield"
