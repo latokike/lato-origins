@@ -3,6 +3,7 @@
         "latoorigins:slippery",
         "latoorigins:phasing",
         "latoorigins:no_fall",
+        "latoorigins:not_solid",
         "latoorigins:high_jump",
         "latoorigins:slow_swimming",
         "latoorigins:speed_increase",
