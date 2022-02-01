@@ -1,0 +1,30 @@
+{
+	"type": "origins:multiple",
+  "slimeball": {
+    "type": "origins:self_action_when_hit",
+    "entity_action": {
+      "type": "origins:chance",
+      "action": {
+        "type": "origins:give",
+        "stack": {
+          "item": "minecraft:slimeball",
+          "amount": 1
+        }
+      },
+      "chance": 0.1
+    }
+    "cooldown": 0
+  },
+  "slime": {
+    "type": "origins:self_action_when_hit",
+    "entity_action": {
+      "type": "origins:chance",
+      "action": {
+        "type": "origins:spawn_entity",
+        "entity_type": "minecraft:slime"
+      }
+    },
+    "chance": 0.01
+  }
+  "hidden": true
+}
