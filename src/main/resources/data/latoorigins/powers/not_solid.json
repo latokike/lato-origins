@@ -19,10 +19,28 @@
       "type": "origins:chance",
       "action": {
         "type": "origins:spawn_entity",
-        "entity_type": "minecraft:slime"
+        "entity_type": "minecraft:slime",
+	"tag": "{Size:1,PersistenceRequired:1}"
       }
     },
     "chance": 0.01
+  },
+  "slime": {
+    "type": "origins:self_action_when_hit",
+    "entity_action": {
+      "type": "origins:chance",
+      "action": {
+        "type": "origins:spawn_entity",
+        "entity_type": "minecraft:slime",
+	"tag": "{Size:3,PersistenceRequired:1,Health:20.0f}",
+	"entity_action": {
+	  "type": "origins:grant_power",
+          "power": "latoorigins:ridable",
+	  "source": "latoorigins:slimeeq"
+	}
+      }
+    },
+    "chance": 0.00001
   },
   "hidden": true
 }
