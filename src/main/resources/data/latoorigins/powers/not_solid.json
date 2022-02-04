@@ -35,7 +35,7 @@
 	"tag": "{Size:3,PersistenceRequired:1,Health:20.0f}",
 	"entity_action": {
 	  "type": "origins:grant_power",
-          "power": "latoorigins:ridable",
+          "power": "latoorigins:rideable_entity",
 	  "source": "latoorigins:slimeeq"
 	}
       }
