@@ -1,15 +1,13 @@
 {
-	"type": "origins:multiple",
+  "type": "origins:multiple",
   "slimeball": {
     "type": "origins:self_action_when_hit",
     "entity_action": {
       "type": "origins:chance",
       "action": {
-        "type": "origins:give",
-        "stack": {
-          "item": "minecraft:slimeball",
-          "amount": 1
-        }
+		    "type": "origins:spawn_entity",
+		    "entity_type": "minecraft:item",
+    		"tag": "{Item:{id:'minecraft:slime_ball',Count:1}}"
       },
       "chance": 0.1
     }
