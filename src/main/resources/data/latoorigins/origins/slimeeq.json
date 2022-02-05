@@ -9,6 +9,7 @@
         "latoorigins:speed_increase",
         "latoorigins:replace_sounds",
         "latoorigins:slimelike_body",
+        "latoorigins:dominant_subspecies",
         "latoorigins:projectile_absorption"
     ],
     "icon": "slime_ball",
