@@ -83,7 +83,6 @@ public class LOPowers {
 					.allowCondition());
 
 	public static final PowerType<Power> RIDEABLE_CREATURE = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "rideable_creature"));
-	public static final PowerType<Power> ROCKY_EATER = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "rocky_eater"));
 	public static final PowerType<Power> IRON_DIET = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "iron_diet"));
 	public static final PowerType<Power> URANIUM_BUILT = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "uranium_built"));
 	public static final PowerType<Power> COBBLESTONE_SKIN = new PowerTypeReference<>(new Identifier(LatoOrigins.MODID, "cobblestone_skin"));

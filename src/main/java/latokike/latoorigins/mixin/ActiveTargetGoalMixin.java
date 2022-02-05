@@ -1,7 +1,5 @@
 package latokike.latoorigins.mixin;
 
-import java.util.function.Predicate;
-
 import io.github.apace100.apoli.component.PowerHolderComponent;
 import latokike.latoorigins.common.power.ModifyBehaviorPower;
 import net.minecraft.entity.LivingEntity;
