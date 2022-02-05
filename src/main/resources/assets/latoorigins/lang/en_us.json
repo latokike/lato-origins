@@ -62,6 +62,9 @@
   "power.latoorigins.blindness.name": "Blindness",
   "power.latoorigins.blindness.description": "Your eyes show signs of advanced genetic modification to make you easier to domesticate by making you blind when not provided food.",
 
+  "power.latoorigins.bloodshot.name": "Bloodshot",
+  "power.latoorigins.bloodshot.description": "When entering water, your blood boils, also causing your eyes to be a dangerous red.",
+
   "power.latoorigins.bombing.name": "Bombing",
   "power.latoorigins.bombing.description": "A feature added to code-name 'NUKE', which, unlike creepers, allows you to dive-bomb enemies, instead of sneaking up on them.",
 
@@ -88,6 +91,9 @@
 
   "power.latoorigins.dimensional_traveler.name": "Dimensional Traveler",
   "power.latoorigins.dimensional_traveler.description": "You haven't explored the dimension code-named 'EX.LDW.A', causing you to be slower and weaker.",
+
+  "power.latoorigins.dominant_subspecies.name": "Dominant Subspecies",
+  "power.latoorigins.dominant_subspecies.description": "Slimes do not actively try to target you, but they will still try to absorb you if you get too close and they are big enough.",
 
   "power.latoorigins.fall.name": "Stone Anatomy",
   "power.latoorigins.fall.description": "The average cobblestonian's anatomy is very complex, unlike it's simple counterpart, but one thing is clear: it's very heavy.",
@@ -194,6 +200,9 @@
   "power.latoorigins.no_shield.name": "Phasing Hands",
   "power.latoorigins.no_shield.description": "Shields fall right through your hands, rendering them useless.",
 
+  "power.latoorigins.not_solid.name": "Unstable Substance",
+  "power.latoorigins.not_solid.description": "Due to your similarities with slimes, you have a chance to fall apart when hit you take more damage from fire.",
+
   "power.latoorigins.nuke.name": "Nuke",
   "power.latoorigins.nuke.description": "Your body was built in a way that allows itself to detonate.",
 
@@ -269,8 +278,8 @@
   "power.latoorigins.tough_hide.name": "Tough Hide",
   "power.latoorigins.tough_hide.description": "Tougher hide allows you to take more hits.",
 
-  "power.latoorigins.underwater_allies.name": "Underwater Allies",
-  "power.latoorigins.underwater_allies.description": "You are familiar with underwater creatures.",
+  "power.latoorigins.underwater_ally.name": "Underwater Allies",
+  "power.latoorigins.underwater_ally.description": "You are familiar with underwater creatures.",
 
   "power.latoorigins.ship_eater.name": "Ship Eater",
   "power.latoorigins.ship_eater.description": "Due to often sinking ships, sharkians are often found in their remains.",
@@ -303,10 +312,6 @@
   "power.latoorigins.webbed_feet.description": "Your feet are webbed, causing you to move slower on land.",
 
 
-  "death.attack.boil_in_water": "%1$s was boiled alive",
-  "death.attack.boil_in_water.player": "%1$s was boiled alive whilst trying to escape %2$s",
-  "death.attack.horned": "%1$s was magically murdered",
-  "death.attack.horned.player": "%1$s was magically murdered running from %2$s",
-  "death.attack.pickaxed": "%1$s was pickaxed to death",
-  "death.attack.pickaxed.player": "%1$s was brutally murdered by %2$s with a pickaxe"
+  "death.attack.separation": "%1$s was separated too much",
+  "death.attack.separation.player": "%1$s split in two at the hand of %2$s"
 }
