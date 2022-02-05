@@ -21,7 +21,7 @@
       "operation": "addition",
       "value": 6,
       "name": "Saturation value gained from eating dried kelp."
-    },
+    }
   },
   "kelp": {
     "type": "origins:active_self",
