@@ -3,9 +3,9 @@
   "entity_action": {
     "type": "origins:chance",
     "action": {
-      "type": "origins:execute_command",
-      "command": "give @s minecraft:bone_meal",
-      "permission_level": 4
+      "type": "origins:spawn_entity",
+      "entity_type": "minecraft:item",
+      "tag": "{Item:{id:'minecraft:bone_meal',Count:1}}"
     },
     "chance": 0.3
   }

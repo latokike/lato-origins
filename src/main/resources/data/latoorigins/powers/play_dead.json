@@ -116,30 +116,6 @@
             "compare_to": 0
         }
     },
-    "status": {
-        "type": "origins:self_action_when_hit",
-        "entity_action": {
-            "type": "origins:apply_effect",
-            "effect": {
-                "effect": "minecraft:regeneration",
-                "duration": 80,
-                "amplifier": 0,
-                "is_ambient": true,
-                "show_particles": false,
-                "show_icon": false
-            }
-        },
-        "condition": {
-            "type": "origins:health",
-            "comparison": "<=",
-            "compare_to": 1
-        },
-        "cooldown": 7500,
-        "hud_render": {
-            "should_render": false,
-            "bar_index": 0
-        }
-    },
     "invulnerability": {
         "type": "origins:invulnerability",
         "condition": {
@@ -158,7 +134,7 @@
         "type": "origins:self_action_when_hit",
         "entity_action": {
             "type": "origins:heal",
-            "amount": 8
+            "amount": 6
         },
         "condition": {
             "type": "origins:health",
