@@ -1,62 +1,36 @@
 {
-  "type": "origins:active_self",
+  "type": "origins:action_on_block_use",
   "entity_action": {
-    "type": "origins:raycast",
-    "distance": 8.0,
-    "block_action": {
-      "type": "origins:set_block",
-      "block": "minecraft:dirt"
-    },
-    "bientity_condition": {
-      "type": "origins:actor_condition",
-      "condition": {
-        "type": "origins:and",
-        "conditions": [
-          {
-            "type": "origins:raycast",
-            "distance": 8.0,
-            "block_condition": {
-              "type": "origins:in_tag",
-              "tag": "latoorigins:edible"
-            }
-          },
-          {
-            "type": "origins:equipped_item",
-            "equipment_slot": "mainhand",
-            "item_condition": {
-              "type": "origins:empty"
-            }
-          }
-        ]
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:feed",
+        "food": 2,
+        "saturation": 1.0
+      },
+      {
+        "type": "origins:swing_hand",
+        "hand": "MAIN_HAND"
+      },
+      {
+        "type": "origins:play_sound",
+        "sound": "minecraft:block.grass.break",
+        "pitch": 1
       }
-    },
-    "bientity_action": {
-      "type": "origins:actor_action",
-      "action": {
-        "type": "origins:and",
-        "actions": [
-          {
-            "type": "origins:feed",
-            "food": 7,
-            "saturation": 0.0
-          },
-          {
-            "type": "origins:swing_hand",
-            "hand": "MAIN_HAND"
-          },
-          {
-            "type": "origins:play_sound",
-            "sound": "minecraft:block.grass.break",
-            "pitch": 0.4
-          }
-        ]
-      }
-    }
+    ]
   },
-  "cooldown": 300,
-  "key": "key.use",
-  "hud_render": {
-    "sprite_location": "latoorigins:textures/gui/nothing.png",
-    "bar_index": 6
+  "item_condition": {
+    "type": "origins:empty"
+  },
+  "hands": [
+    "main_hand"
+  ],
+  "block_action": {
+    "type": "origins:set_block",
+    "block": "minecraft:dirt"
+  },
+  "block_condition": {
+    "type": "origins:in_tag",
+    "tag": "latoorigins:edible"
   }
 }

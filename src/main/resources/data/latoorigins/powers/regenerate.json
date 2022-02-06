@@ -1,25 +1,28 @@
 {
-    "type": "origins:active_self",
-    "entity_action": {
-      "type": "origins:and",
-      "actions": [
-        {
-          "type": "origins:apply_effect",
-          "effect": {
-            "effect": "minecraft:regeneration",
-            "duration": 200,
-            "amplifier": 2
-          }
-        },
-        {
-          "type": "origins:exhaust",
-          "amount": 10
+  "type": "origins:active_self",
+  "key": {
+    "key": "secondary"
+  },
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:apply_effect",
+        "effect": {
+          "effect": "minecraft:regeneration",
+          "duration": 200,
+          "amplifier": 2
         }
-      ]
-    },
-    "cooldown": 600,
-    "hud_render": {
-      "sprite_location": "latoorigins:textures/gui/ability_bars.png",
-      "bar_index": "8"
-    }
+      },
+      {
+        "type": "origins:exhaust",
+        "amount": 10
+      }
+    ]
+  },
+  "cooldown": 600,
+  "hud_render": {
+    "sprite_location": "latoorigins:textures/gui/ability_bars.png",
+    "bar_index": "8"
   }
+}

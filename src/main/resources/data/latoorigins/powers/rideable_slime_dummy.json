@@ -1,0 +1,19 @@
+{
+  "type": "origins:conditioned_attribute",
+  "modifier": {
+    "attribute": "minecraft:generic.attack_damage",
+    "operation": "multiply_total",
+    "value": -1
+  },
+  "tick_rate": 1,
+  "condition": {
+    "type": "origins:passenger",
+    "bientity_condition": {
+      "type": "origins:actor_condition",
+      "condition": {
+        "type": "origins:power",
+        "power": "latoorigins:not_solid"
+      }
+    }
+  }
+}

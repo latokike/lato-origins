@@ -1,21 +1,175 @@
 {
     "type": "origins:multiple",
-    "effect": {
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 240,
+        "hud_render": {
+            "should_render": false,
+            "bar_index": 0
+        }
+    },
+    "set_resource": {
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "latoorigins:play_dead_resource",
+            "change": 240
+        },
+        "condition": {
+            "type": "origins:and",
+            "conditions": [
+                {
+                    "type": "origins:health",
+                    "comparison": "<=",
+                    "compare_to": 1
+                },
+                {
+                    "type": "origins:health",
+                    "comparison": ">",
+                    "compare_to": 0
+                }
+            ]
+        },
+        "cooldown": 7500,
+        "hud_render": {
+            "should_render": false,
+            "bar_index": 0
+        }
+    },
+    "decrease_resource": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "latoorigins:play_dead_resource",
+            "change": -1
+        },
+        "interval": 1
+    },
+    "attributes": {
+        "type": "origins:conditioned_attribute",
+        "modifiers": [
+            {
+                "attribute": "minecraft:generic.movement_speed",
+                "operation": "multiply_total",
+                "value": -1,
+                "name": "Play dead spd modifier"
+            },
+            {
+                "attribute": "minecraft:generic.attack_damage",
+                "operation": "multiply_total",
+                "value": -1,
+                "name": "Play dead atk modifier"
+            }
+        ],
+        "tick_rate": 1,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "latoorigins:play_dead_resource",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "swim_speed": {
+        "type": "origins:modify_swim_speed",
+        "modifier": {
+            "attribute": "minecraft:generic.movement_speed",
+            "operation": "multiply_total",
+            "value": -1,
+            "name": "Play dead sm_spd modifier"
+        },
+        "tick_rate": 1,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "latoorigins:play_dead_resource",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "no_aggro": {
+        "type": "latoorigins:modify_behavior",
+        "entity_condition": {
+            "type": "origins:exists"
+        },
+        "condition": {
+            "type": "origins:resource",
+            "resource": "latoorigins:play_dead_resource",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "closed_eyes": {
+        "type": "origins:overlay",
+        "texture": "latoorigins:textures/overlay/eyes_closed.png",
+        "strength": 1.0,
+        "red": 1.0,
+        "green": 1.0,
+        "blue": 1.0,
+        "draw_mode": "texture",
+        "draw_phase": "below_hud",
+        "hide_with_hud": false,
+        "visible_in_third_person": true,
+        "condition": {
+            "type": "origins:resource",
+            "resource": "latoorigins:play_dead_resource",
+            "comparison": ">",
+            "compare_to": 0
+        }
+    },
+    "status": {
         "type": "origins:self_action_when_hit",
         "entity_action": {
             "type": "origins:apply_effect",
             "effect": {
-                "effect": "minecraft:slowness",
-                "duration": 60,
-                "amplifier": 4
+                "effect": "minecraft:regeneration",
+                "duration": 80,
+                "amplifier": 0,
+                "is_ambient": true,
+                "show_particles": false,
+                "show_icon": false
             }
         },
         "condition": {
             "type": "origins:health",
             "comparison": "<=",
-            "compare_to": 2
+            "compare_to": 1
         },
-        "cooldown": 0
+        "cooldown": 7500,
+        "hud_render": {
+            "should_render": false,
+            "bar_index": 0
+        }
+    },
+    "invulnerability": {
+        "type": "origins:invulnerability",
+        "condition": {
+            "type": "origins:resource",
+            "resource": "latoorigins:play_dead_resource",
+            "comparison": ">",
+            "compare_to": 0
+        },
+        "damage_condition": {
+            "type": "origins:name",
+            "name": "out_of_world",
+            "inverted": true
+        }
+    },
+    "heal": {
+        "type": "origins:self_action_when_hit",
+        "entity_action": {
+            "type": "origins:heal",
+            "amount": 8
+        },
+        "condition": {
+            "type": "origins:health",
+            "comparison": "<=",
+            "compare_to": 1
+        },
+        "cooldown": 7500,
+        "hud_render": {
+            "should_render": false,
+            "bar_index": 0
+        }
     },
     "sound": {
         "type": "origins:self_action_when_hit",
@@ -26,8 +180,12 @@
         "condition": {
             "type": "origins:health",
             "comparison": "<=",
-            "compare_to": 2
+            "compare_to": 1
         },
-        "cooldown": 0
+        "cooldown": 7500,
+        "hud_render": {
+            "should_render": false,
+            "bar_index": 0
+        }
     }
 }

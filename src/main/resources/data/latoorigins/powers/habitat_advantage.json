@@ -6,7 +6,7 @@
       "category": "plains"
     },
     "attribute": "generic.attack_damage",
-	  "value": 2.0,
+	  "value": 0.75,
 	  "operation": "multiply_total"
   }
 }

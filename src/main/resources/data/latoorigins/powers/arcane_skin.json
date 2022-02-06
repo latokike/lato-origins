@@ -1,7 +1,7 @@
 {
   "type": "origins:model_color",
-  "red": 0.05,
-  "green": 0.25,
-  "blue": 0.25,
+  "red": 0.4,
+  "green": 0.45,
+  "blue": 0.7,
   "alpha": 1
 }

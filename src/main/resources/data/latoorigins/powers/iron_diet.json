@@ -1,12 +1,13 @@
 {
   "type": "origins:active_self",
   "key": {
-    "key": "key.use"
+    "key": "key.use",
+    "continuous": true
   },
   "hud_render": {
     "should_render": false
   },
-  "cooldown": 10,
+  "cooldown": 3,
   "entity_action": {
     "type": "origins:and",
     "actions": [
@@ -43,7 +44,8 @@
         }
       },
       {
-        "type": "origins:sneaking"
+        "type": "origins:sneaking",
+        "inverted": true
       }
     ]
   }
