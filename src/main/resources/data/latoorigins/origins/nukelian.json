@@ -5,6 +5,7 @@
     "latoorigins:homing_missile",
     "latoorigins:radioactive",
     "latoorigins:uranium_built",
+    "latoorigins:redstone_fuelled",
     "origins:water_vulnerability"
   ],
   "icon": "redstone_block",
