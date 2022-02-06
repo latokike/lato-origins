@@ -15,7 +15,8 @@
 	"origins:aqua_affinity",
 	"origins:like_water",
 	"origins:water_breathing",
-	"latoorigins:regenerate"
+	"latoorigins:regenerate",
+	"latoorigins:play_dead"
   ],
   "icon": "salmon",
   "order": 1,
