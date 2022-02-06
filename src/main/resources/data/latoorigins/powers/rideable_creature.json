@@ -1,0 +1,6 @@
+{
+  "type": "origins:action_on_being_used",
+  "bientity_action": {
+    "type": "origins:mount"
+  }
+}
