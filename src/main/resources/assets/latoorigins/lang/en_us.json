@@ -218,5 +218,7 @@
   "death.attack.horned": "%1$s was mortally wounded",
   "death.attack.horned.player": "%1$s was mortally wound from hitting %2$s too much",
   "death.attack.pickaxed": "%1$s was pickaxed to death",
-  "death.attack.pickaxed.player": "%1$s was brutally murdered by %2$s with a pickaxe"
+  "death.attack.pickaxed.player": "%1$s was brutally murdered by %2$s with a pickaxe",
+  "death.attack.separation": "%1$s was separated too much",
+  "death.attack.separation.player": "%1$s split in two at the hand of %2$s"
 }
