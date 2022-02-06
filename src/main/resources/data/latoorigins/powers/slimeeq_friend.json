@@ -1,0 +1,12 @@
+{
+  "type": "origins:modify_damage_dealt",
+  "target_condition": {
+    "type": "origins:power",
+    "power": "latoorigins:not_solid"
+  },
+  "modifier": {
+    "name": "Friendly with Slimeequen",
+    "operation": "multiply_base",
+    "value": -1.0
+  }
+}

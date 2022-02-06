@@ -1,7 +1,8 @@
 {
   "type": "origins:active_self",
   "key": {
-    "key": "key.use"
+    "key": "key.use",
+    "continuous": true
   },
   "hud_render": {
     "should_render": false
