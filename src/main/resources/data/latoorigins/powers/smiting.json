@@ -1,0 +1,37 @@
+{
+  "type": "origins:multiple",
+  "holy_smite": {
+    "bientity_condition": {
+      "type": "origins:actor_condition",
+      "condition": {
+        "type": "origins:equipped_item",
+        "equipment_slot": "mainhand",
+        "item_condition": {
+          "type": "origins:enchantment",
+          "enchantment": "minecraft:smite",
+          "comparison": ">",
+          "compare_to": 0
+        }
+      }
+    }
+  },
+  "smiting_fist": {
+  	"type": "origins:target_action_on_hit",
+  	"entity_action": {
+      "type": "origins:spawn_entity",
+      "entity_type": "minecraft:lightning_bolt"
+  	},
+  	"cooldown": 0,
+  	"hud_render": {
+    	"should_render": false,
+    	"bar_index": 0
+  	},
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "mainhand",
+      "item_condition": {
+        "type": "origins:empty"
+      }
+    }
+  }
+}
