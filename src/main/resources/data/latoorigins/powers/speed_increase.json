@@ -1,8 +1,103 @@
 {
+  "type": "origins:multiple",
+  "better_potion": {
     "type": "origins:modify_status_effect_amplifier",
     "status_effect": "minecraft:speed",
     "modifier": {
-        "operation": "addition",
-        "value": 1
+      "operation": "addition",
+      "value": 1
     }
+  },
+  "sugar_time": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 2147483647,
+    "hud_render": {
+      "should_render": false,
+      "bar_index": 0
+    }
+  },
+  "sugar_decreaser": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "latoorigins:not_solid_sugar_time",
+      "change": -125
+    },
+    "interval": 1
+  },
+  "sugar_speed": {
+    "type": "origins:conditioned_attribute",
+    "modifier": {
+      "attribute": "minecraft:generic.movement_speed",
+      "operation": "multiply_base",
+      "value": 0.125,
+      "name": "Sugar Modifier"
+    },
+    "tick_rate": 1,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "latoorigins:not_solid_sugar_time",
+      "comparison": ">",
+      "compare_to": 0
+    }
+  },
+  "sugar_consumption": {
+    "type": "origins:active_self",
+    "entity_action": {
+      "type": "origins:and",
+      "actions": [
+        {
+          "type": "origins:equipped_item_action",
+          "equipment_slot": "mainhand",
+          "action": {
+            "type": "origins:consume",
+            "amount": 1
+          }
+        },
+        {
+          "type": "origins:feed",
+          "food": 0.0,
+          "saturation": 0.1
+        },
+        {
+          "type": "origins:play_sound",
+          "sound": "minecraft:entity.player.burp"
+        },
+        {
+          "type": "origins:change_resource",
+          "resource": "latoorigins:not_solid_sugar_time",
+          "change": 500
+        }
+      ]
+    },
+    "cooldown": 3,
+    "hud_render": {
+      "should_render": false
+    },
+    "key": {
+      "key": "key.use",
+      "continuous": true
+    },
+    "condition": {
+      "type": "origins:and",
+      "conditions":[
+        {
+          "type": "origins:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "item": "minecraft:sugar"
+            }
+          }
+        },
+        {
+          "type": "origins:resource",
+          "comparison": "<",
+          "compare_to": 2147483647
+        }
+      ]
+    }
+  }
 }
