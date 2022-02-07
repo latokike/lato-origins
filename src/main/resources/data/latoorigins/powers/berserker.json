@@ -1,95 +1,177 @@
 {
-    "type": "origins:multiple",
-    "minor": {
-        "type": "origins:self_action_when_hit",
-        "damage_condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:amount",
-                    "comparison": ">=",
-                    "compare_to": 0.5
-                },
-                {
-                    "type": "origins:amount",
-                    "comparison": "<",
-                    "compare_to": 4
-                }
-            ]
-        },
-        "cooldown": 0,
-        "entity_action": {
-            "type": "origins:apply_effect",
-            "effects": [
-                {
-                    "effect": "minecraft:strength",
-                    "duration": 200,
-                    "amplifier": 0
-                },
-                {
-                    "effect": "minecraft:speed",
-                    "duration": 200,
-                    "amplifier": 0
-                }
-            ]
-        }
-    },
-    "average": {
-        "type": "origins:self_action_when_hit",
-        "damage_condition": {
-            "type": "origins:and",
-            "conditions": [
-                {
-                    "type": "origins:amount",
-                    "comparison": ">=",
-                    "compare_to": 4
-                },
-                {
-                    "type": "origins:amount",
-                    "comparison": "<",
-                    "compare_to": 10
-                }
-            ]
-        },
-        "cooldown": 0,
-        "entity_action": {
-            "type": "origins:apply_effect",
-            "effects": [
-                {
-                    "effect": "minecraft:strength",
-                    "duration": 300,
-                    "amplifier": 1
-                },
-                {
-                    "effect": "minecraft:speed",
-                    "duration": 300,
-                    "amplifier": 1
-                }
-            ]
-        }
-    },
-    "major": {
-        "type": "origins:self_action_when_hit",
-        "damage_condition": {
-            "type": "origins:amount",
-            "comparison": ">=",
-            "compare_to": 10
-        },
-        "cooldown": 0,
-        "entity_action": {
-            "type": "origins:apply_effect",
-            "effects": [
-                {
-                    "effect": "minecraft:strength",
-                    "duration": 600,
-                    "amplifier": 3
-                },
-                {
-                    "effect": "minecraft:speed",
-                    "duration": 600,
-                    "amplifier": 3
-                }
-            ]
-        }
+  "type": "origins:multiple",
+  "resource": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 2147483647,
+    "hud_render": {
+      "should_render": false,
+      "bar_index": 0
     }
+  },
+  "time_out": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "latoorigins:berserker_resource",
+      "change": -1
+    },
+    "interval": 1
+  },
+  "apply_average": {
+    "type": "origins:conditioned_attribute",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "multiply_base",
+        "value": 0.45,
+        "name": "Berserk Speed Modifier"
+      },
+      {
+        "attribute": "minecraft:generic.attack_damage",
+        "operation": "multiply_base",
+        "value": 0.45,
+        "name": "Berserk Damage Modifier"
+      }
+    ],
+    "tick_rate": 1,
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "latoorigins:berserker_resource",
+          "comparison": ">",
+          "compare_to": 20
+        },
+        {
+          "type": "origins:resource",
+          "resource": "latoorigins:berserker_resource",
+          "comparison": "<=",
+          "compare_to": 50
+        }
+      ]
+    }
+  },
+  "apply_major": {
+    "type": "origins:conditioned_attribute",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "multiply_base",
+        "value": 1,
+        "name": "Berserk Speed Modifier"
+      },
+      {
+        "attribute": "minecraft:generic.attack_damage",
+        "operation": "multiply_base",
+        "value": 1,
+        "name": "Berserk Damage Modifier"
+      }
+    ],
+    "tick_rate": 1,
+    "condition": {
+      "type": "origins:resource",
+      "resource": "latoorigins:berserker_resource",
+      "comparison": ">",
+      "compare_to": 50
+    }
+  },
+  "apply_minor": {
+    "type": "origins:conditioned_attribute",
+    "modifiers": [
+      {
+        "attribute": "minecraft:generic.movement_speed",
+        "operation": "multiply_base",
+        "value": 0.125,
+        "name": "Berserk Speed Modifier"
+      },
+      {
+        "attribute": "minecraft:generic.attack_damage",
+        "operation": "multiply_base",
+        "value": 0.125,
+        "name": "Berserk Damage Modifier"
+      }
+    ],
+    "tick_rate": 1,
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:resource",
+          "resource": "latoorigins:berserker_resource",
+          "comparison": ">",
+          "compare_to": 0
+        },
+        {
+          "type": "origins:resource",
+          "resource": "latoorigins:berserker_resource",
+          "comparison": "<=",
+          "compare_to": 20
+        }
+      ]
+    }
+  },
+  "increment_minor": {
+    "type": "origins:self_action_when_hit",
+    "damage_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:amount",
+          "comparison": ">",
+          "compare_to": 0
+        },
+        {
+          "type": "origins:amount",
+          "comparison": "<=",
+          "compare_to": 3
+        }
+      ]
+    },
+    "cooldown": 0,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "latoorigins:berserker_resource",
+      "change": 10
+    }
+  },
+  "increment_average": {
+    "type": "origins:self_action_when_hit",
+    "damage_condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:amount",
+          "comparison": ">",
+          "compare_to": 3
+        },
+        {
+          "type": "origins:amount",
+          "comparison": "<=",
+          "compare_to": 5
+        }
+      ]
+    },
+    "cooldown": 0,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "latoorigins:berserker_resource",
+      "change": 20
+    }
+  },
+  "increment_major": {
+    "type": "origins:self_action_when_hit",
+    "damage_condition": {
+      "type": "origins:amount",
+      "comparison": ">",
+      "compare_to": 5
+    },
+    "cooldown": 0,
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "latoorigins:berserker_resource",
+      "change": 50
+    }
+  }
 }
