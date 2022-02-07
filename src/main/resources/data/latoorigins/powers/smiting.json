@@ -1,6 +1,7 @@
 {
   "type": "origins:multiple",
   "holy_smite": {
+    "type": "origins:modify_damage_dealt",
     "bientity_condition": {
       "type": "origins:actor_condition",
       "condition": {
@@ -13,6 +14,11 @@
           "compare_to": 0
         }
       }
+    },
+    "modifier": {
+      "name": "Holy Smite Damage",
+      "operation": "multiply_base",
+      "value": 1.0
     }
   },
   "smiting_fist": {
