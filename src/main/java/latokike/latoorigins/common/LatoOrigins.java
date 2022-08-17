@@ -1,11 +1,13 @@
 package latokike.latoorigins.common;
 
-import latokike.latoorigins.common.power.factory.action.*;
-import latokike.latoorigins.common.registry.*;
-import net.fabricmc.loader.api.FabricLoader;
+import latokike.latoorigins.common.power.factory.action.BiEntityActions;
+import latokike.latoorigins.common.power.factory.action.EntityActions;
+import latokike.latoorigins.common.registry.LOEvents;
+import latokike.latoorigins.common.registry.LOInventory;
+import latokike.latoorigins.common.registry.LOPowers;
+import latokike.latoorigins.common.registry.LOScaleTypes;
 import net.fabricmc.api.ModInitializer;
-import me.shedaniel.autoconfig.AutoConfig;
-import me.shedaniel.autoconfig.serializer.Toml4jConfigSerializer;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.util.Identifier;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;

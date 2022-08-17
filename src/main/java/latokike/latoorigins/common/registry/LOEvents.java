@@ -1,12 +1,8 @@
 package latokike.latoorigins.common.registry;
 
-import java.util.Optional;
-import java.util.function.Consumer;
-
 import io.github.apace100.apoli.component.PowerHolderComponent;
-import latokike.latoorigins.common.registry.events.EntityInteractCallback;
-import io.github.apace100.origins.component.OriginComponent;
 import latokike.latoorigins.common.power.ExplodePower;
+import latokike.latoorigins.common.registry.events.EntityInteractCallback;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
@@ -14,6 +10,8 @@ import net.minecraft.item.Items;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.ActionResult;
+
+import java.util.function.Consumer;
 
 public class LOEvents {
     public static void init() {
