@@ -13,7 +13,7 @@ import net.minecraft.nbt.NbtElement;
 import net.minecraft.screen.Generic3x3ContainerScreenHandler;
 import net.minecraft.screen.ScreenHandlerFactory;
 import net.minecraft.screen.SimpleNamedScreenHandlerFactory;
-import net.minecraft.text.TranslatableText;
+import net.minecraft.text.Text;
 import net.minecraft.util.collection.DefaultedList;
 
 import java.util.function.Predicate;
@@ -21,8 +21,8 @@ import java.util.function.Predicate;
 public class CustomInventoryPower extends Power implements Active, Inventory {
 
     private final int size;
+    private final String name;
     private final DefaultedList<ItemStack> inventory;
-    private final TranslatableText containerName;
     private final ScreenHandlerFactory factory;
     private final boolean shouldDropOnDeath;
     private final Predicate<ItemStack> dropOnDeathFilter;
@@ -30,8 +30,8 @@ public class CustomInventoryPower extends Power implements Active, Inventory {
     public CustomInventoryPower(PowerType<?> type, LivingEntity player, String containerName, int size, boolean shouldDropOnDeath, Predicate<ItemStack> dropOnDeathFilter) {
         super(type, player);
         this.size = size;
+        this.name = containerName;
         this.inventory = DefaultedList.ofSize(size, ItemStack.EMPTY);
-        this.containerName = new TranslatableText(containerName);
         this.factory = (i, playerInventory, playerEntity) -> new Generic3x3ContainerScreenHandler(i, playerInventory, this);
         this.shouldDropOnDeath = shouldDropOnDeath;
         this.dropOnDeathFilter = dropOnDeathFilter;
@@ -40,7 +40,7 @@ public class CustomInventoryPower extends Power implements Active, Inventory {
     @Override
     public void onUse() {
         if(!entity.world.isClient && entity instanceof PlayerEntity player) {
-            player.openHandledScreen(new SimpleNamedScreenHandlerFactory(factory, containerName));
+            player.openHandledScreen(new SimpleNamedScreenHandlerFactory(factory, Text.of(name)));
         }
     }
 

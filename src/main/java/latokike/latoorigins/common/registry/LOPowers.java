@@ -10,17 +10,17 @@ import io.github.apace100.apoli.power.factory.condition.ConditionFactory;
 import io.github.apace100.apoli.registry.ApoliRegistries;
 import io.github.apace100.apoli.util.HudRender;
 import io.github.apace100.calio.data.SerializableData;
-import io.github.apace100.calio.data.SerializableDataType;
 import io.github.apace100.calio.data.SerializableDataTypes;
 import latokike.latoorigins.common.LatoOrigins;
-import latokike.latoorigins.common.power.*;
-import net.minecraft.entity.EntityType;
+import latokike.latoorigins.common.power.ExplodePower;
+import latokike.latoorigins.common.power.ModifyBehaviorPower;
+import latokike.latoorigins.common.power.ModifySizePower;
+import latokike.latoorigins.common.power.SpikedPower;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 import java.util.LinkedHashMap;
-import java.util.List;
 import java.util.Map;
 
 public class LOPowers {

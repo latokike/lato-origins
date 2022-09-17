@@ -1,17 +1,17 @@
 package latokike.latoorigins.common.registry;
 
 import latokike.latoorigins.common.LatoOrigins;
-import net.fabricmc.fabric.api.tag.TagRegistry;
 import net.minecraft.item.Item;
 import net.minecraft.block.Block;
-import net.minecraft.tag.Tag;
+import net.minecraft.tag.TagKey;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 
 public class LOTags {
-	public static final Tag<Item> GOLDEN_ARMOR = TagRegistry.item(new Identifier(LatoOrigins.MODID, "golden_armor"));
-	public static final Tag<Item> GOLDEN_TOOLS = TagRegistry.item(new Identifier(LatoOrigins.MODID, "golden_tools"));
-	public static final Tag<Item> NETHERITE_GOLD_TOOLS = TagRegistry.item(new Identifier(LatoOrigins.MODID, "netherite_gold_tools"));
-	public static final Tag<Item> ARMOR = TagRegistry.item(new Identifier(LatoOrigins.MODID, "armor"));
-	public static final Tag<Item> IRON_TOOLS = TagRegistry.item(new Identifier(LatoOrigins.MODID, "iron_tools"));
-	public static final Tag<Block> EDIBLE = TagRegistry.block(new Identifier(LatoOrigins.MODID, "edible"));
+	public static final TagKey<Item> GOLDEN_ARMOR = TagKey.of(Registry.ITEM_KEY,new Identifier(LatoOrigins.MODID, "golden_armor"));
+	public static final TagKey<Item> GOLDEN_TOOLS = TagKey.of(Registry.ITEM_KEY,new Identifier(LatoOrigins.MODID, "golden_tools"));
+	public static final TagKey<Item> NETHERITE_GOLD_TOOLS = TagKey.of(Registry.ITEM_KEY,new Identifier(LatoOrigins.MODID, "netherite_gold_tools"));
+	public static final TagKey<Item> ARMOR = TagKey.of(Registry.ITEM_KEY,new Identifier(LatoOrigins.MODID, "armor"));
+	public static final TagKey<Item> IRON_TOOLS = TagKey.of(Registry.ITEM_KEY, new Identifier(LatoOrigins.MODID, "iron_tools"));
+	public static final TagKey<Block> EDIBLE = TagKey.of(Registry.BLOCK_KEY, new Identifier(LatoOrigins.MODID, "edible"));
 }

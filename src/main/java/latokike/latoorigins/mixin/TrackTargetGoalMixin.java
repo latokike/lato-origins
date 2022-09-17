@@ -1,8 +1,6 @@
 package latokike.latoorigins.mixin;
 
 import io.github.apace100.apoli.component.PowerHolderComponent;
-import io.github.apace100.apoli.registry.ApoliRegistries;
-import io.github.apace100.origins.component.OriginComponent;
 import latokike.latoorigins.common.power.ModifySizePower;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.goal.TrackTargetGoal;
