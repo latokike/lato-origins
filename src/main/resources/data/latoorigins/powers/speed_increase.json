@@ -21,7 +21,7 @@
     "type": "origins:action_over_time",
     "entity_action": {
       "type": "origins:change_resource",
-      "resource": "latoorigins:not_solid_sugar_time",
+      "resource": "latoorigins:speed_increase_sugar_time",
       "change": -125
     },
     "interval": 1
@@ -37,7 +37,7 @@
     "tick_rate": 1,
     "condition": {
       "type": "origins:resource",
-      "resource": "latoorigins:not_solid_sugar_time",
+      "resource": "latoorigins:speed_increase_sugar_time",
       "comparison": ">",
       "compare_to": 0
     }
@@ -66,7 +66,7 @@
         },
         {
           "type": "origins:change_resource",
-          "resource": "latoorigins:not_solid_sugar_time",
+          "resource": "latoorigins:speed_increase_sugar_time",
           "change": 500
         }
       ]
@@ -94,8 +94,9 @@
         },
         {
           "type": "origins:resource",
+          "resource": "latoorigins:speed_increase_sugar_time",
           "comparison": "<",
-          "compare_to": 2147483647
+          "compare_to": 2147483148
         }
       ]
     }

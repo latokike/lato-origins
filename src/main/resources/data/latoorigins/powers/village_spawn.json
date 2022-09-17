@@ -1,5 +1,7 @@
 {
   "type": "origins:modify_player_spawn",
   "dimension": "minecraft:overworld",
-  "structure": "minecraft:village"
+  "structure": "minecraft:village_plains",
+  "dimension_distance_multiplier": 1,
+  "spawn_strategy": "center"
 }
