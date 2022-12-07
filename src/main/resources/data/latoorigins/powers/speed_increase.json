@@ -8,6 +8,23 @@
       "value": 1
     }
   },
+  "food": {
+    "type": "origins:modify_food",
+    "item_condition": 
+    {
+      "type": "origins:food"
+    },
+    "food_modifier":
+    {
+      "operation": "multiply_base",
+      "value": 0.2
+    },
+    "saturation_modifier":
+    {
+      "operation": "multiply_base",
+      "value": 0.2
+    }
+  },
   "sugar_time": {
     "type": "origins:resource",
     "min": 0,
@@ -57,7 +74,7 @@
         },
         {
           "type": "origins:feed",
-          "food": 0.0,
+          "food": 0.1,
           "saturation": 0.1
         },
         {
