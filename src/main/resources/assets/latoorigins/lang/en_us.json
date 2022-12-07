@@ -183,7 +183,7 @@
   "power.latoorigins.small_appetite.name": "Small Appetite",
   "power.latoorigins.small_appetite.description": "You are less hungry, and need to eat less to stay alive.",
   "power.latoorigins.speed_increase.name": "Slime Digestive Ability",
-  "power.latoorigins.speed_increase.description": "A slimeeq is consists of mostly slime, and can digest things with just their skin. They also can digest sugar much better than a human.",
+  "power.latoorigins.speed_increase.description": "A slimeeq can digest things much more efficiently than a normal organic being, which causes all foodstuffs to feel more filling.",
   "power.latoorigins.translucent_body.name": "Translucent Body",
   "power.latoorigins.translucent_body.description": "Your body has different perks, and different disadvantages than most.",
   "power.latoorigins.trashlike_appetite.name": "Trash-like Appetite",
@@ -214,11 +214,11 @@
   "power.latoorigins.webbed_feet.description": "Your feet are webbed, causing you to move slower on land.",
 
   "death.attack.boil_in_water": "%1$s was boiled alive",
-  "death.attack.boil_in_water.player": "%1$s stayed in the hot tub too long with %2$s",
+  "death.attack.boil_in_water.player": "%1$s thought it a great idea to jump in the hot spring whilst running from %2$s",
   "death.attack.horned": "%1$s was mortally wounded",
-  "death.attack.horned.player": "%1$s was mortally wound from hitting %2$s too much",
+  "death.attack.horned.player": "%1$s was mortally wounded from hitting %2$s too much",
   "death.attack.pickaxed": "%1$s was pickaxed to death",
   "death.attack.pickaxed.player": "%1$s was brutally murdered by %2$s with a pickaxe",
-  "death.attack.separation": "%1$s was separated too much",
+  "death.attack.separation": "%1$s split apart too many times",
   "death.attack.separation.player": "%1$s split in two at the hand of %2$s"
 }
