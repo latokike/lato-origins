@@ -1,5 +1,40 @@
 {
   "type": "origins:multiple",
+  "the_overworld": {
+    "type": "origins:stacking_status_effect",
+    "min_stacks": 0,
+    "max_stacks": 1,
+    "duration_per_stack": 20,
+    "condition": {
+      "type": "origins:and",
+      "conditions": [
+        {
+          "type": "origins:dimension",
+          "dimension": "minecraft:overworld"
+        },
+        {
+          "type": "origins:resource",
+          "resource": "latoorigins:adaptive_time_in_overworld",
+          "comparison": ">=",
+          "compare_to": 9999
+        },
+        {
+          "type": "origins:resource",
+          "resource": "latoorigins:age_resource",
+          "comparison": ">=",
+          "compare_to": 14999
+        }
+      ]
+    },
+    "effects": [
+      {
+        "effect": "minecraft:haste",
+        "is_ambient": false,
+        "show_particles": false,
+        "show_icon": false
+      }
+    ]
+  },
   "the_nether": {
     "type": "origins:stacking_status_effect",
     "min_stacks": 0,
@@ -39,7 +74,7 @@
   "time_in_overworld": {
     "type": "origins:resource",
     "min": 0,
-    "max": 1000000,
+    "max": 10000,
     "hud_render": {
       "should_render": false,
       "bar_index": 0
@@ -53,7 +88,8 @@
       "change": 1
     },
     "entity_condition": {
-
+      "type": "origins:dimension",
+      "dimension": "minecraft:overworld"
     },
     "interval": 1
   }
