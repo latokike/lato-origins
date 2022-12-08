@@ -16,13 +16,13 @@
           "type": "origins:resource",
           "resource": "latoorigins:adaptive_time_in_overworld",
           "comparison": ">=",
-          "compare_to": 9999
+          "compare_to": 99999
         },
         {
           "type": "origins:resource",
           "resource": "latoorigins:age_resource",
           "comparison": ">=",
-          "compare_to": 14999
+          "compare_to": 119999
         }
       ]
     },
@@ -74,7 +74,7 @@
   "time_in_overworld": {
     "type": "origins:resource",
     "min": 0,
-    "max": 10000,
+    "max": 100000,
     "hud_render": {
       "should_render": false,
       "bar_index": 0
