@@ -36,4 +36,25 @@
       }
     ]
   }
+  "time_in_overworld": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1000000,
+    "hud_render": {
+      "should_render": false,
+      "bar_index": 0
+    }
+  },
+  "increase_resource": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:change_resource",
+      "resource": "latoorigins:adaptive_time_in_overworld",
+      "change": 1
+    },
+    "entity_condition": {
+
+    },
+    "interval": 1
+  }
 }
