@@ -1,0 +1,109 @@
+{
+  "type": "origins:multiple",
+  "god": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1,
+    "hud_render": {
+      "should_render": false,
+      "bar_index": 0
+    }
+  },
+  "god_resource": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 2000,
+    "hud_render": {
+      "should_render": false,
+      "bar_index": 0
+    }
+  },
+  "resource": {
+    "type": "origins:resource",
+    "min": 0,
+    "max": 1000,
+    "hud_render": {
+      "should_render": false,
+      "bar_index": 0
+    }
+  },
+  "increase_resource": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:resource",
+        "resource": "latoorigins:aether_capacity_god",
+        "comparison": "<",
+        "compare_to": 1
+      },
+      "if_action": {
+        "type": "origins:change_resource",
+        "resource": "latoorigins:aether_capacity_resource",
+        "change": 10
+      },
+      "else_action": {
+        "type": "origins:change_resource",
+        "resource": "latoorigins:aether_capacity_god_resource",
+        "change": 10
+      }
+    },
+    "interval": 20
+  },
+  "grant_god": {
+    "type": "origins:action_on_item_use",
+    "entity_action": {
+      "type": "origins:chance",
+      "action": {
+        "type": "origins:and",
+        "actions": [
+          {
+            "type": "origins:change_resource",
+            "resource": "latoorigins:aether_capacity_god",
+            "operation": "set",
+            "change": 1
+          },
+          {
+            "type": "origins:revoke",
+            "powern": "latoorigins:aether_capacity_resource",
+            "operation": "set",
+            "change": 0
+          }
+        ]
+      },
+      "fail_action": {
+        "type": "origins:damage",
+        "amount": 10
+      },
+      "chance": 0.1
+    },
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "item": "minecraft:apple"
+      }
+    }
+  },
+  "wake_up": {
+    "type": "origins:action_on_wake_up",
+    "entity_action": {
+      "type": "origins:if_else",
+      "condition": {
+        "type": "origins:resource",
+        "resource": "latoorigins:aether_capacity_god",
+        "comparison": "<",
+        "compare_to": 1
+      },
+      "if_action": {
+        "type": "origins:change_resource",
+        "resource": "latoorigins:aether_capacity_resource",
+        "change": 500
+      },
+      "else_action": {
+        "type": "origins:change_resource",
+        "resource": "latoorigins:aether_capacity_god_resource",
+        "change": 1000
+      }
+    }
+  }
+}
