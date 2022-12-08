@@ -15,7 +15,7 @@
     }
   },
   "modifier": {
-    "operation": "multiply_base",
-    "value": 1
+    "operation": "addition",
+    "value": 6
   }
 }
