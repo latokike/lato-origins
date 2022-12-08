@@ -1,0 +1,21 @@
+{
+    "type": "origins:multiple",
+    "resource": {
+        "type": "origins:resource",
+        "min": 0,
+        "max": 10000,
+        "hud_render": {
+            "should_render": false,
+            "bar_index": 0
+        }
+    },
+    "increase_resource": {
+        "type": "origins:action_over_time",
+        "entity_action": {
+            "type": "origins:change_resource",
+            "resource": "latoorigins:age_resource",
+            "change": 1
+        },
+        "interval": 1
+    }
+}
