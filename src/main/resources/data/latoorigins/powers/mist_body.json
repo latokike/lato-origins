@@ -1,5 +1,6 @@
 {
   "type": "origins:attribute",
+  "update_health": true,
   "modifiers": [
     {
       "attribute": "generic.max_health",
