@@ -1,5 +1,6 @@
 {
   "type": "origins:attribute",
+  "update_health": true,
   "modifiers": [
 	{
 	  "name": "Bite Sized health reduction",
